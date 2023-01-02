@@ -24,6 +24,18 @@ get_header(); ?>
 	</header><!-- .page-header -->
 
 		<?php
+		if ( 'resources' === get_post_type() ) {
+			echo '<div class="facet-filter container flex items-center">';
+				echo '<h3 class="filter-label">' . esc_html__( 'Filter by ', 'wd_s' ) . '</h3>';
+				echo do_shortcode( '[facetwp facet="resources_type"]' );
+				echo do_shortcode( '[facetwp facet="resources_topic"]' );
+				echo do_shortcode( '[facetwp facet="resources_industry"]' );
+				echo do_shortcode( '[facetwp facet="categories"]' );
+				echo do_shortcode( '[facetwp facet="tags"]' );
+			echo '</div>';
+			echo '<div class="resources-facets-list facetwp-template">';
+		}
+
 			/* Start the Loop */
 		while ( have_posts() ) :
 			the_post();
@@ -32,12 +44,16 @@ get_header(); ?>
 
 			endwhile;
 
-			print_numeric_pagination();
+			else :
+				get_template_part( 'template-parts/content', 'none' );
+			endif;
 
-		else :
-			get_template_part( 'template-parts/content', 'none' );
-		endif;
-		?>
+			if ( 'resources' === get_post_type() ) {
+				echo '</div>';
+			}
+
+			print_numeric_pagination();
+			?>
 
 </main><!-- #main -->
 

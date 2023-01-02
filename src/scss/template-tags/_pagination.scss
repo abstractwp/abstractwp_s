@@ -4,5 +4,9 @@
 //----------------------------------------
 
 .pagination-container {
-	@apply container;
+	@apply container text-center;
+
+	.page-numbers {
+		@apply p-4 no-underline leading-7;
+	}
 }
