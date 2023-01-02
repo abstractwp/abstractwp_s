@@ -44,16 +44,16 @@ get_header(); ?>
 
 			endwhile;
 
+			else :
+				get_template_part( 'template-parts/content', 'none' );
+			endif;
+
+			if ( 'resources' === get_post_type() ) {
+				echo '</div>';
+			}
+
 			print_numeric_pagination();
-
-		else :
-			get_template_part( 'template-parts/content', 'none' );
-		endif;
-
-		if ( 'resources' === get_post_type() ) {
-			echo '</div>';
-		}
-		?>
+			?>
 
 </main><!-- #main -->
 
