@@ -14,7 +14,18 @@ namespace WebDevStudios\wd_s;
  * @param object $query query object.
  */
 function resources_archive_query( $query ) {
-	if ( $query->is_main_query() && is_post_type_archive( 'resources' ) ) {
+	$is_resource_tax = false;
+	if ( taxonomy_exists( 'resources-type' ) ) {
+		$is_resource_tax = true;
+	}
+	if ( taxonomy_exists( 'resources-industry' ) ) {
+		$is_resource_tax = true;
+	}
+	if ( taxonomy_exists( 'resources-topic' ) ) {
+		$is_resource_tax = true;
+	}
+
+	if ( $query->is_main_query() && ( is_post_type_archive( 'resources' ) || $is_resource_tax ) ) {
 		$query->set( 'posts_per_page', 12 );
 	}
 }
