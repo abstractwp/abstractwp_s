@@ -4,3 +4,19 @@
 .facetwp-template {
 	@apply container grid grid-cols-3 gap-x-24 gap-y-32 px-0;
 }
+
+.facet-filter {
+	@apply mb-32;
+
+	.filter-label {
+		@apply mb-0 mr-16;
+	}
+
+	.facetwp-facet {
+		@apply mb-0;
+
+		.facetwp-dropdown {
+			@apply py-5 pl-4 pr-16 mr-8 rounded border-black border;
+		}
+	}
+}
