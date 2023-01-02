@@ -1,3 +1,27 @@
 //--------------------------------------------------------------
 // Resource Archives
 //--------------------------------------------------------------
+.resources-facets-list {
+	@apply px-16;
+
+	.entry-header,
+	.entry-content,
+	.entry-footer {
+		@apply px-0;
+	}
+
+	.entry-header {
+		.wp-post-image {
+			@apply w-full object-cover;
+
+			max-width: 378px;
+			max-height: 230px;
+		}
+	}
+}
+
+//--------------------------------------------------------------
+// Resource Single
+//--------------------------------------------------------------
+.single-resources {
+}

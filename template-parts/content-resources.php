@@ -31,14 +31,18 @@ use function WebDevStudios\wd_s\get_trimmed_excerpt;
 
 	<div class="entry-content">
 		<?php
-		echo esc_html(
-			get_trimmed_excerpt(
-				array(
-					'post'   => get_the_ID(),
-					'length' => 25,
+		if ( is_single() ) :
+			the_content();
+		else :
+			echo esc_html(
+				get_trimmed_excerpt(
+					array(
+						'post'   => get_the_ID(),
+						'length' => 25,
+					)
 				)
-			)
-		);
+			);
+		endif;
 		?>
 		<?php
 		wp_link_pages(
