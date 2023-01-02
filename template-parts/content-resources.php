@@ -16,10 +16,11 @@ use function WebDevStudios\wd_s\get_trimmed_excerpt;
 <article <?php post_class( 'post-container' ); ?>>
 	<header class="entry-header">
 		<?php
-		the_post_thumbnail( 'full' );
 		if ( is_single() ) :
+			the_post_thumbnail( 'full' );
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
+			the_post_thumbnail( 'resource-thumb' );
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 		?>
@@ -29,18 +30,16 @@ use function WebDevStudios\wd_s\get_trimmed_excerpt;
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<p class="wp-block-paragraph">
 		<?php
 		echo esc_html(
 			get_trimmed_excerpt(
 				array(
 					'post'   => get_the_ID(),
-					'length' => 30,
+					'length' => 25,
 				)
 			)
 		);
 		?>
-		</p>
 		<?php
 		wp_link_pages(
 			[

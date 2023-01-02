@@ -24,6 +24,8 @@ get_header(); ?>
 	</header><!-- .page-header -->
 
 		<?php
+		if ('resources' ===  get_post_type() ) echo '<div class="resources-facets-list facetwp-template">';
+
 			/* Start the Loop */
 		while ( have_posts() ) :
 			the_post();
@@ -37,6 +39,8 @@ get_header(); ?>
 		else :
 			get_template_part( 'template-parts/content', 'none' );
 		endif;
+
+		if ('resources' ===  get_post_type() ) echo '</div>';
 		?>
 
 </main><!-- #main -->
