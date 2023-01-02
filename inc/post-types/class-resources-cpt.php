@@ -84,7 +84,7 @@ function cptui_register_my_taxes_resources_type() {
 		'query_var'             => true,
 		'rewrite'               => [
 			'slug'       => 'resources/type',
-			'with_front' => true,
+			'with_front' => false,
 		],
 		'show_admin_column'     => false,
 		'show_in_rest'          => true,
@@ -168,7 +168,7 @@ function cptui_register_my_taxes_resources_industry() {
 		'query_var'             => true,
 		'rewrite'               => [
 			'slug'       => 'resources/industry',
-			'with_front' => true,
+			'with_front' => false,
 		],
 		'show_admin_column'     => false,
 		'show_in_rest'          => true,
