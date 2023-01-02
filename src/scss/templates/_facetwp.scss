@@ -2,11 +2,31 @@
 // FacetWp grid
 //--------------------------------------------------------------
 .facetwp-template {
-	@apply container grid grid-cols-3 gap-x-24 gap-y-32 px-0;
+	@apply container grid grid-cols-1 gap-x-24 gap-y-32 px-0;
+
+	@screen tablet-portrait {
+		@apply grid-cols-2;
+	}
+
+	@screen tablet-landscape {
+		@apply grid-cols-3;
+	}
 }
 
 .facet-filter {
-	@apply mb-32;
+	@apply mb-32 flex-row;
+
+	@screen max-tablet-portrait {
+		@apply flex-col;
+
+		.facetwp-facet {
+			@apply w-full;
+
+			.facetwp-dropdown {
+				@apply w-full mb-8;
+			}
+		}
+	}
 
 	.filter-label {
 		@apply mb-0 mr-16;

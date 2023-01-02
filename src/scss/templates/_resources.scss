@@ -4,6 +4,14 @@
 .resources-facets-list {
 	@apply px-16;
 
+	.entry-title {
+		@apply text-heading-sm;
+
+		a {
+			@apply no-underline;
+		}
+	}
+
 	.entry-header,
 	.entry-content,
 	.entry-footer {
@@ -14,8 +22,16 @@
 		.wp-post-image {
 			@apply w-full object-cover;
 
-			max-width: 378px;
-			max-height: 230px;
+			max-height: 200px;
+
+			@screen tablet-portrait {
+				max-height: 170px;
+			}
+
+			@screen tablet-landscape {
+				max-width: 378px;
+				max-height: 230px;
+			}
 		}
 	}
 }
