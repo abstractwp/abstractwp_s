@@ -83,7 +83,7 @@ function cptui_register_my_taxes_resources_type() {
 		'show_in_nav_menus'     => true,
 		'query_var'             => true,
 		'rewrite'               => [
-			'slug'       => 'resources/type',
+			'slug'       => 'type',
 			'with_front' => false,
 		],
 		'show_admin_column'     => false,
@@ -125,7 +125,7 @@ function cptui_register_my_taxes_resources_topic() {
 		'show_in_nav_menus'     => true,
 		'query_var'             => true,
 		'rewrite'               => [
-			'slug'       => 'resources/topic',
+			'slug'       => 'topic',
 			'with_front' => false,
 		],
 		'show_admin_column'     => false,
@@ -167,7 +167,7 @@ function cptui_register_my_taxes_resources_industry() {
 		'show_in_nav_menus'     => true,
 		'query_var'             => true,
 		'rewrite'               => [
-			'slug'       => 'resources/industry',
+			'slug'       => 'industry',
 			'with_front' => false,
 		],
 		'show_admin_column'     => false,
