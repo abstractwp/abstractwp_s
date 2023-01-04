@@ -134,18 +134,23 @@ module.exports = {
 					fontSize: config( 'theme.fontSize.heading-md' ),
 				},
 				'h4,.h4': {
-					fontSize: config( 'theme.fontSize.heading-sm' ),
+					fontSize: config( 'theme.fontSize.heading-md' ),
 				},
 				'h5,.h5': {
-					fontSize: config( 'theme.fontSize.heading-xs' ),
+					fontSize: config( 'theme.fontSize.heading-md' ),
 				},
 				'h6,.h6': {
-					fontSize: config( 'theme.fontSize.heading-xs' ),
+					fontSize: config( 'theme.fontSize.heading-md' ),
 				},
-				'h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6': {
+				'h1,h2,h3,.h1,.h2,.h3': {
+					marginBottom: config( 'theme.spacing.16' ),
+					fontWeight: 700,
+					lineHeight: '1',
+				},
+				'h4,h5,h6,.h4,.h5,.h6': {
 					marginBottom: config( 'theme.spacing.16' ),
 					fontWeight: 600,
-					lineHeight: '1.25',
+					lineHeight: '1.333',
 				},
 				a: {
 					textDecoration: 'underline',
@@ -155,7 +160,7 @@ module.exports = {
 					'&:last-child': {
 						marginBottom: '0',
 					},
-					lineHeight: '1.5',
+					lineHeight: '1.333',
 				},
 				'.button': {
 					padding: config( 'theme.spacing.16' ),
