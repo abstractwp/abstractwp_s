@@ -116,6 +116,31 @@
 					"fontFamily": "\"Poppins\", sans-serif",
 					"name": "Poppins",
 					"slug": "poppins"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Neue Haas Unica",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./src/fonts/neue-haas-unica/NeueHaasUnica-Regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "Neue Haas Unica",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./src/fonts/neue-haas-unica/NeueHaasUnica-Medium.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Neue Haas Unica\", sans-serif",
+					"name": "Neue Haas Unica",
+					"slug": "neue-haas-unica"
 				}
 			],
 			"fontSizes": [
@@ -614,7 +639,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--poppins)",
+			"fontFamily": "var(--wp--preset--font-family--neue-haas-unica)",
 			"fontSize": "var(--wp--preset--font-size--base)",
 			"lineHeight": "1.5"
 		}
