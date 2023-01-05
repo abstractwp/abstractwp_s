@@ -5,6 +5,10 @@
 .wp-block-heading {
 	@apply block container;
 
+	.has-background {
+		@apply px-16;
+	}
+
 	h1 {
 		@apply mb-32;
 	}
@@ -28,4 +32,13 @@
 	h6 {
 		@apply mb-8;
 	}
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: Poppins, sans-serif;
 }

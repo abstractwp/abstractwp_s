@@ -17,6 +17,10 @@
 	@apply mb-16;
 }
 
+.alignwide {
+	@apply container;
+}
+
 .alignfull {
 	@apply left-1/2 relative px-0;
 	margin-left: -50vw;
