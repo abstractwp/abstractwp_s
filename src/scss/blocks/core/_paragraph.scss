@@ -5,6 +5,10 @@
 .wp-block-paragraph {
 	@apply block container;
 
+	.has-background {
+		@apply px-16;
+	}
+
 	.entry-content > & {
 		@apply block container;
 	}
