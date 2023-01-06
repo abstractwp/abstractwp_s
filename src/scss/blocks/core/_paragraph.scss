@@ -3,13 +3,13 @@
 //----------------------------------------
 
 .wp-block-paragraph {
-	@apply block container;
+	@apply block;
 
 	.has-background {
 		@apply px-16;
 	}
 
 	.entry-content > & {
-		@apply block container;
+		@apply block;
 	}
 }

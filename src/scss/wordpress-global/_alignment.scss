@@ -1,36 +1,40 @@
 //--------------------------------------------------------------
 // WordPress Alignments
 //--------------------------------------------------------------
-.alignleft {
-	@apply float-left mb-16 mr-16;
-}
+.site-main {
+	.alignleft {
+		@apply float-left mr-16;
+	}
 
-.alignright {
-	@apply float-right mb-16 ml-16;
-}
+	.alignright {
+		@apply float-right ml-16;
+	}
 
-.aligncenter {
-	@apply my-16 mx-auto;
-}
+	.aligncenter {
+		@apply mt-16 mx-auto;
+	}
 
-.alignnone {
-	@apply mb-16;
-}
+	.alignwide {
+		@apply container;
+	}
 
-.alignwide {
-	@apply container;
-}
+	.alignfull {
+		@apply left-1/2 relative px-0;
+		margin-left: -50vw;
 
-.alignfull {
-	@apply left-1/2 relative px-0;
-	margin-left: -50vw;
+		width: 100vw;
+		max-width: 100vw;
 
-	width: 100vw;
-	max-width: 100vw;
+		@screen tablet-landscape {
+			// Total width less vertical scroll bar.
+			width: calc( 100vw - 8.1px );
+			max-width: calc( 100vw - 8.1px );
+		}
+	}
 
-	@screen tablet-landscape {
-		// Total width less vertical scroll bar.
-		width: calc( 100vw - 8.1px );
-		max-width: calc( 100vw - 8.1px );
+	.entry-content>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright) {
+		@apply mx-auto;
+
+		width: var(--wp--style--global--content-size);
 	}
 }
