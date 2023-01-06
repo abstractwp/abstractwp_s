@@ -34,8 +34,21 @@
 
 	.entry-content
 		> *:not( .alignwide ):not( .alignfull ):not( .alignleft ):not( .alignright ) {
-		@apply mx-auto;
+		@apply px-16;
 
-		width: var( --wp--style--global--content-size );
+		@screen tablet-landscape {
+			@apply mx-auto px-0;
+			width: var( --wp--style--global--content-size );
+		}
+	}
+
+	&.left-sidebar,
+	&.right-sidebar {
+		.alignfull {
+			@apply w-full max-w-full;
+
+			left: auto;
+			margin-left: auto;
+		}
 	}
 }
