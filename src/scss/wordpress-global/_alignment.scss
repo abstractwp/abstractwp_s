@@ -2,19 +2,19 @@
 // WordPress Alignments
 //--------------------------------------------------------------
 .alignleft {
-	@apply float-left mb-16 mr-16;
+	@apply float-left mr-16;
 }
 
 .alignright {
-	@apply float-right mb-16 ml-16;
+	@apply float-right ml-16;
 }
 
 .aligncenter {
-	@apply my-16 mx-auto;
+	@apply mt-16 mx-auto;
 }
 
-.alignnone {
-	@apply mb-16;
+.alignwide {
+	@apply container;
 }
 
 .alignfull {
