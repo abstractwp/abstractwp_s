@@ -29,7 +29,7 @@ function wrap_core_blocks( $block_content, $block ) {
 
 	foreach ( $blocks_to_wrap as $block_class => $block_name ) {
 		if ( $block_name === $block['blockName'] ) {
-			$block_content = '<span class="wp-block-' . $block_class . '">' . $block_content . '</span>';
+			$block_content = '<span class="wp-block wp-block-' . $block_class . '">' . $block_content . '</span>';
 		}
 	}
 

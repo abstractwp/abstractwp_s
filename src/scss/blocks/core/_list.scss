@@ -3,7 +3,7 @@
 //----------------------------------------
 
 .wp-block-list {
-	@apply block container;
+	@apply block;
 
 	ul {
 		&:not( .menu, .sub-menu ) {
