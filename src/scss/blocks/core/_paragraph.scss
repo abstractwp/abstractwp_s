@@ -3,9 +3,9 @@
 //----------------------------------------
 
 .wp-block-paragraph {
-	@apply block container;
+	@apply block;
 
 	.entry-content > & {
-		@apply block container;
+		@apply block;
 	}
 }

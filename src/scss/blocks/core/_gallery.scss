@@ -3,7 +3,11 @@
 //----------------------------------------
 
 .wp-block-gallery {
-	@apply block container mb-80;
+	@apply block mb-80;
+
+	&.is-layout-flex {
+		@apply flex;
+	}
 
 	.wp-block-image {
 		@apply px-0;
