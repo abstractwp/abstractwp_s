@@ -3,6 +3,10 @@
 //--------------------------------------------------------------
 
 .left-sidebar {
+	.sidebar {
+		@apply px-16;
+	}
+
 	@screen tablet-landscape {
 		@apply container flex-row-reverse flex px-0;
 
