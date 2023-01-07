@@ -31,7 +31,7 @@ pre {
 	.entry-header,
 	.entry-footer {
 		@apply mx-auto px-0;
-		width: var( --wp--style--global--content-size );
+		max-width: var( --wp--style--global--content-size );
 	}
 }
 
