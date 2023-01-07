@@ -4,6 +4,10 @@
 .mobile-menu {
 	li {
 		@apply mb-8;
+
+		a {
+			@apply no-underline;
+		}
 	}
 
 	.sub-menu {
@@ -59,11 +63,14 @@
 	}
 
 	.parent-indicator {
-		@apply inline-block relative;
+		@apply inline-block relative top-4 p-4 ml-8;
 
 		float: unset;
 		height: theme( 'height.16' );
 		width: theme( 'width.16' );
-		top: -4px;
+
+		.caret-down {
+			@apply mt-0;
+		}
 	}
 }
