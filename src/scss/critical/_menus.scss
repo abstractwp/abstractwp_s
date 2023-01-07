@@ -47,6 +47,12 @@
 			}
 		}
 	}
+
+	.submenu-open {
+		.caret-down {
+			@apply -rotate-180 transform;
+		}
+	}
 }
 
 //-----------------------------------------
@@ -91,7 +97,7 @@
 // The Down Caret
 //-----------------------------------------
 .caret-down {
-	@apply block float-right h-full ml-8;
+	@apply block float-right h-8 w-8 ml-8 mt-8 transition-all duration-200 ease-in-out;
 
 	background: url( ../images/icons/caret-down.svg ) 50% 50% no-repeat;
 	background-size: 100%;
