@@ -8,6 +8,52 @@
 	const subMenuParentItem = document.querySelectorAll(
 		'.main-navigation .menu-item-has-children'
 	);
+	let currentParent;
+	subMenuParentItem.forEach( ( menu ) => {
+		// Touch events. Note: Listener is on the li>a element.
+		menu.firstChild.addEventListener( 'touchstart', ( e ) => {
+			e.preventDefault();
+			if ( menu.classList.contains( 'submenu-open' ) ) {
+				menu.classList.remove( 'submenu-open' );
+			} else {
+				closeAllSubmenus();
+				menu.classList.add( 'submenu-open' );
+			}
+		} );
+
+		menu.addEventListener( 'mouseenter', () => {
+			menu.classList.add( 'submenu-open' );
+			currentParent = menu;
+		} );
+
+		menu.addEventListener( 'mouseleave', ( event ) => {
+			// closeAllSubmenus();
+			if ( currentParent ) {
+				currentParent.classList.remove( 'submenu-open' );
+			}
+
+			const parentMenuItem = getParents(
+				event.target.parentNode,
+				'.menu-item-has-children'
+			);
+			if ( parentMenuItem.length ) {
+				currentParent = parentMenuItem[ 0 ];
+			}
+		} );
+	} );
+
+	// Close menu if screen was touched outside of open submenu.
+	window.addEventListener( 'touchstart', ( e ) => {
+		if ( ! e.target.closest( '.menu-item-has-children' ) ) {
+			closeAllSubmenus();
+		}
+	} );
+
+	function closeAllSubmenus() {
+		subMenuParentItem.forEach( ( menu ) => {
+			menu.classList.remove( 'submenu-open' );
+		} );
+	}
 
 	document.addEventListener( 'DOMContentLoaded', addDownArrow );
 	document.addEventListener( 'DOMContentLoaded', toggleFocusClass );
@@ -52,7 +98,7 @@
 			'.menu-item-has-children'
 		);
 		parentMenuItems.forEach( ( parentItem ) => {
-			parentItem.classList.add( 'focus' );
+			parentItem.classList.add( 'submenu-open' );
 		} );
 	}
 
@@ -69,7 +115,7 @@
 			'.menu-item-has-children'
 		);
 		parentMenuItems.forEach( ( parentItem ) => {
-			parentItem.classList.remove( 'focus' );
+			parentItem.classList.remove( 'submenu-open' );
 		} );
 	}
 

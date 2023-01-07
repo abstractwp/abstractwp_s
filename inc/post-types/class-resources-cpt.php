@@ -98,8 +98,26 @@ function cptui_register_my_taxes_resources_type() {
 	 */
 
 	$labels = [
-		'name'          => esc_html__( 'Types', 'wd_s' ),
-		'singular_name' => esc_html__( 'Type', 'wd_s' ),
+		'name'                       => _x( 'Types', 'Type', 'wd_s' ),
+		'singular_name'              => _x( 'Type', 'Type', 'wd_s' ),
+		'menu_name'                  => __( 'Types', 'wd_s' ),
+		'all_items'                  => __( 'All Types', 'wd_s' ),
+		'parent_item'                => __( 'Parent Type', 'wd_s' ),
+		'parent_item_colon'          => __( 'Parent Type:', 'wd_s' ),
+		'new_item_name'              => __( 'New Type Name', 'wd_s' ),
+		'add_new_item'               => __( 'Add New Type', 'wd_s' ),
+		'edit_item'                  => __( 'Edit Type', 'wd_s' ),
+		'update_item'                => __( 'Update Type', 'wd_s' ),
+		'view_item'                  => __( 'View Type', 'wd_s' ),
+		'separate_items_with_commas' => __( 'Separate types with commas', 'wd_s' ),
+		'add_or_remove_items'        => __( 'Add or remove types', 'wd_s' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'wd_s' ),
+		'popular_items'              => __( 'Popular Types', 'wd_s' ),
+		'search_items'               => __( 'Search Types', 'wd_s' ),
+		'not_found'                  => __( 'Not Found', 'wd_s' ),
+		'no_terms'                   => __( 'No items', 'wd_s' ),
+		'items_list'                 => __( 'Types list', 'wd_s' ),
+		'items_list_navigation'      => __( 'Types list navigation', 'wd_s' ),
 	];
 
 	$args = [
@@ -140,8 +158,26 @@ function cptui_register_my_taxes_resources_topic() {
 	 */
 
 	$labels = [
-		'name'          => esc_html__( 'Topics', 'wd_s' ),
-		'singular_name' => esc_html__( 'Topic', 'wd_s' ),
+		'name'                       => _x( 'Topics', 'Topics', 'wd_s' ),
+		'singular_name'              => _x( 'Topic', 'Topic', 'wd_s' ),
+		'menu_name'                  => __( 'Topics', 'wd_s' ),
+		'all_items'                  => __( 'All Topics', 'wd_s' ),
+		'parent_item'                => __( 'Parent Topic', 'wd_s' ),
+		'parent_item_colon'          => __( 'Parent Topic:', 'wd_s' ),
+		'new_item_name'              => __( 'New Topic Name', 'wd_s' ),
+		'add_new_item'               => __( 'Add New Topic', 'wd_s' ),
+		'edit_item'                  => __( 'Edit Topic', 'wd_s' ),
+		'update_item'                => __( 'Update Topic', 'wd_s' ),
+		'view_item'                  => __( 'View Topic', 'wd_s' ),
+		'separate_items_with_commas' => __( 'Separate Topics with commas', 'wd_s' ),
+		'add_or_remove_items'        => __( 'Add or remove Topics', 'wd_s' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'wd_s' ),
+		'popular_items'              => __( 'Popular Topics', 'wd_s' ),
+		'search_items'               => __( 'Search Topics', 'wd_s' ),
+		'not_found'                  => __( 'Not Found', 'wd_s' ),
+		'no_terms'                   => __( 'No items', 'wd_s' ),
+		'items_list'                 => __( 'Topics list', 'wd_s' ),
+		'items_list_navigation'      => __( 'Topics list navigation', 'wd_s' ),
 	];
 
 	$args = [
@@ -182,8 +218,26 @@ function cptui_register_my_taxes_resources_industry() {
 	 */
 
 	$labels = [
-		'name'          => esc_html__( 'Industries', 'wd_s' ),
-		'singular_name' => esc_html__( 'Industry', 'wd_s' ),
+		'name'                       => _x( 'Industries', 'Industries', 'wd_s' ),
+		'singular_name'              => _x( 'Industry', 'Industry', 'wd_s' ),
+		'menu_name'                  => __( 'Industries', 'wd_s' ),
+		'all_items'                  => __( 'All Industries', 'wd_s' ),
+		'parent_item'                => __( 'Parent Industry', 'wd_s' ),
+		'parent_item_colon'          => __( 'Parent Industry:', 'wd_s' ),
+		'new_item_name'              => __( 'New Industry Name', 'wd_s' ),
+		'add_new_item'               => __( 'Add New Industry', 'wd_s' ),
+		'edit_item'                  => __( 'Edit Industry', 'wd_s' ),
+		'update_item'                => __( 'Update Industry', 'wd_s' ),
+		'view_item'                  => __( 'View Industry', 'wd_s' ),
+		'separate_items_with_commas' => __( 'Separate Industries with commas', 'wd_s' ),
+		'add_or_remove_items'        => __( 'Add or remove Industries', 'wd_s' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'wd_s' ),
+		'popular_items'              => __( 'Popular Industries', 'wd_s' ),
+		'search_items'               => __( 'Search Industries', 'wd_s' ),
+		'not_found'                  => __( 'Not Found', 'wd_s' ),
+		'no_terms'                   => __( 'No items', 'wd_s' ),
+		'items_list'                 => __( 'Industries list', 'wd_s' ),
+		'items_list_navigation'      => __( 'Industries list navigation', 'wd_s' ),
 	];
 
 	$args = [

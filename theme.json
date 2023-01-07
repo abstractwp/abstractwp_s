@@ -277,7 +277,7 @@
 					}
 				},
 				"typography": {
-					"fontWeight": "400"
+					"fontWeight": "700"
 				},
 				"elements": {
 					"link": {
@@ -611,7 +611,7 @@
 			}
 		},
 		"spacing": {
-			"blockGap": "1.5rem",
+			"blockGap": "1.875rem",
 			"padding": {
 				"top": "var(--wp--preset--spacing--40)",
 				"right": "var(--wp--preset--spacing--15)",

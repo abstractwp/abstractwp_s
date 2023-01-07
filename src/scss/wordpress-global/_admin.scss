@@ -5,3 +5,9 @@
 .block-editor-writing-flow {
 	@apply text-base leading-normal;
 }
+
+.is-layout-flow > .wp-block:not(.wp-block-paragraph):not(.wp-block-heading ) {
+	margin-block-start: 0;
+	padding-top: calc(var( --wp--style--block-gap ) * 3 );
+	padding-bottom: calc(var( --wp--style--block-gap ) * 3 );
+}
