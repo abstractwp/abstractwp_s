@@ -26,11 +26,11 @@
 		padding-block: calc( theme( 'spacing.gap' ) * 2 );
 
 		@screen max-tablet-portrait {
-			> .alignfull, > .alignwide {
+			> .alignfull,
+			> .alignwide {
 				@apply px-0;
 			}
 		}
-
 	}
 
 	.wp-block-group.has-background.alignwide,
@@ -39,13 +39,25 @@
 		padding-block: calc( theme( 'spacing.gap' ) * 1.5 );
 	}
 
-	.wp-block-group.has-background:not(.alignfull),
-	.wp-block-group.alignfull:not(.has-background),
-	.wp-block-cover:not(.alignfull) {
+	.wp-block-group.has-background:not( .alignfull ),
+	.wp-block-group.alignfull:not( .has-background ),
+	.wp-block-cover:not( .alignfull ) {
 		@apply py-gap px-16;
 
 		@screen max-tablet-portrait {
 			@apply px-16;
+		}
+	}
+
+	.wp-block-cover {
+		&.alignwide {
+			/* stylelint-disable */
+			max-width: calc( theme( 'screens.desktop' ) - 32px ) !important;
+			@media screen and ( min-width: 783px ) and ( max-width: theme('screens.desktop') ) {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+			/* stylelint-enable */
 		}
 	}
 }
