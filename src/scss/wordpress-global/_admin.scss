@@ -5,3 +5,47 @@
 .block-editor-writing-flow {
 	@apply text-base leading-normal;
 }
+
+.wp-block-post-content {
+	.alignfull {
+		@screen tablet-landscape {
+			@apply w-full mx-0;
+		}
+
+		@screen max-tablet-portrait {
+			.alignwide {
+				@apply px-0;
+			}
+		}
+	}
+
+	.wp-block-group.has-background.alignfull,
+	.wp-block-cover.alignfull {
+		@apply px-16;
+
+		padding-block: calc( theme( 'spacing.gap' ) * 2 );
+
+		@screen max-tablet-portrait {
+			> .alignfull, > .alignwide {
+				@apply px-0;
+			}
+		}
+
+	}
+
+	.wp-block-group.has-background.alignwide,
+	.wp-block-cover.alignwide {
+		@apply px-16;
+		padding-block: calc( theme( 'spacing.gap' ) * 1.5 );
+	}
+
+	.wp-block-group.has-background:not(.alignfull),
+	.wp-block-group.alignfull:not(.has-background),
+	.wp-block-cover:not(.alignfull) {
+		@apply py-gap px-16;
+
+		@screen max-tablet-portrait {
+			@apply px-16;
+		}
+	}
+}
