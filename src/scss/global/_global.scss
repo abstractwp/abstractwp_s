@@ -28,6 +28,8 @@ pre {
 // Page Template Containers
 //-----------------------------------------
 .site-main {
+	@apply py-32;
+
 	.entry-header,
 	.entry-footer {
 		@apply mx-auto px-0;
