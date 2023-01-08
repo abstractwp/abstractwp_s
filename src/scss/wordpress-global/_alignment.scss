@@ -46,7 +46,7 @@
 	&.left-sidebar .entry-content,
 	&.right-sidebar .entry-content {
 		.alignfull {
-			@apply w-full max-w-full mx-16;
+			@apply w-full max-w-full mx-0;
 		}
 	}
 }
