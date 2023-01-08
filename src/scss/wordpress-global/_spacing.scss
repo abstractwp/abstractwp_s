@@ -16,11 +16,14 @@
 		}
 
 	}
+
 	.wp-block-group.has-background.alignwide,
 	.wp-block-cover.alignwide {
 		padding: calc( theme( 'spacing.gap' ) * 1.5 );
 	}
+
 	.wp-block-group.has-background:not(.alignfull),
+	.wp-block-group.alignfull:not(.has-background),
 	.wp-block-cover:not(.alignfull) {
 		@apply p-gap;
 	}
