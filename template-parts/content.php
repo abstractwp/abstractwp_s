@@ -10,6 +10,7 @@
 use function WebDevStudios\wd_s\print_post_date;
 use function WebDevStudios\wd_s\print_post_author;
 use function WebDevStudios\wd_s\print_entry_footer;
+use function WebDevStudios\wd_s\get_trimmed_excerpt
 
 ?>
 
@@ -19,6 +20,15 @@ use function WebDevStudios\wd_s\print_entry_footer;
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
+			if ( 'post' === get_post_type() ) :
+				?>
+				<div class="entry-meta">
+					<?php print_post_date(); ?>
+					<?php print_post_author(); ?>
+				</div><!-- .entry-meta -->
+				<?php
+				the_post_thumbnail( 'full' );
+			endif;
 		else :
 			if ( 'post' === get_post_type() ) :
 				if ( has_post_thumbnail() ) :
@@ -35,8 +45,15 @@ use function WebDevStudios\wd_s\print_entry_footer;
 
 	<div class="entry-content">
 		<?php
-		if ( 'post' === get_post_type() ) :
-			the_excerpt();
+		if ( 'post' === get_post_type() && ! is_single() ) :
+			echo esc_html(
+				get_trimmed_excerpt(
+					[
+						'length' => 30,
+						'post'   => get_the_ID(),
+					]
+				)
+			);
 		else :
 			the_content(
 				sprintf(
@@ -66,7 +83,7 @@ use function WebDevStudios\wd_s\print_entry_footer;
 	<footer class="entry-footer">
 		<?php
 		print_entry_footer();
-		if ( 'post' === get_post_type() ) :
+		if ( 'post' === get_post_type() && ! is_single() ) :
 			?>
 			<div class="entry-meta">
 				<?php print_post_date(); ?>
