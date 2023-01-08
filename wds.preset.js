@@ -117,6 +117,10 @@ module.exports = {
 			},
 			spacing: {
 				gap: theme.styles.spacing.blockGap,
+			},
+			layout: {
+				contentSize: theme.settings.layout.contentSize,
+				wideSize: theme.settings.layout.wideSize,
 			}
 		},
 	},

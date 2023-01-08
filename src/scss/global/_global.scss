@@ -33,7 +33,7 @@ pre {
 	.entry-header,
 	.entry-footer {
 		@apply mx-auto px-0;
-		max-width: var( --wp--style--global--content-size );
+		max-width: theme( 'layout.contentSize' );
 	}
 }
 

@@ -38,7 +38,7 @@
 
 		@screen tablet-landscape {
 			@apply mx-auto px-0;
-			width: var( --wp--style--global--content-size );
+			max-width: theme( 'layout.contentSize' );
 		}
 	}
 
