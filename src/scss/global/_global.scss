@@ -39,7 +39,6 @@ pre {
 			@apply px-16;
 		}
 	}
-
 }
 
 .page-header {
@@ -48,4 +47,20 @@ pre {
 
 .more-link {
 	@apply container block;
+}
+
+// This is for blog image placeholder
+.pbg-primary {
+	@apply bg-primary;
+}
+
+.pbg-secondary {
+	@apply bg-secondary;
+}
+
+.pbg-tertiary {
+	@apply bg-tertiary;
+}
+.pbg-contrast {
+	@apply bg-contrast;
 }

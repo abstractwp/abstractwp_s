@@ -56,8 +56,66 @@
 // Post Archives
 //--------------------------------------------------------------
 .archive,
+.category,
 .blog {
-	.post-container {
-		@apply container px-0;
+	.site-main {
+		@apply wds-grid-2 container;
+
+		@screen max-tablet-portrait {
+			grid-template-columns: repeat( 1, 1fr );
+		}
+
+		row-gap: calc( theme( 'spacing.gap' ) * 2 );
+		column-gap: calc( theme( 'spacing.gap' ) * 1.5 );
+
+		.entry-header,
+		.page-header {
+			@apply w-full;
+			max-width: none;
+			grid-column: 1 / -1;
+
+			.page-title {
+				@apply mx-auto px-0;
+				max-width: theme( 'layout.contentSize' );
+			}
+		}
+		.hentry {
+			@apply flex flex-col w-full m-0;
+			.entry-header {
+				@apply px-0;
+
+				.wp-post-image,
+				.placeholder-img {
+					@apply object-cover w-full;
+
+					min-height: 326px;
+					max-height: 326px;
+
+					@media screen and ( min-width: theme('screens.tablet-portrait') ) and ( max-width: theme('screens.tablet-landscape') ) {
+						min-height: 200px;
+						max-height: 200px;
+					}
+				}
+
+				.entry-title {
+					@apply mt-gap;
+
+					a {
+						@apply no-underline;
+					}
+				}
+			}
+			.entry-content {
+				/* stylelint-disable */
+				p {
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
+				/* stylelint-enable */
+			}
+			.entry-footer {
+				@apply ml-0 mr-auto px-0;
+			}
+		}
 	}
 }
