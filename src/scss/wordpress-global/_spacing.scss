@@ -5,11 +5,11 @@
 .entry-content {
 	.wp-block-group.has-background.alignfull,
 	.wp-block-cover.alignfull {
+		@apply px-16;
+
 		padding-block: calc( theme( 'spacing.gap' ) * 2 );
 
 		@screen max-tablet-portrait {
-			@apply px-16;
-
 			> .alignfull, > .alignwide {
 				@apply px-0;
 			}
@@ -19,12 +19,17 @@
 
 	.wp-block-group.has-background.alignwide,
 	.wp-block-cover.alignwide {
-		padding: calc( theme( 'spacing.gap' ) * 1.5 );
+		@apply px-16;
+		padding-block: calc( theme( 'spacing.gap' ) * 1.5 );
 	}
 
 	.wp-block-group.has-background:not(.alignfull),
 	.wp-block-group.alignfull:not(.has-background),
 	.wp-block-cover:not(.alignfull) {
-		@apply p-gap;
+		@apply py-gap px-16;
+
+		@screen max-tablet-portrait {
+			@apply px-16;
+		}
 	}
 }
