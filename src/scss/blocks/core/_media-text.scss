@@ -1,0 +1,34 @@
+//----------------------------------------
+// Media and Text Block
+//----------------------------------------
+.wp-block-media-text {
+	.wp-block-media-text {
+		&__media {
+			@apply mb-gap;
+
+			@screen tablet-portrait {
+				@apply mb-0;
+			}
+		}
+
+		&__content {
+			@apply px-0;
+
+			@screen tablet-portrait {
+				@apply pl-gap;
+			}
+		}
+	}
+
+	&.has-media-on-the-right {
+		.wp-block-media-text {
+			&__content {
+				@apply px-0;
+
+				@screen tablet-portrait {
+					@apply pr-gap;
+				}
+			}
+		}
+	}
+}

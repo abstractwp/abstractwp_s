@@ -2,17 +2,26 @@
 // Spacing Styles
 //--------------------------------------------------------------
 
-.entry-content{
+.entry-content {
 	.wp-block-group.has-background.alignfull,
 	.wp-block-cover.alignfull {
-		padding-block: calc(var( --wp--style--block-gap ) * 2 );
+		padding-block: calc( var( --wp--style--block-gap ) * 2 );
+
+		@screen max-tablet-portrait {
+			@apply px-16;
+
+			> .alignfull, > .alignwide {
+				@apply px-0;
+			}
+		}
+
 	}
 	.wp-block-group.has-background.alignwide,
 	.wp-block-cover.alignwide {
-		padding: calc(var( --wp--style--block-gap ) * 1.5 );
+		padding: calc( var( --wp--style--block-gap ) * 1.5 );
 	}
 	.wp-block-group.has-background:not(.alignfull),
 	.wp-block-cover:not(.alignfull) {
-		padding: var( --wp--style--block-gap );
+		@apply p-gap;
 	}
 }

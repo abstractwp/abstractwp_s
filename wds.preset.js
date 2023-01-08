@@ -115,6 +115,9 @@ module.exports = {
 				},
 				...themeColors,
 			},
+			spacing: {
+				gap: theme.styles.spacing.blockGap,
+			}
 		},
 	},
 	variants: {},
