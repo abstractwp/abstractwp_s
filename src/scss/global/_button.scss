@@ -2,8 +2,9 @@
 // Button style
 //----------------------------------------
 
-.button {
-	@apply bg-primary text-contrast cursor-pointer no-underline;
+.button,
+button {
+	@apply bg-primary text-contrast cursor-pointer no-underline p-12;
 
 	&:hover,
 	&:focus {
