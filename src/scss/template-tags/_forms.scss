@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 textarea,
 input:not( .button ) {
-	@apply bg-black bg-opacity-10 p-8;
+	@apply bg-black bg-opacity-10 p-12 text-base;
 }
 
 label {
