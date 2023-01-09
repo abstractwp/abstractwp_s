@@ -20,7 +20,12 @@ use function WebDevStudios\wd_s\get_trimmed_excerpt;
 			the_post_thumbnail( 'full' );
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
-			the_post_thumbnail( 'resource-thumb' );
+			if ( has_post_thumbnail() ) :
+				the_post_thumbnail( 'resource-thumb' );
+			else :
+				$wd_s_colors = [ 'primary', 'secondary', 'tertiary', 'contrast' ];
+				echo '<div class="placeholder-img pbg-' . $wd_s_colors[ array_rand( $wd_s_colors )] . '"></div>'; // phpcs:ignore.
+			endif;
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 		?>
