@@ -21,10 +21,8 @@ namespace WebDevStudios\wd_s;
 function wrap_core_blocks( $block_content, $block ) {
 
 	$blocks_to_wrap = [
-		'heading'   => 'core/heading',
-		'paragraph' => 'core/paragraph',
-		'html'      => 'core/html',
-		'list'      => 'core/list',
+		'html' => 'core/html',
+		'list' => 'core/list',
 	];
 
 	foreach ( $blocks_to_wrap as $block_class => $block_name ) {

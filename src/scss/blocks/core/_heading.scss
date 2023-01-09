@@ -2,36 +2,28 @@
 // Heading - Core Gutenberg Block
 //----------------------------------------
 
-.wp-block-heading {
-	@apply block;
+h1 {
+	@apply mb-32;
+}
 
-	.has-background {
-		@apply px-16;
-	}
+h2 {
+	@apply mb-24;
+}
 
-	h1 {
-		@apply mb-32;
-	}
+h3 {
+	@apply mb-20;
+}
 
-	h2 {
-		@apply mb-24;
-	}
+h4 {
+	@apply mb-16;
+}
 
-	h3 {
-		@apply mb-20;
-	}
+h5 {
+	@apply mb-12;
+}
 
-	h4 {
-		@apply mb-16;
-	}
-
-	h5 {
-		@apply mb-12;
-	}
-
-	h6 {
-		@apply mb-8;
-	}
+h6 {
+	@apply mb-8;
 }
 
 .h1,
