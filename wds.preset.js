@@ -3,8 +3,8 @@ const plugin = require( 'tailwindcss/plugin' );
 const fs = require( 'fs' );
 
 const themeJson = fs.readFileSync( './theme.json' );
-const theme = JSON.parse( themeJson );
-const themeColors = theme.settings.color.palette.reduce( ( acc, item ) => {
+const themeData = JSON.parse( themeJson );
+const themeColors = themeData.settings.color.palette.reduce( ( acc, item ) => {
 	const [ color, number ] = item.slug.split( '-' );
 
 	// If there is a number identifier, make this an object
@@ -20,7 +20,7 @@ const themeColors = theme.settings.color.palette.reduce( ( acc, item ) => {
 	return acc;
 }, {} );
 
-const themeFontSizes = theme.settings.typography.fontSizes.reduce(
+const themeFontSizes = themeData.settings.typography.fontSizes.reduce(
 	( acc, item ) => {
 		acc[ item.slug ] = item.size;
 		return acc;
@@ -28,7 +28,7 @@ const themeFontSizes = theme.settings.typography.fontSizes.reduce(
 	{}
 );
 
-const themeSpacingSizes = theme.settings.spacing.spacingSizes.reduce(
+const themeSpacingSizes = themeData.settings.spacing.spacingSizes.reduce(
 	( acc, item ) => {
 		acc[ item.slug ] = item.size;
 		return acc;
@@ -114,6 +114,13 @@ module.exports = {
 					orange: '#f3713c',
 				},
 				...themeColors,
+			},
+			spacing: {
+				gap: themeData.styles.spacing.blockGap,
+			},
+			layout: {
+				contentSize: themeData.settings.layout.contentSize,
+				wideSize: themeData.settings.layout.wideSize,
 			},
 		},
 	},
@@ -206,6 +213,11 @@ module.exports = {
 					display: 'grid',
 					gridTemplateColumns: 'repeat(12, minmax(0, 1fr))',
 					columnGap: '1rem',
+				},
+				'.wds-grid-2': {
+					display: 'grid',
+					gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+					columnGap: themeData.styles.spacing.blockGap,
 				},
 			} );
 		} ),

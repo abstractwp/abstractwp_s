@@ -1,54 +1,52 @@
 //--------------------------------------------------------------
 // WordPress Alignments
 //--------------------------------------------------------------
+.alignleft {
+	@apply float-left mr-16;
+}
+
+.alignright {
+	@apply float-right ml-16;
+}
+
+.aligncenter {
+	@apply mx-auto;
+}
+
+.alignwide {
+	@apply container;
+}
+
+.alignfull {
+	@screen tablet-landscape {
+		@apply w-full;
+
+		margin-left: calc((-100vw + 15px) / 2 + 100% / 2);
+		margin-right: calc((-100vw + 15px) / 2 + 100% / 2);
+	}
+
+	@screen max-tablet-portrait {
+		.alignwide {
+			@apply px-0;
+		}
+	}
+}
+
+.entry-content
+	> *:not( .alignwide ):not( .alignfull ):not( .alignleft ):not( .alignright ) {
+	@apply px-16;
+
+	@screen tablet-landscape {
+		@apply mx-auto px-0;
+		max-width: theme( 'layout.contentSize' );
+	}
+}
+
 .site-main {
-	.alignleft {
-		@apply float-left mr-16;
-	}
-
-	.alignright {
-		@apply float-right ml-16;
-	}
-
-	.aligncenter {
-		@apply mt-16 mx-auto;
-	}
-
-	.alignwide {
-		@apply container;
-	}
-
-	.alignfull {
-		@apply left-1/2 relative px-0;
-		margin-left: -50vw;
-
-		width: 100vw;
-		max-width: 100vw;
-
-		@screen tablet-landscape {
-			// Total width less vertical scroll bar.
-			width: calc( 100vw - 8.1px );
-			max-width: calc( 100vw - 8.1px );
-		}
-	}
-
-	.entry-content
-		> *:not( .alignwide ):not( .alignfull ):not( .alignleft ):not( .alignright ) {
-		@apply px-16;
-
-		@screen tablet-landscape {
-			@apply mx-auto px-0;
-			width: var( --wp--style--global--content-size );
-		}
-	}
-
-	&.left-sidebar,
-	&.right-sidebar {
+	&.left-sidebar .entry-content,
+	&.right-sidebar .entry-content {
 		.alignfull {
-			@apply w-full max-w-full;
-
-			left: auto;
-			margin-left: auto;
+			@apply w-full max-w-full mx-0;
 		}
 	}
 }
