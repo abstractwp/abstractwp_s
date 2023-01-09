@@ -1,6 +1,21 @@
 //--------------------------------------------------------------
 // Resource Archives
 //--------------------------------------------------------------
+.tax-resources-topic,
+.tax-resources-industry,
+.tax-resources-type,
+.post-type-archive {
+	.site-main {
+		@apply block;
+
+		.page-header {
+			.page-title {
+				padding-bottom: calc( theme( 'spacing.gap' ) * 2 );
+			}
+		}
+	}
+}
+
 .resources-facets-list {
 	@apply px-16;
 
