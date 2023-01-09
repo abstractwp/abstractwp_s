@@ -33,7 +33,11 @@ pre {
 	.entry-header,
 	.entry-footer {
 		@apply mx-auto px-0;
-		max-width: var( --wp--style--global--content-size );
+		max-width: theme( 'layout.contentSize' );
+
+		@screen max-tablet-portrait {
+			@apply px-16;
+		}
 	}
 }
 
@@ -43,4 +47,20 @@ pre {
 
 .more-link {
 	@apply container block;
+}
+
+// This is for blog image placeholder
+.pbg-primary {
+	@apply bg-primary;
+}
+
+.pbg-secondary {
+	@apply bg-secondary;
+}
+
+.pbg-tertiary {
+	@apply bg-tertiary;
+}
+.pbg-contrast {
+	@apply bg-contrast;
 }

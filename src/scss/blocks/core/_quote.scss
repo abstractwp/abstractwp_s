@@ -3,10 +3,10 @@
 //----------------------------------------
 
 .wp-block-quote {
-	@apply my-32;
+	@apply my-32 py-24;
 
 	.wp-block-paragraph {
-		@apply px-0;
+		@apply px-0 pb-0;
 	}
 
 	p {

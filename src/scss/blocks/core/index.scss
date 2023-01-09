@@ -2,7 +2,6 @@
 // Core Gutenberg Block Styles
 // Import supported Core Gutenberg block partials.
 //----------------------------------------
-@import 'global';
 @import 'code';
 @import 'freeform';
 @import 'heading';
@@ -21,5 +20,6 @@
 @import 'embed';
 @import 'search';
 @import 'preformatted';
-@import 'group';
 @import 'media-text';
+@import 'cover';
+@import 'columns';

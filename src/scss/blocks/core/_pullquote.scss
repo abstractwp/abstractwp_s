@@ -3,7 +3,7 @@
 //----------------------------------------
 
 .wp-block-pullquote {
-	@apply my-32;
+	@apply py-24 m-gap;
 
 	blockquote > p {
 		@apply mb-16;

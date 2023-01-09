@@ -45,6 +45,7 @@ function setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'full-width', 1920, 1080, false );
 	add_image_size( 'resource-thumb', 378, 230, false );
+	add_image_size( 'blog-thumb', 572, 326, false );
 
 	// Register navigation menus.
 	register_nav_menus(
