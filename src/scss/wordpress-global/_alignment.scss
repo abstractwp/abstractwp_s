@@ -39,6 +39,10 @@
 	@screen tablet-landscape {
 		@apply mx-auto px-0;
 		max-width: theme( 'layout.contentSize' );
+
+		&.has-background {
+			@apply px-16;
+		}
 	}
 }
 
