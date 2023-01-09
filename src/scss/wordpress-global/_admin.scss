@@ -20,10 +20,11 @@
 	}
 
 	.wp-block-group.has-background.alignfull,
+	.wp-block-group.is-layout-flow.alignfull,
 	.wp-block-cover.alignfull {
 		@apply px-16;
 
-		padding-block: calc( theme( 'spacing.gap' ) * 2 );
+		padding-block: calc( theme( 'spacing.gap' ) * 3 );
 
 		@screen max-tablet-portrait {
 			> .alignfull,
@@ -34,15 +35,20 @@
 	}
 
 	.wp-block-group.has-background.alignwide,
+	.wp-block-group.is-layout-flow.alignwide,
 	.wp-block-cover.alignwide {
 		@apply px-16;
-		padding-block: calc( theme( 'spacing.gap' ) * 1.5 );
+
+		padding-block: calc( theme( 'spacing.gap' ) * 2.5 );
 	}
 
 	.wp-block-group.has-background:not( .alignfull ),
 	.wp-block-group.alignfull:not( .has-background ),
+	.wp-block-group.is-layout-flow:not( .alignfull ) ,
 	.wp-block-cover:not( .alignfull ) {
-		@apply py-gap px-16;
+		@apply px-16;
+
+		padding-block: calc( theme( 'spacing.gap' ) * 1.75 );
 
 		@screen max-tablet-portrait {
 			@apply px-16;
