@@ -23,6 +23,10 @@
 			@apply px-12 py-12 text-base bg-tertiary text-black h-48;
 		}
 
+		input[type='checkbox'] {
+			@apply bg-tertiary;
+		}
+
 		.gfield-choice-input {
 			margin-top: -3px;
 		}
