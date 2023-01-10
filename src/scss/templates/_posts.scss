@@ -117,6 +117,39 @@
 				@apply ml-0 mr-auto px-0;
 			}
 		}
+
+		&.right-sidebar {
+			@apply block;
+
+			.entry-header {
+				@apply w-full;
+			}
+
+			.content-container {
+				@apply wds-grid-2 mx-0 px-0;
+
+				@screen max-tablet-portrait {
+					grid-template-columns: repeat( 1, 1fr );
+				}
+
+				row-gap: calc( theme( 'spacing.gap' ) * 2 );
+				column-gap: theme( 'spacing.gap' );
+
+				@screen tablet-landscape {
+					@apply float-left;
+				}
+			}
+
+			.sidebar {
+				@apply px-0 overflow-hidden;
+
+				margin-top: calc( theme( 'spacing.gap' ) * 2 );
+
+				@screen tablet-landscape {
+					@apply float-left pl-32 pr-16 mt-0;
+				}
+			}
+		}
 	}
 }
 
