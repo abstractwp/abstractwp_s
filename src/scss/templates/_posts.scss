@@ -28,12 +28,54 @@
 	@apply container;
 
 	.nav-links {
-		@apply flex flex-col text-center;
+		@apply flex flex-col text-center no-underline;
+
+		.post-title {
+			@apply font-bold;
+		}
 
 		@screen tablet-landscape {
 			@apply flex-row justify-between;
 
 			text-align: unset;
+		}
+
+		.meta-nav {
+			@apply mb-8;
+		}
+
+		.nav-previous {
+			.meta-nav span {
+				@apply mr-12 leading-6;
+			}
+
+			@screen tablet-landscape {
+				.post-title {
+					@apply ml-32;
+				}
+			}
+		}
+
+		.nav-next {
+			.meta-nav span {
+				@apply ml-12 leading-6;
+			}
+
+			@screen tablet-landscape {
+				@apply text-right;
+
+				.post-title {
+					@apply mr-32;
+				}
+			}
+		}
+
+		a {
+			@apply no-underline;
+
+			&:hover .post-title {
+				@apply underline;
+			}
 		}
 	}
 }
