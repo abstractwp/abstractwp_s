@@ -10,6 +10,14 @@ input:not( .button ) {
 	}
 }
 
+form {
+	@apply pb-gap;
+}
+
+select {
+	@apply max-w-full px-12 py-8 bg-black bg-opacity-10;
+}
+
 label {
 	@apply block font-semibold mb-16;
 }
