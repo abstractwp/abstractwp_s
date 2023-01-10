@@ -122,6 +122,7 @@
 				max-width: theme( 'layout.contentSize' );
 			}
 		}
+
 		.hentry {
 			@apply flex flex-col w-full m-0;
 			.entry-header {
@@ -134,9 +135,9 @@
 					min-height: 326px;
 					max-height: 326px;
 
-					@media screen and ( min-width: theme('screens.tablet-portrait') ) and ( max-width: theme('screens.tablet-landscape') ) {
-						min-height: 200px;
-						max-height: 200px;
+					@media screen and ( max-width: theme('screens.tablet-landscape') ) {
+						min-height: 218px;
+						max-height: 218px;
 					}
 				}
 
@@ -166,6 +167,16 @@
 
 			.entry-header {
 				@apply w-full;
+			}
+
+			.hentry {
+				.entry-header {
+					.wp-post-image,
+					.placeholder-img {
+						min-height: 218px;
+						max-height: 218px;
+					}
+				}
 			}
 
 			.content-container {

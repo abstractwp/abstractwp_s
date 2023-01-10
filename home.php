@@ -26,8 +26,12 @@ get_header(); ?>
 			<header class="entry-header">
 				<h1 class="page-title"><?php single_post_title(); ?></h1>
 			</header>
-			<div class="content-container">
 			<?php
+			if ( is_active_sidebar( 'sidebar-2' ) ) :
+				?>
+			<div class="content-container">
+				<?php
+		endif;
 
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -42,10 +46,11 @@ get_header(); ?>
 		else :
 			get_template_part( 'template-parts/content', 'none' );
 		endif;
-		?>
-		</div><!-- end blog-container -->
-		<?php
+
 		if ( is_active_sidebar( 'sidebar-2' ) ) :
+			?>
+			</div><!-- end blog-container -->
+			<?php
 			get_sidebar();
 		endif;
 		?>
