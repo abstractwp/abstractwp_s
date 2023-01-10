@@ -21,7 +21,7 @@ use function WebDevStudios\wd_s\main_classes;
 		<?php wp_head(); ?>
 	</head>
 
-	<div class="<?php echo esc_attr( main_classes( [] ) ); ?>">
+	<div class="<?php echo esc_attr( main_classes( [ 'no-header-footer' ] ) ); ?>">
 		<main id="main" class="content-container">
 
 			<?php
