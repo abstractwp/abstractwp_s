@@ -132,19 +132,6 @@
 			.entry-header {
 				@apply px-0;
 
-				.wp-post-image,
-				.placeholder-img {
-					@apply object-cover w-full;
-
-					min-height: 326px;
-					max-height: 326px;
-
-					@media screen and ( max-width: theme('screens.tablet-landscape') ) {
-						min-height: 218px;
-						max-height: 218px;
-					}
-				}
-
 				.entry-title {
 					@apply mt-gap;
 
@@ -206,6 +193,26 @@
 				@screen tablet-landscape {
 					@apply float-left pl-32 pr-16 mt-0;
 				}
+			}
+		}
+	}
+}
+
+//--------------------------------------------------------------
+// Post item image
+//--------------------------------------------------------------
+.hentry {
+	.entry-header {
+		.wp-post-image,
+		.placeholder-img {
+			@apply object-cover w-full;
+
+			min-height: 326px;
+			max-height: 326px;
+
+			@media screen and ( max-width: theme('screens.tablet-landscape') ) {
+				min-height: 218px;
+				max-height: 218px;
 			}
 		}
 	}
