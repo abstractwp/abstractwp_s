@@ -44,7 +44,7 @@
 
 	.wp-block-group.has-background:not( .alignfull ),
 	.wp-block-group.alignfull:not( .has-background ),
-	.wp-block-group.is-layout-flow:not( .alignfull ) ,
+	.wp-block-group.is-layout-flow:not( .alignfull ),
 	.wp-block-cover:not( .alignfull ) {
 		@apply px-16;
 
@@ -107,22 +107,23 @@
 
 		&.is-primary {
 			@apply text-white;
-			background: var(--wp-admin-theme-color);
+			background: var( --wp-admin-theme-color );
 
 			&:hover {
-				background: var(--wp-admin-theme-color-darker-10);
+				background: var( --wp-admin-theme-color-darker-10 );
 			}
 		}
 
 		&.is-secondary,
 		&.is-tertiary {
 			white-space: nowrap;
-			color: var(--wp-admin-theme-color);
+			color: var( --wp-admin-theme-color );
 			background: transparent;
 
-			&:hover:not(:disabled) {
-				color: var(--wp-admin-theme-color-darker-10);
-				box-shadow: inset 0 0 0 1px var(--wp-admin-theme-color-darker-10);
+			&:hover:not( :disabled ) {
+				color: var( --wp-admin-theme-color-darker-10 );
+				box-shadow: inset 0 0 0 1px
+					var( --wp-admin-theme-color-darker-10 );
 			}
 		}
 	}
