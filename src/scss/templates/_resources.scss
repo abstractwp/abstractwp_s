@@ -9,8 +9,10 @@
 		@apply block;
 
 		.page-header {
-			.page-title {
-				padding-bottom: calc( theme( 'spacing.gap' ) * 2 );
+			padding-bottom: calc( theme( 'spacing.gap' ) * 2 );
+
+			*:last-child {
+				@apply mb-0;
 			}
 		}
 	}
@@ -52,3 +54,8 @@
 //--------------------------------------------------------------
 // Resource Single
 //--------------------------------------------------------------
+.single-resources {
+	.wp-post-image {
+		padding-bottom: calc( theme( 'spacing.gap' ) * 1.5 );
+	}
+}
