@@ -74,7 +74,8 @@
 			max-width: none;
 			grid-column: 1 / -1;
 
-			.page-title {
+			.page-title,
+			.archive-description {
 				@apply mx-auto px-0;
 				max-width: theme( 'layout.contentSize' );
 			}
