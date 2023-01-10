@@ -33,19 +33,23 @@
 		@apply px-0;
 	}
 
-	.entry-header {
-		.wp-post-image {
-			@apply w-full object-cover;
+	.resources {
+		.entry-header {
+			.wp-post-image,
+			.placeholder-img {
+				@apply w-full object-cover;
 
-			max-height: 200px;
+				max-height: 200px;
 
-			@screen tablet-portrait {
-				max-height: 170px;
-			}
+				@screen tablet-portrait {
+					max-height: 170px;
+				}
 
-			@screen tablet-landscape {
-				max-width: 378px;
-				max-height: 230px;
+				@screen tablet-landscape {
+					max-width: 378px;
+					max-height: 230px;
+					min-height: 230px;
+				}
 			}
 		}
 	}
