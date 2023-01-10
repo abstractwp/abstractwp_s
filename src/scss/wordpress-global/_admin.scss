@@ -44,7 +44,7 @@
 
 	.wp-block-group.has-background:not( .alignfull ),
 	.wp-block-group.alignfull:not( .has-background ),
-	.wp-block-group.is-layout-flow:not( .alignfull ) ,
+	.wp-block-group.is-layout-flow:not( .alignfull ),
 	.wp-block-cover:not( .alignfull ) {
 		@apply px-16;
 
@@ -98,5 +98,33 @@
 	.button,
 	button {
 		@apply border-none p-12 h-48 font-normal;
+	}
+
+	.components-button {
+		@apply p-6 h-auto;
+
+		font-size: 13px;
+
+		&.is-primary {
+			@apply text-white;
+			background: var( --wp-admin-theme-color );
+
+			&:hover {
+				background: var( --wp-admin-theme-color-darker-10 );
+			}
+		}
+
+		&.is-secondary,
+		&.is-tertiary {
+			white-space: nowrap;
+			color: var( --wp-admin-theme-color );
+			background: transparent;
+
+			&:hover:not( :disabled ) {
+				color: var( --wp-admin-theme-color-darker-10 );
+				box-shadow: inset 0 0 0 1px
+					var( --wp-admin-theme-color-darker-10 );
+			}
+		}
 	}
 }

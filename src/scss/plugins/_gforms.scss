@@ -20,15 +20,34 @@
 		input[type='week'],
 		select,
 		textarea {
-			@apply px-12 py-12 text-base bg-tertiary text-black h-48;
+			@apply px-12 py-8 text-base bg-tertiary text-black h-48;
 		}
 
 		input[type='checkbox'] {
 			@apply bg-tertiary;
 		}
 
+		input:not( [type='radio'] ):not( [type='checkbox'] ):not( [type='image'] ):not( [type='file'] ),
+		input[type='submit'],
+		#field_submit input,
+		.gform-button {
+			@apply leading-6;
+
+			@screen max-tablet-portrait {
+				@apply w-full;
+			}
+		}
+
 		.gfield-choice-input {
 			margin-top: -3px;
+		}
+	}
+
+	&.gform_validation_error {
+		@screen tablet-portrait {
+			#field_submit input {
+				@apply self-start mt-32;
+			}
 		}
 	}
 }
