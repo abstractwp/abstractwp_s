@@ -8,7 +8,7 @@ button {
 
 	&:hover,
 	&:focus {
-		@apply bg-contrast text-base;
+		@apply bg-secondary text-base;
 	}
 
 	&:active {

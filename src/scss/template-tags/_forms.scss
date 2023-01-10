@@ -3,7 +3,11 @@
 //--------------------------------------------------------------
 textarea,
 input:not( .button ) {
-	@apply bg-black bg-opacity-10 p-12 text-base;
+	@apply bg-black bg-opacity-10 px-12 py-8 text-base leading-6;
+
+	@screen max-tablet-portrait {
+		@apply max-w-full;
+	}
 }
 
 label {
@@ -17,10 +21,10 @@ label {
 	@apply mt-6;
 
 	.search-field {
-		@apply bg-black bg-opacity-10 text-black p-16 rounded-lg;
+		@apply bg-black bg-opacity-10 text-black px-12 py-8 rounded-lg border-none leading-6;
 	}
 
 	.button {
-		@apply bg-black bg-opacity-25 text-black p-16 rounded-lg text-center no-underline;
+		@apply bg-black bg-opacity-25 text-black px-12 py-8 rounded-lg text-center no-underline leading-6;
 	}
 }
