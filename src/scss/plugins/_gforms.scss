@@ -20,7 +20,7 @@
 		input[type='week'],
 		select,
 		textarea {
-			@apply px-12 py-12 text-base bg-transparent text-black border rounded-md;
+			@apply px-12 py-12 text-base bg-transparent text-black border rounded-md border-gray-100;
 
 			&:focus {
 				@apply outline-primary;

@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 
 .footer-widgets {
-	@apply bg-black text-white float-left w-full;
+	@apply bg-base text-contrast float-left w-full;
 
 	&-wrap {
 		@apply container clear-both mx-auto;
