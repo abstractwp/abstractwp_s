@@ -20,11 +20,7 @@
 		input[type='week'],
 		select,
 		textarea {
-			@apply px-12 py-12 text-base bg-transparent text-black border rounded-md border-gray-100;
-
-			&:focus {
-				@apply outline-primary;
-			}
+			@extend .input-field;
 		}
 
 		input[type='checkbox'] {
@@ -45,7 +41,6 @@
 		.validation_message {
 			@apply px-0 text-sm border-none bg-transparent py-4;
 		}
-
 	}
 }
 /* stylelint-enable */
