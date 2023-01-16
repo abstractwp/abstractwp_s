@@ -28,7 +28,16 @@ pre {
 // Page Template Containers
 //-----------------------------------------
 .site-main {
-	@apply py-32;
+	@apply pb-32;
+
+	> .entry-header,
+	> .page-header,
+	&.no-header-footer,
+	&.has-padding-top,
+	&.right-sidebar,
+	&.left-sidebar {
+		@apply pt-32;
+	}
 
 	.entry-header,
 	.entry-footer {

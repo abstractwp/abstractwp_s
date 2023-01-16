@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The blog template file.
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -14,13 +14,24 @@
 
 use function WebDevStudios\wd_s\print_numeric_pagination;
 use function WebDevStudios\wd_s\main_classes;
+use function WebDevStudios\wd_s\get_blog_main_classes;
 
 get_header(); ?>
 
-	<main id="main" class="<?php echo esc_attr( main_classes( [ 'has-padding-top' ] ) ); ?>">
+	<main id="main" class="<?php echo esc_attr( main_classes( get_blog_main_classes() ) ); ?>">
 
 		<?php
 		if ( have_posts() ) :
+			?>
+			<header class="entry-header">
+				<h1 class="page-title"><?php single_post_title(); ?></h1>
+			</header>
+			<?php
+			if ( is_active_sidebar( 'sidebar-2' ) ) :
+				?>
+			<div class="content-container">
+				<?php
+		endif;
 
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -34,6 +45,13 @@ get_header(); ?>
 
 		else :
 			get_template_part( 'template-parts/content', 'none' );
+		endif;
+
+		if ( is_active_sidebar( 'sidebar-2' ) ) :
+			?>
+			</div><!-- end blog-container -->
+			<?php
+			get_sidebar();
 		endif;
 		?>
 
