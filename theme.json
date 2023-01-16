@@ -16,22 +16,22 @@
 					"slug": "contrast"
 				},
 				{
-					"color": "#EBE53C",
+					"color": "#CD6D50",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#707070",
+					"color": "#1C343B",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
 				{
-					"color": "#DBD9D5",
+					"color": "#C6D7D5",
 					"name": "Tertiary",
 					"slug": "tertiary"
 				},
 				{
-					"color": "#F7E28F",
+					"color": "#F1E2A3",
 					"name": "Yellow",
 					"slug": "yellow"
 				},
