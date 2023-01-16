@@ -20,16 +20,32 @@
 		input[type='week'],
 		select,
 		textarea {
-			@apply px-12 py-12 text-base bg-tertiary text-black h-48;
+			@apply px-12 py-12 text-base bg-transparent text-black border rounded-md;
+
+			&:focus {
+				@apply outline-primary;
+			}
 		}
 
 		input[type='checkbox'] {
 			@apply bg-tertiary;
 		}
 
-		.gfield-choice-input {
-			margin-top: -3px;
+		input[type='submit'] {
+			@extend .button;
 		}
+
+		legend,
+		.gfield_label,
+		.ginput_complex label {
+			@apply font-normal text-sm;
+		}
+
+		.gfield_validation_message,
+		.validation_message {
+			@apply px-0 text-sm border-none bg-transparent py-4;
+		}
+
 	}
 }
 /* stylelint-enable */

@@ -7,7 +7,11 @@ input:not( .button ) {
 }
 
 label {
-	@apply block font-semibold mb-16;
+	@apply block mb-16 text-gray-600 text-sm font-normal;
+}
+
+.error-label {
+	@apply block text-primary text-sm font-normal;
 }
 
 //-----------------------------------------
