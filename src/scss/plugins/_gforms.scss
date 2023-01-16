@@ -42,5 +42,13 @@
 			@apply px-0 text-sm border-none bg-transparent py-4;
 		}
 	}
+
+	&.gform_validation_error {
+		@screen tablet-portrait {
+			#field_submit input {
+				@apply self-start mt-32;
+			}
+		}
+	}
 }
 /* stylelint-enable */
