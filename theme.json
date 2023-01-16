@@ -480,7 +480,7 @@
 			}
 		},
 		"color": {
-			"background": "var(--wp--preset--color--base)",
+			"background": "var(--wp--preset--color--white)",
 			"text": "var(--wp--preset--color--contrast)"
 		},
 		"spacing": {
