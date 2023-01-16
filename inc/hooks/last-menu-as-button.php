@@ -23,7 +23,7 @@ function filter_primary_nav_menu_objects( $items, $args ) {
 	if ( 'primary' === $args->theme_location && $has_button ) {
 		foreach ( $items as $index => &$item ) {
 			if ( $has_button && count( $items ) === $index ) {
-				$item->classes[] = 'menu-button';
+				$item->classes[] = 'button';
 			}
 		}
 	}

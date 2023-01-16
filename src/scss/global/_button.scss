@@ -3,8 +3,8 @@
 //----------------------------------------
 
 .button,
-button {
-	@apply bg-primary text-contrast cursor-pointer no-underline p-12;
+button:not( .off-canvas-open ) {
+	@apply bg-primary bg-opacity-50 text-contrast cursor-pointer no-underline px-16 py-12 rounded-md shadow-md;
 
 	&:hover,
 	&:focus {
@@ -12,7 +12,7 @@ button {
 	}
 
 	&:active {
-		@apply bg-secondary text-base;
+		@apply bg-primary bg-opacity-100 text-base;
 	}
 
 	&:visited {

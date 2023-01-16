@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 .off-canvas {
 	&-container {
-		@apply bg-black text-white inset-y-0 h-full fixed w-full;
+		@apply bg-base text-contrast inset-y-0 h-full fixed w-full;
 
 		overflow-y: auto;
 		right: -100%;
@@ -48,7 +48,7 @@
 	}
 
 	&-screen {
-		@apply bg-black bg-opacity-25 inset-0 fixed invisible;
+		@apply bg-base bg-opacity-25 inset-0 fixed invisible;
 
 		z-index: 9996;
 
