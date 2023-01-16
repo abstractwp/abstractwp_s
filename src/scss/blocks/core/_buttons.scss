@@ -1,0 +1,9 @@
+//----------------------------------------
+// Buttons - Core Gutenberg Block
+//----------------------------------------
+/* stylelint-disable */
+.wp-element-button,
+.wp-block-button__link {
+	@extend .button;
+}
+/* stylelint-enable */
