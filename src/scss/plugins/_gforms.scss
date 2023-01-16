@@ -20,34 +20,26 @@
 		input[type='week'],
 		select,
 		textarea {
-			@apply px-12 py-8 text-base bg-tertiary text-black h-48;
+			@extend .input-field;
 		}
 
 		input[type='checkbox'] {
 			@apply bg-tertiary;
 		}
 
-		input:not( [type='radio'] ):not( [type='checkbox'] ):not( [type='image'] ):not( [type='file'] ),
-		input[type='submit'],
-		#field_submit input,
-		.gform-button {
-			@apply leading-6;
-
-			@screen max-tablet-portrait {
-				@apply w-full;
-			}
+		input[type='submit'] {
+			@extend .button;
 		}
 
-		.gfield-choice-input {
-			margin-top: -3px;
+		legend,
+		.gfield_label,
+		.ginput_complex label {
+			@apply font-normal text-sm;
 		}
-	}
 
-	&.gform_validation_error {
-		@screen tablet-portrait {
-			#field_submit input {
-				@apply self-start mt-32;
-			}
+		.gfield_validation_message,
+		.validation_message {
+			@apply px-0 text-sm border-none bg-transparent py-4;
 		}
 	}
 }

@@ -10,32 +10,36 @@
 	}
 
 	.menu {
-		@apply flex mb-0 items-center pr-0 text-white;
+		@apply flex mb-0 items-center pr-0 text-contrast;
 
 		> li {
 			&:not( :last-child ) {
-				@apply mr-16;
+				@apply mr-8;
 			}
 		}
 
 		a {
-			@apply no-underline;
+			@apply no-underline py-4 px-8 rounded;
 
 			&:hover {
-				@apply underline underline-offset-4 decoration-dotted;
+				@apply bg-gray-100;
 			}
+		}
+
+		.button a:hover {
+			@apply bg-transparent;
 		}
 	}
 
 	.sub-menu {
-		@apply bg-black py-8 absolute shadow-md;
+		@apply bg-base py-8 absolute shadow-md;
 
 		left: -999em;
 		top: theme( 'spacing.24' );
 		z-index: 99999;
 
 		li {
-			@apply px-24 py-8;
+			@apply px-16 py-4;
 		}
 
 		.menu-item-has-children {
@@ -53,13 +57,6 @@
 			@apply -rotate-180 transform;
 		}
 	}
-}
-
-//-----------------------------------------
-// Button menu
-//-----------------------------------------
-.menu-button {
-	@apply bg-white px-12 py-6 text-black;
 }
 
 //-----------------------------------------

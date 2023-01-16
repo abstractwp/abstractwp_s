@@ -2,7 +2,7 @@
 // Global Site Footer
 //--------------------------------------------------------------
 .site-footer {
-	@apply bg-black bg-opacity-80 py-30 float-left w-full;
+	@apply bg-gray-600 bg-opacity-80 py-30 float-left w-full;
 
 	@screen tablet-landscape {
 		padding-left: calc( ( 100% - theme( 'screens.desktop' ) ) / 2 );
@@ -11,6 +11,15 @@
 
 	.footer-navigation .menu {
 		@apply mb-24;
+		li {
+			a {
+				@apply text-white;
+
+				&:hover {
+					@apply text-contrast;
+				}
+			}
+		}
 	}
 
 	.site-info {

@@ -1,25 +1,28 @@
 //--------------------------------------------------------------
 // Forms
 //--------------------------------------------------------------
-textarea,
-input:not( .button ) {
-	@apply bg-black bg-opacity-10 px-12 py-8 text-base leading-6;
+.input-field {
+	@apply px-12 py-12 text-base bg-transparent text-black border rounded-md border-gray-100;
 
-	@screen max-tablet-portrait {
-		@apply max-w-full;
+	&:focus {
+		@apply outline outline-primary outline-offset-0 outline-2 border-gray-600;
 	}
 }
 
-form {
-	@apply pb-gap;
-}
-
-select {
-	@apply max-w-full px-12 py-8 bg-black bg-opacity-10;
+textarea,
+input:not( .button ),
+input[type='search'] {
+	/* stylelint-disable */
+	@extend .input-field;
+	/* stylelint-enable */
 }
 
 label {
-	@apply block font-semibold mb-16;
+	@apply block mb-16 text-gray-600 text-sm font-normal;
+}
+
+.error-label {
+	@apply block text-primary text-sm font-normal;
 }
 
 //-----------------------------------------
@@ -28,11 +31,13 @@ label {
 .search-form {
 	@apply mt-6;
 
+	/* stylelint-disable */
 	.search-field {
-		@apply bg-black bg-opacity-10 text-black px-12 py-8 rounded-lg border-none leading-6;
+		@extend .input-field;
 	}
 
 	.button {
-		@apply bg-black bg-opacity-25 text-black px-12 py-8 rounded-lg text-center no-underline leading-6;
+		@extend .button;
 	}
+	/* stylelint-enable */
 }
