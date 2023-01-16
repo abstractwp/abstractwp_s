@@ -17,6 +17,10 @@ input[type='search'] {
 	/* stylelint-enable */
 }
 
+form {
+	@apply pb-gap;
+}
+
 label {
 	@apply block mb-16 text-gray-600 text-sm font-normal;
 }

@@ -6,10 +6,10 @@
 	@apply bg-base text-contrast float-left w-full;
 
 	&-wrap {
-		@apply container clear-both mx-auto;
+		@apply container clear-both mx-auto px-0;
 
 		.widget {
-			@apply float-left py-32;
+			@apply float-left py-gap px-16;
 		}
 
 		&.widget-halves .widget:nth-child( odd ),
