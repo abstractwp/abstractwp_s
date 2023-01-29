@@ -35,20 +35,13 @@
 
 	.resources {
 		.entry-header {
-			.wp-post-image,
-			.placeholder-img {
+			.resource-img {
 				@apply w-full object-cover;
 
-				max-height: 200px;
-
-				@screen tablet-portrait {
-					max-height: 170px;
-				}
+				max-height: none;
 
 				@screen tablet-landscape {
 					max-width: 378px;
-					max-height: 230px;
-					min-height: 230px;
 				}
 			}
 		}
