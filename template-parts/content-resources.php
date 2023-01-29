@@ -13,54 +13,30 @@ use function WebDevStudios\wd_s\get_trimmed_excerpt;
 
 ?>
 
-<article <?php post_class( 'post-container' ); ?>>
+<article <?php post_class( 'resource-container' ); ?>>
 	<header class="entry-header">
 		<?php
-		if ( is_single() ) :
-			the_post_thumbnail( 'full' );
-			the_title( '<h1 class="entry-title">', '</h1>' );
+		if ( has_post_thumbnail() ) :
+			the_post_thumbnail( 'resource-thumb', [ 'class' => 'resource-img' ] );
 		else :
-			if ( has_post_thumbnail() ) :
-				the_post_thumbnail( 'resource-thumb', [ 'class' => 'resource-img' ] );
-			else :
-				$wd_s_colors = [ 'primary', 'secondary', 'tertiary', 'contrast' ];
-				echo '<div class="resource-img placeholder-img pbg-' . $wd_s_colors[ array_rand( $wd_s_colors )] . '"></div>'; // phpcs:ignore.
-			endif;
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			$wd_s_colors = [ 'primary', 'secondary', 'tertiary', 'contrast' ];
+			echo '<div class="resource-img placeholder-img pbg-' . $wd_s_colors[ array_rand( $wd_s_colors )] . '"></div>'; // phpcs:ignore.
 		endif;
 		?>
-		<div class="entry-meta">
-			<?php print_resources_type( get_the_ID() ); ?>
-		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php
-		if ( is_single() ) :
-			the_content();
-		else :
-			echo esc_html(
-				get_trimmed_excerpt(
-					array(
-						'post'   => get_the_ID(),
-						'length' => 25,
-					)
+		the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		print_resources_type( get_the_ID() );
+		echo esc_html(
+			get_trimmed_excerpt(
+				array(
+					'post'   => get_the_ID(),
+					'length' => 25,
 				)
-			);
-		endif;
-		?>
-		<?php
-		wp_link_pages(
-			[
-				'before' => '<div class="page-links">' . esc_attr__( 'Pages:', 'wd_s' ),
-				'after'  => '</div>',
-			]
+			)
 		);
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php print_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-
 </article><!-- #post-## -->
