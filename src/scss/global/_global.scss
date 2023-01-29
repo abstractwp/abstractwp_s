@@ -50,6 +50,12 @@ pre {
 	}
 }
 
+.page-template-no-title {
+	.site-main {
+		@apply pb-0;
+	}
+}
+
 .page-header {
 	@apply container;
 }
