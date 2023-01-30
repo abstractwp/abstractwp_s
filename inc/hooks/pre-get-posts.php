@@ -25,7 +25,7 @@ function resources_archive_query( $query ) {
 		$is_resource_tax = true;
 	}
 
-	if ( $query->is_main_query() && ( is_post_type_archive( 'resources' ) || $is_resource_tax ) ) {
+	if ( ! is_admin() && $query->is_main_query() && ( is_post_type_archive( 'resources' ) || $is_resource_tax ) ) {
 		$query->set( 'posts_per_page', 12 );
 	}
 }

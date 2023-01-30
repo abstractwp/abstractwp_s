@@ -23,7 +23,7 @@ function print_resources_type( $post_id ) {
 	<span class="types">
 		<?php
 		foreach ( $types as $type ) {
-			echo '<a href="' . esc_url( get_term_link( $type->term_id ) ) . '" class="button secondary small-button">' . esc_html( $type->name ) . '</a>'; // phpcs: ignore.
+			echo '<a href="' . esc_url( get_term_link( $type->term_id ) ) . '" class="resource-type">' . esc_html( $type->name ) . '</a>'; // phpcs: ignore.
 		}
 		?>
 	</span>

@@ -18,8 +18,11 @@ get_header(); ?>
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', get_post_type() );
-
+			if ( is_singular( 'resources' ) ) :
+				get_template_part( 'template-parts/content', get_post_type() . '-single' );
+			else :
+				get_template_part( 'template-parts/content', get_post_type() );
+			endif;
 			print_comments();
 
 			if ( is_singular( 'post' ) ) :
