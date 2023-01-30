@@ -101,9 +101,14 @@
 	}
 
 	.components-button {
-		@apply p-6 h-auto;
+		@apply w-auto;
 
 		font-size: 13px;
+		height: 36px;
+
+		&.block-editor-button-block-appender {
+			@apply w-full h-auto;
+		}
 
 		&.is-primary {
 			@apply text-white;
@@ -126,5 +131,9 @@
 					var( --wp-admin-theme-color-darker-10 );
 			}
 		}
+	}
+
+	.wp-block.is-selected {
+		margin-bottom: 1rem;
 	}
 }
