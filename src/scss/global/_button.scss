@@ -3,7 +3,7 @@
 //----------------------------------------
 
 .button,
-button:not( .off-canvas-open ) {
+button:not( .off-canvas-open ):not( .components-button ) {
 	@apply bg-primary bg-opacity-50 text-contrast cursor-pointer no-underline px-16 py-12 rounded-md shadow-md;
 
 	&:hover,
