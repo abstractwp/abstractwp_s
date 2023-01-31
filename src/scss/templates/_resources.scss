@@ -48,7 +48,7 @@
 			}
 
 			&::after {
-				@apply absolute w-full h-full bg-contrast top-0 left-0 bg-opacity-30;
+				@apply absolute w-full h-full bg-contrast top-0 left-0 bg-opacity-50;
 
 				content: '';
 			}
