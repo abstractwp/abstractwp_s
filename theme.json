@@ -45,6 +45,14 @@
 					"name": "Gray",
 					"slug": "gray-100"
 				}
+			],
+			"customDuotone": true,
+			"duotone": [
+				{
+						"colors": [ "#000", "#b90e4a" ],
+						"slug": "black-pink",
+						"name": "Black and Pink"
+				}
 			]
 		},
 		"layout": {
