@@ -14,8 +14,4 @@ button:not( .off-canvas-open ):not( .components-button ) {
 	&:active {
 		@apply bg-primary bg-opacity-100 text-base;
 	}
-
-	&:visited {
-		@apply text-contrast;
-	}
 }
