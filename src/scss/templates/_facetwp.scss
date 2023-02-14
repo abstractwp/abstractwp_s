@@ -11,6 +11,12 @@
 	@screen tablet-landscape {
 		@apply grid-cols-3;
 	}
+
+	&.posts-facets-list {
+		@screen tablet-landscape {
+			@apply grid-cols-2;
+		}
+	}
 }
 
 .facet-filter {
@@ -29,13 +35,17 @@
 	}
 
 	.filter-label {
-		@apply mb-0 mr-16;
+		@screen tablet-portrait {
+			@apply mb-0 mr-16;
+		}
 	}
 
-	.facetwp-facet {
+	.facetwp-facet,
+	.facetwp-sort {
 		@apply mb-0;
 
-		.facetwp-dropdown {
+		.facetwp-dropdown,
+		.facetwp-sort-select {
 			@apply py-5 pl-4 pr-16 mr-8 rounded border-black border;
 		}
 	}

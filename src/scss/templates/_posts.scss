@@ -101,7 +101,7 @@
 .category,
 .blog {
 	.site-main {
-		@apply wds-grid-2 container;
+		@apply container block;
 
 		@screen max-tablet-portrait {
 			grid-template-columns: repeat( 1, 1fr );
