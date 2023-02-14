@@ -78,9 +78,11 @@ get_header(); ?>
 
 			if ( 'resources' === get_post_type() || 'post' === get_post_type() ) {
 				echo '</div>';
+				echo do_shortcode( '[facetwp facet="paging"]' );
+			} else {
+				print_numeric_pagination();
 			}
 
-			print_numeric_pagination();
 			?>
 
 </main><!-- #main -->

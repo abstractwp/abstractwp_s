@@ -63,7 +63,7 @@ get_header(); ?>
 				echo '</div>';
 			}
 
-			print_numeric_pagination();
+			echo do_shortcode( '[facetwp facet="paging"]' );
 
 		else :
 			get_template_part( 'template-parts/content', 'none' );
