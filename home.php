@@ -33,15 +33,15 @@ get_header(); ?>
 				<?php
 		endif;
 
-		if ( 'post' === get_post_type() ) {
-			echo '<div class="facet-filter container flex items-center">';
+			if ( 'post' === get_post_type() ) {
+				echo '<div class="facet-filter container flex items-center">';
 				echo '<h3 class="filter-label">' . esc_html__( 'Filter by ', 'wd_s' ) . '</h3>';
 				echo do_shortcode( '[facetwp sort="true"]' );
 				echo do_shortcode( '[facetwp facet="categories"]' );
 				echo do_shortcode( '[facetwp facet="tags"]' );
-			echo '</div>';
-			echo '<div class="posts-facets-list facetwp-template">';
-		}
+				echo '</div>';
+				echo '<div class="posts-facets-list facetwp-template">';
+			}
 
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -51,9 +51,9 @@ get_header(); ?>
 
 			endwhile;
 
-		if ( 'post' === get_post_type() ) {
-			echo '</div>';
-		}
+			if ( 'post' === get_post_type() ) {
+				echo '</div>';
+			}
 
 			print_numeric_pagination();
 
