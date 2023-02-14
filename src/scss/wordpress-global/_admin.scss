@@ -133,6 +133,32 @@
 		}
 	}
 
+	/* stylelint-disable */
+	.wp-block-buttons {
+		.wp-block-button {
+			.wp-element-button {
+				@apply bg-primary bg-opacity-50 text-contrast cursor-pointer no-underline px-16 py-12 rounded-md shadow-md text-normal flex items-center;
+
+				&:hover,
+				&:focus,
+				&:active {
+					@apply bg-primary bg-opacity-100 text-base;
+				}
+			}
+
+			&.is-style-outline {
+				.wp-element-button {
+					@apply bg-transparent border-2 border-gray-600 border-solid text-contrast;
+
+					&:hover {
+						@apply bg-gray-100;
+					}
+				}
+			}
+		}
+	}
+	/* stylelint-enable */
+
 	.wp-block.is-selected {
 		margin-bottom: 1rem;
 	}
