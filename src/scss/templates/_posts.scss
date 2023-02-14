@@ -139,6 +139,12 @@
 						@apply no-underline;
 					}
 				}
+
+				img {
+					/* stylelint-disable */
+					filter: url(#wp-duotone-black-pink);
+					/* stylelint-enable */
+				}
 			}
 			.entry-content {
 				/* stylelint-disable */
