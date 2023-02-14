@@ -26,21 +26,40 @@ get_header(); ?>
 		<?php
 		if ( 'resources' === get_post_type() ) {
 			echo '<div class="facet-filter container flex items-center">';
-				echo '<h3 class="filter-label">' . esc_html__( 'Filter by ', 'wd_s' ) . '</h3>';
+			echo '<h3 class="filter-label">' . esc_html__( 'Filter by ', 'wd_s' ) . '</h3>';
+
+			if ( ! is_category() ) {
 				echo do_shortcode( '[facetwp facet="categories"]' );
+			}
+
+			if ( ! is_tax( 'resources-type' ) ) {
 				echo do_shortcode( '[facetwp facet="resources_type"]' );
+			}
+
+			if ( ! is_tax( 'resources-topic' ) ) {
 				echo do_shortcode( '[facetwp facet="resources_topic"]' );
+			}
+
+			if ( ! is_tag() ) {
 				echo do_shortcode( '[facetwp facet="tags"]' );
+			}
+
 			echo '</div>';
 			echo '<div class="resources-facets-list facetwp-template">';
 		}
 
 		if ( 'post' === get_post_type() ) {
 			echo '<div class="facet-filter container flex items-center">';
-				echo '<h3 class="filter-label">' . esc_html__( 'Filter by ', 'wd_s' ) . '</h3>';
-				echo do_shortcode( '[facetwp sort="true"]' );
+			echo '<h3 class="filter-label">' . esc_html__( 'Filter by ', 'wd_s' ) . '</h3>';
+			echo do_shortcode( '[facetwp sort="true"]' );
+
+			if ( ! is_category() ) {
 				echo do_shortcode( '[facetwp facet="categories"]' );
+			}
+
+			if ( ! is_tag() ) {
 				echo do_shortcode( '[facetwp facet="tags"]' );
+			}
 			echo '</div>';
 			echo '<div class="posts-facets-list facetwp-template">';
 		}
