@@ -146,7 +146,36 @@
 
 				img {
 					/* stylelint-disable */
-					filter: url( #wp-duotone-black-pink );
+					&.dualtone-secondary-primary {
+						filter: url( #wp-duotone-secondary-primary );
+					}
+					&.dualtone-secondary-tertiary {
+						filter: url( #wp-duotone-secondary-tertiary );
+					}
+					&.dualtone-secondary-yellow {
+						filter: url( #wp-duotone-secondary-yellow );
+					}
+					&.dualtone-secondary-gray {
+						filter: url( #wp-duotone-secondary-gray );
+					}
+					&.dualtone-primary-base {
+						filter: url( #wp-duotone-primary-base );
+					}
+					&.dualtone-primary-tertiary {
+						filter: url( #wp-duotone-primary-tertiary );
+					}
+					&.dualtone-primary-yellow {
+						filter: url( #wp-duotone-primary-yellow );
+					}
+					&.dualtone-primary-gray {
+						filter: url( #wp-duotone-primary-gray );
+					}
+					&.dualtone-yellow-gray {
+						filter: url( #wp-duotone-yellow-gray );
+					}
+					&.dualtone-yellow-tertiary {
+						filter: url( #wp-duotone-yellow-tertiary );
+					}
 					/* stylelint-enable */
 				}
 			}

@@ -46,6 +46,12 @@
 					max-width: 378px;
 				}
 			}
+
+			&::after {
+				@apply absolute w-full h-full bg-contrast top-0 left-0 bg-opacity-30;
+
+				content: '';
+			}
 		}
 
 		.entry-content {
