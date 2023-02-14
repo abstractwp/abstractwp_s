@@ -125,6 +125,10 @@
 				@apply mx-auto px-0;
 				max-width: theme( 'layout.contentSize' );
 			}
+
+			.page-title.with-icon {
+				@apply flex items-center;
+			}
 		}
 
 		.hentry {
@@ -142,7 +146,7 @@
 
 				img {
 					/* stylelint-disable */
-					filter: url(#wp-duotone-black-pink);
+					filter: url( #wp-duotone-black-pink );
 					/* stylelint-enable */
 				}
 			}

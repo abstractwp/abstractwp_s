@@ -24,7 +24,12 @@ get_header(); ?>
 		if ( have_posts() ) :
 			?>
 			<header class="entry-header">
-				<h1 class="page-title"><?php single_post_title(); ?></h1>
+				<h1 class="page-title with-icon">
+				<?php
+				echo get_the_post_thumbnail( get_option( 'page_for_posts' ), array( 150, 150 ) );
+				single_post_title();
+				?>
+				</h1>
 			</header>
 			<?php
 			if ( is_active_sidebar( 'sidebar-2' ) ) :
@@ -33,15 +38,18 @@ get_header(); ?>
 				<?php
 		endif;
 
-			if ( 'post' === get_post_type() ) {
-				echo '<div class="facet-filter container flex items-center">';
-				echo '<h3 class="filter-label">' . esc_html__( 'Filter by ', 'wd_s' ) . '</h3>';
-				echo do_shortcode( '[facetwp sort="true"]' );
+			echo '<div class="facet-filter container flex items-center">';
+			echo '<h3 class="filter-label">' . esc_html__( 'Filter by ', 'wd_s' ) . '</h3>';
+			echo do_shortcode( '[facetwp sort="true"]' );
+			if ( ! is_category() ) {
 				echo do_shortcode( '[facetwp facet="categories"]' );
-				echo do_shortcode( '[facetwp facet="tags"]' );
-				echo '</div>';
-				echo '<div class="posts-facets-list facetwp-template">';
 			}
+
+			if ( ! is_tag() ) {
+				echo do_shortcode( '[facetwp facet="tags"]' );
+			}
+			echo '</div>';
+			echo '<div class="posts-facets-list facetwp-template">';
 
 			/* Start the Loop */
 			while ( have_posts() ) :
