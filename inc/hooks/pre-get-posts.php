@@ -25,8 +25,19 @@ function resources_archive_query( $query ) {
 		$is_resource_tax = true;
 	}
 
-	if ( ! is_admin() && $query->is_main_query() && ( is_post_type_archive( 'resources' ) || $is_resource_tax ) ) {
+	if ( is_admin() || ! $query->is_main_query() ) {
+		return;
+	}
+
+	if ( is_post_type_archive( 'resources' ) || $is_resource_tax ) {
 		$query->set( 'posts_per_page', 12 );
+	}
+
+	if ( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+		$query->set(
+			'post_type',
+			[ 'post', 'resources' ]
+		);
 	}
 }
 

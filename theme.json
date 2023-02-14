@@ -49,9 +49,54 @@
 			"customDuotone": true,
 			"duotone": [
 				{
-						"colors": [ "#000", "#b90e4a" ],
-						"slug": "black-pink",
-						"name": "Black and Pink"
+					"colors": [ "#1C343B", "#CD6D50" ],
+					"slug": "secondary-primary",
+					"name": "Secondary and primary"
+				},
+				{
+					"colors": [ "#1C343B", "#C6D7D5" ],
+					"slug": "secondary-tertiary",
+					"name": "Secondary and tertiary"
+				},
+				{
+					"colors": [ "#1C343B", "#F1E2A3" ],
+					"slug": "secondary-yellow",
+					"name": "Secondary and yellow"
+				},
+				{
+					"colors": [ "#1C343B", "#515050" ],
+					"slug": "secondary-gray",
+					"name": "Secondary and gray"
+				},
+				{
+					"colors": [ "#CD6D50", "#FDFBF6" ],
+					"slug": "primary-base",
+					"name": "Primary and base"
+				},
+				{
+					"colors": [ "#CD6D50", "#C6D7D5" ],
+					"slug": "primary-tertiary",
+					"name": "Primary and tertiary"
+				},
+				{
+					"colors": [ "#CD6D50", "#F1E2A3" ],
+					"slug": "primary-yellow",
+					"name": "Primary and yellow"
+				},
+				{
+					"colors": [ "#CD6D50", "#515050" ],
+					"slug": "primary-gray",
+					"name": "Primary and gray"
+				},
+				{
+					"colors": [ "#F1E2A3", "#515050" ],
+					"slug": "yellow-gray",
+					"name": "Yellow and gray"
+				},
+				{
+					"colors": [ "#F1E2A3", "#515050" ],
+					"slug": "yellow-tertiary",
+					"name": "Yellow and tertiary"
 				}
 			]
 		},
@@ -126,7 +171,7 @@
 				{
 					"fluid": false,
 					"size": "1rem",
-					"slug": "base"
+					"slug": "normal"
 				},
 				{
 					"fluid": false,

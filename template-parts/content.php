@@ -10,7 +10,9 @@
 use function WebDevStudios\wd_s\print_post_date;
 use function WebDevStudios\wd_s\print_post_author;
 use function WebDevStudios\wd_s\print_entry_footer;
-use function WebDevStudios\wd_s\get_trimmed_excerpt
+use function WebDevStudios\wd_s\get_trimmed_excerpt;
+use function WebDevStudios\wd_s\get_dualtone_colors;
+use function WebDevStudios\wd_s\get_theme_colors;
 
 ?>
 
@@ -32,9 +34,10 @@ use function WebDevStudios\wd_s\get_trimmed_excerpt
 		else :
 			if ( 'post' === get_post_type() ) :
 				if ( has_post_thumbnail() ) :
-					the_post_thumbnail( 'blog-thumb' );
+					$wd_s_dualtone = get_dualtone_colors();
+					the_post_thumbnail( 'blog-thumb', [ 'class' => 'dualtone-' . $wd_s_dualtone[ array_rand( $wd_s_dualtone ) ] ] );
 				else :
-					$wd_s_colors = [ 'primary', 'secondary', 'tertiary', 'contrast' ];
+					$wd_s_colors = get_theme_colors();
 					echo '<div class="placeholder-img pbg-' . $wd_s_colors[ array_rand( $wd_s_colors )] . '"></div>'; // phpcs:ignore.
 				endif;
 			endif;

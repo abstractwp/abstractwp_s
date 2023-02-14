@@ -2,7 +2,7 @@
 // Forms
 //--------------------------------------------------------------
 .input-field {
-	@apply px-12 py-12 text-base bg-transparent text-black border rounded-md border-gray-100;
+	@apply px-12 py-10 text-base bg-transparent text-black border-2 rounded-md border-gray-100;
 
 	&:focus {
 		@apply outline outline-primary outline-offset-0 outline-2 border-gray-600;

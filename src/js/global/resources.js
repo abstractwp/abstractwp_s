@@ -16,6 +16,18 @@
 		resizeResourceImage();
 	} );
 
+	$( document ).on( 'facetwp-loaded', function () {
+		resizeResourceImage();
+
+		// Hide empty filter option.
+		$( '.facetwp-dropdown' ).each( function () {
+			$( this ).hide();
+			if ( $( this ).find( 'option' ).length > 1 ) {
+				$( this ).show();
+			}
+		} );
+	} );
+
 	function resizeResourceImage() {
 		$( '.resource-img' ).each( function () {
 			$( this ).height( $( this ).width() );

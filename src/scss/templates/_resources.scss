@@ -47,10 +47,10 @@
 				}
 			}
 
-			img {
-				/* stylelint-disable */
-				filter: url(#wp-duotone-black-pink);
-				/* stylelint-enable */
+			&::after {
+				@apply absolute w-full h-full bg-contrast top-0 left-0 bg-opacity-30;
+
+				content: '';
 			}
 		}
 

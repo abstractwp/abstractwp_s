@@ -2,7 +2,7 @@
 // Global Site Header
 //--------------------------------------------------------------
 .site-header {
-	@apply bg-base text-contrast px-16 py-12 flex relative;
+	@apply bg-base text-contrast px-16 py-12 flex relative border-b border-gray-100;
 
 	@screen tablet-landscape {
 		padding-left: calc( ( 100% - theme( 'screens.desktop' ) ) / 2 );
