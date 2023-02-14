@@ -16,6 +16,10 @@
 		resizeResourceImage();
 	} );
 
+	$(document).on('facetwp-loaded', function() {
+		resizeResourceImage();
+	});
+
 	function resizeResourceImage() {
 		$( '.resource-img' ).each( function () {
 			$( this ).height( $( this ).width() );
