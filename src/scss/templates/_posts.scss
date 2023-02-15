@@ -278,14 +278,22 @@
 
 // Post single
 .single-post {
+	.has-padding-top {
+		@apply pt-0;
+	}
+
 	.post-container {
 		.entry-header {
-			@apply container text-center;
+			@apply text-center w-full relative pt-48 pb-32;
+			max-width: none;
 
-			padding-bottom: calc( theme( 'spacing.gap' ) * 2 );
+			&::before {
+				@apply absolute w-full h-full bg-base top-0 left-0 -z-10;
+				content: '';
+			}
 
 			.entry-title {
-				@apply mx-auto px-0 pb-gap;
+				@apply mx-auto px-0;
 				max-width: theme( 'layout.contentSize' );
 			}
 
