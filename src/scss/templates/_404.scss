@@ -2,7 +2,16 @@
 // 404 page
 //--------------------------------------------------------------
 .not-found {
-	.page-content {
-		@apply container;
+	.page-content,
+	.page-header {
+		@apply mx-auto px-0 pt-48 text-center;
+
+		max-width: theme( 'layout.contentSize' );
+	}
+	.page-title {
+		@apply mb-0;
+	}
+	.page-content img {
+		@apply mx-auto;
 	}
 }
