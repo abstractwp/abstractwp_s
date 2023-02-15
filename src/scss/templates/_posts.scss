@@ -100,6 +100,10 @@
 .archive,
 .category,
 .blog {
+	.site-header {
+		@apply border-none;
+	}
+
 	.site-main {
 		@apply block;
 
@@ -278,6 +282,10 @@
 
 // Post single
 .single-post {
+	.site-header {
+		@apply border-none;
+	}
+
 	.has-padding-top {
 		@apply pt-0;
 	}
