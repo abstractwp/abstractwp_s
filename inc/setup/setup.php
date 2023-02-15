@@ -133,6 +133,8 @@ function setup() {
 
 	// Gutenberg responsive embed support.
 	add_theme_support( 'responsive-embeds' );
+
+	remove_theme_support( 'block-templates' );
 }
 
 add_action( 'after_setup_theme', __NAMESPACE__ . '\setup' );
