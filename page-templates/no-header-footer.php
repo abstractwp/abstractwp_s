@@ -28,7 +28,7 @@ use function WebDevStudios\wd_s\main_classes;
 			while ( have_posts() ) :
 				the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
+				get_template_part( 'template-parts/content', 'no-title' );
 
 				print_comments();
 
