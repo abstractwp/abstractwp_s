@@ -19,7 +19,7 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<div class="page-content">
-
+				<img src="<?php echo  get_template_directory_uri() . '/build/images/website-construction-person.png' ?>" alt="404 image" />
 				<p><?php esc_html_e( "It seems we can't find what you're looking for. Perhaps searching can help.", 'wd_s' ); ?></p>
 
 				<?php get_search_form(); ?>
