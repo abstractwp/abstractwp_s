@@ -72,6 +72,7 @@ function register_block_patterns() {
 		'header.php',
 		'footer.php',
 		'query.php',
+		'bookmark.php',
 	);
 
 	$path = trailingslashit( get_template_directory() ) . 'inc/blocks/patterns/';
