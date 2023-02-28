@@ -12,16 +12,16 @@ register_block_pattern(
 	array(
 		'title'      => __( 'Bookmark', 'wd_s' ),
 		'categories' => array( 'pages' ),
-		'content'    => '<!-- wp:spacer {"height":"20px"} -->
-		<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+		'content'    => '<!-- wp:spacer {"height":"32px"} -->
+		<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
 		<!-- wp:image {"id":214,"sizeSlug":"large","linkDestination":"none"} -->
 		<figure class="wp-block-image size-large"><img src="https://collectivewp.com/wp-content/uploads/2023/01/Website_BookmarksIcon_Wide-1024x256.png" alt="" class="wp-image-214"/></figure>
 		<!-- /wp:image -->
 
-		<!-- wp:spacer {"height":"25px"} -->
-		<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"32px"} -->
+		<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
 		<!-- wp:paragraph -->
@@ -36,8 +36,8 @@ register_block_pattern(
 		<p class="has-text-align-left"><br>As a reminder, we\'ll be sending these weekly and if you have feedback shoot us a note at&nbsp;<a href="mailto:hello@collectivewp.com" target="_blank" rel="noreferrer noopener">hello@collectivewp.com</a>.  We were overjoyed with your feedback and support from our initial launch, so keep it coming!  It\'s our hope as always that by helping to share information, and brining resources to the community we can help everyone to build that future more quickly.</p>
 		<!-- /wp:paragraph -->
 
-		<!-- wp:spacer {"height":"22px"} -->
-		<div style="height:22px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"32px"} -->
+		<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
 		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
@@ -46,8 +46,8 @@ register_block_pattern(
 		<!-- /wp:button --></div>
 		<!-- /wp:buttons -->
 
-		<!-- wp:spacer {"height":"22px"} -->
-		<div style="height:22px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"32px"} -->
+		<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
 		<!-- wp:paragraph -->
@@ -62,8 +62,8 @@ register_block_pattern(
 		<hr class="wp-block-separator alignfull has-text-color has-primary-color has-alpha-channel-opacity has-primary-background-color has-background"/>
 		<!-- /wp:separator -->
 
-		<!-- wp:spacer {"height":"22px"} -->
-		<div style="height:22px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"32px"} -->
+		<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
 		<!-- wp:heading {"style":{"typography":{"textTransform":"uppercase"}},"fontSize":"small"} -->
@@ -116,8 +116,8 @@ register_block_pattern(
 		<!-- /wp:button --></div>
 		<!-- /wp:buttons -->
 
-		<!-- wp:spacer {"height":"22px"} -->
-		<div style="height:22px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"32px"} -->
+		<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
 		<!-- wp:group {"align":"full","backgroundColor":"tertiary","layout":{"inherit":true,"type":"constrained"}} -->
@@ -132,8 +132,8 @@ register_block_pattern(
 		<!-- /wp:group --></div>
 		<!-- /wp:group -->
 
-		<!-- wp:spacer {"height":"22px"} -->
-		<div style="height:22px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"32px"} -->
+		<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
 		<!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -146,10 +146,6 @@ register_block_pattern(
 		<!-- wp:heading -->
 		<h2>In The Collective World of Work And Place</h2>
 		<!-- /wp:heading -->
-
-		<!-- wp:spacer {"height":"22px"} -->
-		<div style="height:22px" aria-hidden="true" class="wp-block-spacer"></div>
-		<!-- /wp:spacer -->
 
 		<!-- wp:paragraph -->
 		<p><strong>Jomal McNeal</strong>:  has spent many years assisting stakeholders in aligning their mission and built environment. The journey starts in the healthcare environment where complex clients rely on infrastructure to save lives and then transitions to Workplace where a culmination of business strategy, process and space enable today’s knowledge workers to effectively collaborate on complex solutions. Jomal believes collecting high quality data in discovery leads to best-in-class design. We are stronger together therefore discovery must also be totally inclusive. The workplace is an effective tool in bringing people together when based on great discovery.</p>
@@ -172,24 +168,22 @@ register_block_pattern(
 		<!-- /wp:columns --></div>
 		<!-- /wp:group -->
 
-		<!-- wp:spacer {"height":"22px"} -->
-		<div style="height:22px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"16px"} -->
+		<div style="height:16px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
 		<!-- wp:separator {"align":"full","backgroundColor":"primary"} -->
 		<hr class="wp-block-separator alignfull has-text-color has-primary-color has-alpha-channel-opacity has-primary-background-color has-background"/>
 		<!-- /wp:separator -->
 
-		<!-- wp:spacer {"height":"22px"} -->
-		<div style="height:22px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"32px"} -->
+		<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
 		<!-- wp:group {"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group"><!-- wp:columns -->
 		<div class="wp-block-columns"><!-- wp:column -->
-		<div class="wp-block-column"><!-- wp:spacer {"height":"22px"} -->
-		<div style="height:22px" aria-hidden="true" class="wp-block-spacer"></div>
-		<!-- /wp:spacer -->
+		<div class="wp-block-column">
 
 		<!-- wp:heading {"style":{"typography":{"textTransform":"uppercase"}},"fontSize":"small"} -->
 		<h2 class="has-small-font-size" style="text-transform:uppercase"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color">A product we\'re into right now</mark></h2>
@@ -220,16 +214,16 @@ register_block_pattern(
 		<!-- /wp:columns --></div>
 		<!-- /wp:group -->
 
-		<!-- wp:spacer {"height":"22px"} -->
-		<div style="height:22px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"32px"} -->
+		<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
 		<!-- wp:separator {"align":"full","backgroundColor":"primary"} -->
 		<hr class="wp-block-separator alignfull has-text-color has-primary-color has-alpha-channel-opacity has-primary-background-color has-background"/>
 		<!-- /wp:separator -->
 
-		<!-- wp:spacer {"height":"22px"} -->
-		<div style="height:22px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"32px"} -->
+		<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
 		<!-- wp:group {"layout":{"type":"constrained"}} -->
