@@ -31,9 +31,69 @@
 
 
 #bbpress-forums {
-	.bbp-body {
-		.forum {
-			@apply inline-block;
+	@apply container;
+
+	div.bbp-breadcrumb {
+		p {
+			@apply text-normal;
+
+			a {
+				@apply no-underline;
+			}
+		}
+	}
+
+	li.bbp-header {
+		@apply p-16 bg-gray-100 border-t-0;
+
+		.forum-titles {
+			li {
+				@apply h2 text-3xl my-8;
+
+				@screen max-tablet-portrait {
+					@apply text-normal;
+				}
+			}
+		}
+	}
+
+	li.bbp-body {
+		@apply grid;
+
+		ul.forum {
+			@apply inline-block border-t-0 py-gap px-16 text-normal;
+
+			line-height: 1.5;
+
+			@screen max-tablet-portrait {
+				@apply text-sm;
+
+				.bbp-topic-meta span {
+					white-space: pre-wrap;
+				}
+			}
+
+			.bbp-forum-title {
+				@apply h2 text-3xl no-underline mb-16 block;
+
+				@screen max-tablet-portrait {
+					@apply text-normal;
+				}
+			}
+
+			.bbp-forum-content,
+			.bbp-author-link {
+				@apply text-normal my-0;
+
+				@screen max-tablet-portrait {
+					@apply text-sm;
+				}
+			}
+
+			&.odd {
+				@apply bg-base;
+			}
+
 		}
 	}
 }
