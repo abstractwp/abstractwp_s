@@ -28,3 +28,12 @@
 		}
 	}
 }
+
+
+#bbpress-forums {
+	.bbp-body {
+		.forum {
+			@apply inline-block;
+		}
+	}
+}
