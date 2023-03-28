@@ -1,0 +1,30 @@
+.bbpress.archive {
+	.site-main {
+
+		&.has-padding-top {
+			@apply pt-0;
+		}
+
+
+		.entry-header {
+			@apply relative pt-48 mb-32;
+
+			.entry-title {
+				@apply mx-auto m-0 p-0;
+				max-width: theme( 'layout.contentSize' );
+			}
+
+			padding-bottom: calc(1.5rem * 2);
+
+			&::before {
+				@apply absolute w-full h-full bg-base top-0 left-0 -z-10;
+				content: '';
+			}
+
+			@screen max-tablet-portrait {
+				@apply px-16;
+			}
+
+		}
+	}
+}
