@@ -60,7 +60,7 @@
 	li.bbp-body {
 		@apply grid;
 
-		ul.forum {
+		ul.hentry {
 			@apply inline-block border-t-0 py-gap px-16 text-normal;
 
 			line-height: 1.5;
@@ -73,7 +73,8 @@
 				}
 			}
 
-			.bbp-forum-title {
+			.bbp-forum-title,
+			.bbp-topic-permalink {
 				@apply h2 text-3xl no-underline mb-16 block;
 
 				@screen max-tablet-portrait {
@@ -82,7 +83,7 @@
 			}
 
 			.bbp-forum-content,
-			.bbp-author-link {
+			.bbp-topic-meta {
 				@apply text-normal my-0;
 
 				@screen max-tablet-portrait {
