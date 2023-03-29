@@ -34,6 +34,8 @@
 	@apply container;
 
 	div.bbp-breadcrumb {
+		@apply mb-16;
+
 		p {
 			@apply text-normal;
 
@@ -55,6 +57,15 @@
 				}
 			}
 		}
+	}
+
+	p,
+	label {
+		@apply text-normal;
+	}
+
+	label {
+		@apply pb-8;
 	}
 
 	li.bbp-body {
@@ -98,10 +109,43 @@
 		}
 	}
 
+	.bbp-topic-form,
+	.bbp-reply-form {
+		.bbp-form {
+			legend,
+			.submit {
+				@apply text-normal;
+			}
+
+			.bbp-the-content {
+				@apply text-normal;
+
+				&:focus {
+					@apply border-t-0 rounded-t-none;
+				}
+			}
+
+			input[type='text'] {
+				height: 42px;
+			}
+
+			select {
+				@apply border-2 rounded-md border-gray-100;
+
+				height: 42px;
+
+				&:focus {
+					@apply outline outline-primary outline-offset-0 outline-2 border-gray-600;
+				}
+			}
+		}
+	}
+
 	.bbp-pagination {
 		.bbp-pagination-count {
 			@apply text-normal;
 		}
+
 		.bbp-pagination-links {
 			.page-numbers {
 				@apply p-4 no-underline leading-7 border-0 text-normal;
@@ -110,6 +154,29 @@
 					@apply font-bold bg-transparent;
 				}
 			}
+		}
+	}
+
+	#subscription-toggle,
+	#favorite-toggle {
+		@apply text-normal mb-16;
+	}
+
+	.bbp-template-notice {
+		@apply p-8 text-normal my-24;
+
+		li {
+			@apply text-normal;
+		}
+
+		&.info {
+			@apply bg-tertiary;
+		}
+	}
+
+	.bbp-replies {
+		.bbp-header {
+			@apply p-16 bg-gray-100 border-t-0;
 		}
 	}
 }
