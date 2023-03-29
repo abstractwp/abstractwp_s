@@ -97,4 +97,39 @@
 
 		}
 	}
+
+	.bbp-pagination {
+		.bbp-pagination-count {
+			@apply text-normal;
+		}
+		.bbp-pagination-links {
+			.page-numbers {
+				@apply p-4 no-underline leading-7 border-0 text-normal;
+
+				&.current {
+					@apply font-bold bg-transparent;
+				}
+			}
+		}
+	}
+}
+
+.buddypress {
+	.buddypress-wrap {
+		input[type=button],
+		input[type=reset],
+		input[type=submit] {
+			/* stylelint-disable */
+			@extend .button;
+			border-radius: 6px !important;
+			/* stylelint-enable */
+			line-height: 16px;
+		}
+	}
+}
+
+.buddypress-wrap {
+	#bbpress-forums {
+		@apply px-0;
+	}
 }
