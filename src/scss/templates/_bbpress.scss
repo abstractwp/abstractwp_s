@@ -205,6 +205,23 @@ body.buddypress article.page>.entry-header {
 			/* stylelint-enable */
 			line-height: 16px;
 		}
+
+		.select-wrap {
+			@apply border-none mr-10;
+
+			select {
+				@apply border-2 border-gray-100 border-solid;
+
+				height: 42px;
+				/* stylelint-disable */
+				border-radius: 6px !important;
+				/* stylelint-enable */
+
+				&:focus {
+					@apply outline outline-primary outline-offset-0 outline-2 border-gray-600;
+				}
+			}
+		}
 	}
 }
 
