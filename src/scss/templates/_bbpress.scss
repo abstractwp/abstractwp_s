@@ -1,4 +1,6 @@
-.bbpress.archive {
+.bbpress.archive,
+.bbpress.single,
+.buddypress, {
 	.site-main {
 
 		&.has-padding-top {
@@ -9,8 +11,11 @@
 		.entry-header {
 			@apply relative pt-48 mb-32;
 
+			max-width: 100%;;
+
 			.entry-title {
-				@apply mx-auto m-0 p-0;
+				@apply mx-auto m-0 p-0 text-center;
+
 				max-width: theme( 'layout.contentSize' );
 			}
 
@@ -29,6 +34,14 @@
 	}
 }
 
+// Override buddypress styles.
+body.buddypress article.page>.entry-header {
+	@apply py-48 mb-32;
+
+	&:not(.alignwide):not(.alignfull) .entry-title {
+		@apply text-black;
+	}
+}
 
 #bbpress-forums {
 	@apply container;
