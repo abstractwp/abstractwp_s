@@ -1,6 +1,10 @@
 .bbpress.archive,
 .bbpress.single,
-.buddypress, {
+.buddypress {
+	.site-header {
+		@apply border-0;
+	}
+
 	.site-main {
 
 		&.has-padding-top {
