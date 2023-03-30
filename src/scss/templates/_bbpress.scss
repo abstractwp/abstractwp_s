@@ -227,6 +227,34 @@ body.buddypress article.page>.entry-header {
 			}
 		}
 	}
+
+	&.activation {
+		.buddypress-wrap {
+			@apply mx-auto text-center;
+			max-width: theme( 'layout.contentSize' );
+
+			#activation-form {
+				label {
+					@apply mb-16;
+				}
+
+				input {
+					max-width: 300px;
+					height: 42px;
+
+					&[type='submit'] {
+						@apply bg-primary bg-opacity-50 text-contrast border-0 w-full;
+
+						&:hover,
+						&:focus,
+						&:active {
+							@apply bg-primary bg-opacity-100 text-base;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 .buddypress-wrap {
