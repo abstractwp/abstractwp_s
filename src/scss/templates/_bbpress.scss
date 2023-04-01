@@ -196,6 +196,42 @@ body.buddypress article.page>.entry-header {
 			@apply p-16 bg-gray-100 border-t-0;
 		}
 	}
+
+	.bbp-login-form {
+		fieldset.bbp-form {
+			@apply p-16;
+
+			input[type=password],
+			input[type=text],
+			select {
+				@apply px-12 py-10;
+
+				min-width: 300px;
+				height: inherit;
+
+				@screen max-tablet-portrait {
+					@apply w-full;
+				}
+			}
+		}
+		.bbp-submit-wrapper {
+			@apply text-left float-left;
+
+			@screen max-tablet-portrait {
+				@apply w-full;
+			}
+
+			.button {
+				@apply text-normal;
+
+				min-width: 150px;
+
+				@screen max-tablet-portrait {
+					@apply w-full;
+				}
+			}
+		}
+	}
 }
 
 .buddypress {
@@ -223,6 +259,34 @@ body.buddypress article.page>.entry-header {
 
 				&:focus {
 					@apply outline outline-primary outline-offset-0 outline-2 border-gray-600;
+				}
+			}
+		}
+	}
+
+	&.activation {
+		.buddypress-wrap {
+			@apply mx-auto text-center;
+			max-width: theme( 'layout.contentSize' );
+
+			#activation-form {
+				label {
+					@apply mb-16;
+				}
+
+				input {
+					max-width: 300px;
+					height: 42px;
+
+					&[type='submit'] {
+						@apply bg-primary bg-opacity-50 text-contrast border-0 w-full;
+
+						&:hover,
+						&:focus,
+						&:active {
+							@apply bg-primary bg-opacity-100 text-base;
+						}
+					}
 				}
 			}
 		}
