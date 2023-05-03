@@ -196,8 +196,9 @@ body.buddypress article.page>.entry-header {
 			@apply p-16 bg-gray-100 border-t-0;
 		}
 	}
-
 	.bbp-login-form {
+		@apply pb-32;
+
 		fieldset.bbp-form {
 			@apply p-16;
 
@@ -209,26 +210,42 @@ body.buddypress article.page>.entry-header {
 				min-width: 300px;
 				height: inherit;
 
-				@screen max-tablet-portrait {
-					@apply w-full;
-				}
 			}
 		}
-		.bbp-submit-wrapper {
-			@apply text-left float-left;
+	}
+}
+
+.bbp-login-form {
+	@apply pb-0;
+
+	fieldset.bbp-form {
+		input[type=password],
+		input[type=text],
+		select {
+			@apply px-12 py-10;
+
+			min-width: 300px;
+			height: inherit;
 
 			@screen max-tablet-portrait {
 				@apply w-full;
 			}
+		}
+	}
+	.bbp-submit-wrapper {
+		@apply text-left float-left;
 
-			.button {
-				@apply text-normal;
+		@screen max-tablet-portrait {
+			@apply w-full;
+		}
 
-				min-width: 150px;
+		.button {
+			@apply text-normal;
 
-				@screen max-tablet-portrait {
-					@apply w-full;
-				}
+			min-width: 200px;
+
+			@screen max-tablet-portrait {
+				@apply w-full;
 			}
 		}
 	}
