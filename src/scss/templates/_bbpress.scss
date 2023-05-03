@@ -179,18 +179,6 @@ body.buddypress article.page>.entry-header {
 		@apply text-normal mb-16;
 	}
 
-	.bbp-template-notice {
-		@apply p-8 text-normal my-24;
-
-		li {
-			@apply text-normal;
-		}
-
-		&.info {
-			@apply bg-tertiary;
-		}
-	}
-
 	.bbp-replies {
 		.bbp-header {
 			@apply p-16 bg-gray-100 border-t-0;
@@ -212,6 +200,22 @@ body.buddypress article.page>.entry-header {
 
 			}
 		}
+	}
+}
+
+div.bbp-template-notice {
+	@apply p-8 text-normal my-24;
+
+	ul {
+		@apply mb-0;
+	}
+
+	li {
+		@apply text-normal;
+	}
+
+	&.info {
+		@apply bg-tertiary;
 	}
 }
 
