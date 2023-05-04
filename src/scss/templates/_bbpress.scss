@@ -50,6 +50,14 @@ body.buddypress article.page>.entry-header {
 #bbpress-forums {
 	@apply container;
 
+	@screen tablet-landscape {
+		max-width: 100%;
+	}
+
+	@screen desktop-min {
+		max-width: theme( 'screens.desktop' );
+	}
+
 	div.bbp-breadcrumb {
 		@apply mb-16;
 
@@ -67,10 +75,14 @@ body.buddypress article.page>.entry-header {
 
 		.forum-titles {
 			li {
-				@apply h2 text-3xl my-8;
+				@apply h2 text-normal my-8;
 
 				@screen max-tablet-portrait {
-					@apply text-normal;
+					@apply text-sm;
+				}
+
+				@screen desktop-min {
+					@apply text-3xl;
 				}
 			}
 		}
@@ -325,4 +337,14 @@ div.bbp-template-notice {
 
 	padding-bottom: calc( theme( 'spacing.gap' ) * 2 );
 	padding-top: calc( theme( 'spacing.gap' ) * 2 );
+}
+
+.bbp-search-form {
+	/* stylelint-disable */
+	#bbp_search_submit {
+		@screen max-tablet-portrait {
+			@apply px-16 py-12;
+		}
+	}
+	/* stylelint-enable */
 }
