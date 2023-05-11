@@ -14,7 +14,7 @@ use function WebDevStudios\wd_s\print_social_network_links;
 use function WebDevStudios\wd_s\print_mobile_menu;
 use function WebDevStudios\wd_s\custom_widget_area_class;
 
-if ( is_active_sidebar( 'sidebar-3' ) ) {
+if ( is_active_sidebar( 'sidebar-3' ) && ! is_page_template( 'page-templates/no-footer.php' ) ) {
 	?>
 	<aside class="footer-widgets widget-area">
 			<div class="footer-widgets-wrap<?php echo esc_html( custom_widget_area_class( 'sidebar-3' ) ); ?>">
