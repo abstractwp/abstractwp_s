@@ -1,5 +1,6 @@
 <?php
 /**
+ * // phpcs:ignoreFile.
  * The header for our theme.
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
@@ -8,7 +9,6 @@
  *
  * @package wd_s
  */
-
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -30,7 +30,7 @@
 
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'wd_s' ); ?></a>
 
-	<header class="site-header">
+	<header class="site-header sticky-header">
 
 		<div class="site-header-content">
 

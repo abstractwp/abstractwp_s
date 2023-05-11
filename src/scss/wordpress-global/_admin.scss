@@ -163,3 +163,22 @@
 		margin-bottom: 1rem;
 	}
 }
+
+// For adminbar.
+body.admin-bar {
+	.site-header.sticky-header {
+		top: 32px;
+	}
+
+	@media screen and ( max-width: 782px ) {
+		.site-header.sticky-header {
+			top: 46px;
+		}
+	}
+
+	@screen max-tablet-portrait {
+		#wpadminbar {
+			@apply fixed;
+		}
+	}
+}

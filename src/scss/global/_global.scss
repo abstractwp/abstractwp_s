@@ -30,6 +30,16 @@ pre {
 .site-main {
 	@apply pb-32;
 
+	margin-top: 63px; /* sticky header height */
+
+	@screen wp-admin-bar {
+		margin-top: 67px;
+	}
+
+	@screen desktop {
+		margin-top: 72px;
+	}
+
 	> .entry-header,
 	> .page-header,
 	&.no-header-footer,
