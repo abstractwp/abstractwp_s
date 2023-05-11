@@ -10,11 +10,15 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+	<?php
+		if ( function_exists( 'bp_is_user' ) && ! bp_is_user() ) :
+	?>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-
+	<?php
+		endif;
+	?>
 	<div class="entry-content">
 		<?php
 		the_content();
