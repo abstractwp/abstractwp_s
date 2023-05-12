@@ -59,7 +59,11 @@ pre {
 		}
 	}
 
-	min-height: calc( 100vh - 495px );
+	min-height: calc( 100vh - 463px );
+
+	.admin-bar & {
+		min-height: calc( 100vh - 495px );
+	}
 }
 
 .page-template-no-title {
