@@ -58,6 +58,8 @@ pre {
 			@apply px-16;
 		}
 	}
+
+	min-height: calc( 100vh - 495px );
 }
 
 .page-template-no-title {

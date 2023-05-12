@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 .off-canvas {
 	&-container {
-		@apply bg-base text-contrast inset-y-0 h-full fixed w-full;
+		@apply bg-base text-contrast inset-y-0 h-full fixed w-full pt-48;
 
 		overflow-y: auto;
 		right: -100%;
