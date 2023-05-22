@@ -310,6 +310,10 @@
 			}
 		}
 
+		.entry-content .wp-block-image {
+			@apply mb-gap;
+		}
+
 		.entry-content,
 		.entry-footer {
 			padding-bottom: calc( theme( 'spacing.gap' ) * 2 );
