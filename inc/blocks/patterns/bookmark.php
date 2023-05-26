@@ -245,5 +245,5 @@ register_block_pattern(
 		<!-- /wp:button --></div>
 		<!-- /wp:buttons --></div>
 		<!-- /wp:group -->',
-		)
-	);
+	)
+);
