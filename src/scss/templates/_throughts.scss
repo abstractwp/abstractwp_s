@@ -4,10 +4,54 @@
 
 		.throughts-right {
 			@apply grid grid-cols-2 gap-32;
+
+			align-self: flex-start;
+
+			.throught {
+				.entry-header {
+					@apply px-12 border border-contrast;
+
+					.entry-title {
+						@apply mt-16 mb-8 text-2xl font-normal;
+					}
+
+					.post-author {
+						@apply text-sm mb-16 block;
+					}
+				}
+
+				.entry-content {
+					@apply px-12 py-16 border border-t-0 border-contrast;
+
+					.excerpt {
+						@apply mb-24;
+					}
+
+					.readmore {
+						@apply float-right;
+					}
+				}
+
+				.entry-footer {
+					@apply px-12 mt-0 w-full border border-t-0 border-contrast inline-flex;
+
+					.date {
+						@apply pr-12 border-r border-contrast;
+					}
+				}
+
+				a {
+					@apply no-underline;
+				}
+			}
 		}
 
 		.throughts-left {
 			.throught {
+				@apply sticky;
+
+				top: 140px;
+
 				.entry-header {
 					.wp-post-image,
 					.placeholder-img {
