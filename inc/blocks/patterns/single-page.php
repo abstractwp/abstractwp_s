@@ -9,6 +9,472 @@
 use function WebDevStudios\wd_s\get_pattern_asset;
 
 register_block_pattern(
+	'wd_s/single-page-post-1',
+	array(
+		'title'      => _x( 'Single Page', 'Block pattern category', 'wd_s' ) . ' - Post 1',
+		'categories' => array( 'page-single' ),
+		'content'    => '<!-- wp:spacer {"height":"50px"} -->
+		<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</strong></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+		<figure class="wp-block-image size-full"><img src="https://collectivewp.com/wp-content/uploads/2023/03/Screenshot-2023-03-28-at-2.47.03-PM.png" alt=""/></figure>
+		<!-- /wp:image -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+		<figure class="wp-block-image size-large"><img src="https://collectivewp.com/wp-content/uploads/2023/03/Gable-dashboard-1024x652.png" alt=""/></figure>
+		<!-- /wp:image -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+		<figure class="wp-block-image size-full"><img src="https://collectivewp.com/wp-content/uploads/2023/04/Screenshot-2023-04-18-at-1.10.13-PM.png" alt=""/></figure>
+		<!-- /wp:image -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+		<figure class="wp-block-image size-large"><img src="https://collectivewp.com/wp-content/uploads/2023/03/L1000722-1024x576.jpg" alt=""/></figure>
+		<!-- /wp:image -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:spacer {"height":"50px"} -->
+		<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+
+		<!-- wp:group {"layout":{"type":"constrained"}} -->
+		<div class="wp-block-group"><!-- wp:image {"align":"left","sizeSlug":"thumbnail","linkDestination":"none","className":"is-style-rounded"} -->
+		<figure class="wp-block-image alignleft size-thumbnail is-style-rounded"><img src="https://collectivewp.com/wp-content/uploads/2023/04/Andreas_Hoffbauer-150x150.jpeg" alt=""/></figure>
+		<!-- /wp:image --></div>
+		<!-- /wp:group -->
+
+		<!-- wp:post-author-name /-->
+
+		<!-- wp:paragraph -->
+		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->',
+	)
+);
+
+register_block_pattern(
+	'wd_s/single-page-post-2',
+	array(
+		'title'      => _x( 'Single Page', 'Block pattern category', 'wd_s' ) . ' - Post 2',
+		'categories' => array( 'page-single' ),
+		'content'    => '<!-- wp:spacer {"height":"50px"} -->
+		<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:group {"backgroundColor":"tertiary","layout":{"inherit":true,"type":"constrained"}} -->
+		<div class="wp-block-group has-tertiary-background-color has-background"><!-- wp:heading -->
+		<h2 class="wp-block-heading">What to consider</h2>
+		<!-- /wp:heading -->
+
+		<!-- wp:columns {"align":"wide","className":"tw-cols-stack-md-2"} -->
+		<div class="wp-block-columns alignwide tw-cols-stack-md-2"><!-- wp:column -->
+		<div class="wp-block-column"><!-- wp:paragraph -->
+		<p><strong>01.</strong></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem ipsum dolor sit amet, commodo erat adipiscing.</p>
+		<!-- /wp:paragraph --></div>
+		<!-- /wp:column -->
+
+		<!-- wp:column -->
+		<div class="wp-block-column"><!-- wp:paragraph -->
+		<p><strong>02.</strong></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Integer enim risus, suscipit eu iaculis sed metus.</p>
+		<!-- /wp:paragraph --></div>
+		<!-- /wp:column --></div>
+		<!-- /wp:columns -->
+
+		<!-- wp:columns {"align":"wide","className":"tw-cols-stack-md-2"} -->
+		<div class="wp-block-columns alignwide tw-cols-stack-md-2"><!-- wp:column -->
+		<div class="wp-block-column"><!-- wp:paragraph -->
+		<p><strong>03.</strong></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem ipsum dolor sit amet, commodo erat adipiscing.</p>
+		<!-- /wp:paragraph --></div>
+		<!-- /wp:column -->
+
+		<!-- wp:column -->
+		<div class="wp-block-column"><!-- wp:paragraph -->
+		<p><strong>04.</strong></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Integer enim risus, suscipit eu iaculis sed metus.</p>
+		<!-- /wp:paragraph --></div>
+		<!-- /wp:column --></div>
+		<!-- /wp:columns --></div>
+		<!-- /wp:group -->
+
+		<!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"backgroundColor":"gray-100","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group has-gray-100-background-color has-background" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:media-text {"mediaPosition":"right","mediaId":644,"mediaLink":"https://collectivewp.com/access-the-workplace-solution-ecosystem/ecosystem/","mediaType":"image","className":"tw-stack-md tw-media-bottom"} -->
+		<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile tw-stack-md tw-media-bottom"><div class="wp-block-media-text__content"><!-- wp:paragraph -->
+		<p><strong>Our pick</strong><a href="https://www.nytimes.com/wirecutter/out/link/36200/158513/4/142200?merchant=Amazon" target="_blank" rel="noreferrer noopener"></a></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.1"}}} -->
+		<h3 class="wp-block-heading" style="line-height:1.1">Product title 1</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem ipsum dolor sit amet, commodo erat adipiscing elit. Sed do eiusmod ut tempor incididunt ut labore.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"30px"}}}} -->
+		<div class="wp-block-buttons" style="margin-top:30px"><!-- wp:button -->
+		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">$1,299*&nbsp;from&nbsp;Amazon</a></div>
+		<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://collectivewp.com/wp-content/uploads/2023/04/Ecosystem-1024x1024.png" alt="" class="wp-image-644 size-full"/></figure></div>
+		<!-- /wp:media-text --></div>
+		<!-- /wp:group -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"backgroundColor":"gray-100","layout":{"inherit":true,"type":"constrained"}} -->
+		<div class="wp-block-group has-gray-100-background-color has-background" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:media-text {"mediaPosition":"right","mediaId":695,"mediaLink":"https://collectivewp.com/issue-12/futureofjobs/","mediaType":"image","className":"tw-stack-md tw-media-bottom"} -->
+		<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile tw-stack-md tw-media-bottom"><div class="wp-block-media-text__content"><!-- wp:paragraph -->
+		<p><strong>Runner-up</strong><a href="https://www.nytimes.com/wirecutter/out/link/49062/178063/4/142201?merchant=Dick%27s%20Sporting%20Goods" target="_blank" rel="noreferrer noopener"></a></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.1"}}} -->
+		<h3 class="wp-block-heading" style="line-height:1.1">Product title 2</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem ipsum dolor sit amet, commodo erat adipiscing elit. Sed do eiusmod ut tempor incididunt ut labore.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"30px"}}}} -->
+		<div class="wp-block-buttons" style="margin-top:30px"><!-- wp:button -->
+		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">$2,299*&nbsp;from&nbsp;Amazon</a></div>
+		<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://collectivewp.com/wp-content/uploads/2023/05/FutureofJobs-1024x1024.png" alt="" class="wp-image-695 size-full"/></figure></div>
+		<!-- /wp:media-text --></div>
+		<!-- /wp:group -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"backgroundColor":"gray-100","layout":{"inherit":true,"type":"constrained"}} -->
+		<div class="wp-block-group has-gray-100-background-color has-background" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:media-text {"mediaPosition":"right","mediaId":579,"mediaLink":"https://collectivewp.com/issue-9/grid_0/","mediaType":"image","className":"tw-stack-md tw-media-bottom"} -->
+		<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile tw-stack-md tw-media-bottom"><div class="wp-block-media-text__content"><!-- wp:paragraph -->
+		<p><strong>Upgrade pick</strong></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.1"}}} -->
+		<h3 class="wp-block-heading" style="line-height:1.1">Product title 3</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem ipsum dolor sit amet, commodo erat adipiscing elit. Sed do eiusmod ut tempor incididunt ut labore.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"30px"}}}} -->
+		<div class="wp-block-buttons" style="margin-top:30px"><!-- wp:button -->
+		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">$3,299*&nbsp;from&nbsp;Amazon</a></div>
+		<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://collectivewp.com/wp-content/uploads/2023/04/grid_0-1024x1024.webp" alt="" class="wp-image-579 size-full"/></figure></div>
+		<!-- /wp:media-text --></div>
+		<!-- /wp:group -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"backgroundColor":"gray-100","layout":{"inherit":true,"type":"constrained"}} -->
+		<div class="wp-block-group has-gray-100-background-color has-background" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:media-text {"mediaPosition":"right","mediaId":579,"mediaLink":"https://collectivewp.com/issue-9/grid_0/","mediaType":"image","className":"tw-stack-md tw-media-bottom"} -->
+		<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile tw-stack-md tw-media-bottom"><div class="wp-block-media-text__content"><!-- wp:paragraph -->
+		<p><strong><strong>Also great</strong></strong></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.1"}}} -->
+		<h3 class="wp-block-heading" style="line-height:1.1">Product title 4</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem ipsum dolor sit amet, commodo erat adipiscing elit. Sed do eiusmod ut tempor incididunt ut labore.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"30px"}}}} -->
+		<div class="wp-block-buttons" style="margin-top:30px"><!-- wp:button -->
+		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">$3,299*&nbsp;from&nbsp;Amazon</a></div>
+		<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://collectivewp.com/wp-content/uploads/2023/04/grid_0-1024x1024.webp" alt="" class="wp-image-579 size-full"/></figure></div>
+		<!-- /wp:media-text --></div>
+		<!-- /wp:group -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:spacer {"height":"50px"} -->
+		<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+
+		<!-- wp:heading -->
+		<h2 class="wp-block-heading">Everything we recommend</h2>
+		<!-- /wp:heading -->
+
+		<!-- wp:group {"align":"full","backgroundColor":"base","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group alignfull has-base-background-color has-background"><!-- wp:columns {"align":"wide"} -->
+		<div class="wp-block-columns alignwide"><!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|16","right":"var:preset|spacing|16","bottom":"var:preset|spacing|16","left":"var:preset|spacing|16"}}},"backgroundColor":"tertiary"} -->
+		<div class="wp-block-column has-tertiary-background-color has-background" style="padding-top:var(--wp--preset--spacing--16);padding-right:var(--wp--preset--spacing--16);padding-bottom:var(--wp--preset--spacing--16);padding-left:var(--wp--preset--spacing--16)"><!-- wp:paragraph -->
+		<p><strong>Our pick</strong></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:image {"align":"center","id":644,"sizeSlug":"medium","linkDestination":"none"} -->
+		<figure class="wp-block-image aligncenter size-medium"><img src="https://collectivewp.com/wp-content/uploads/2023/04/Ecosystem-300x300.png" alt="" class="wp-image-644"/></figure>
+		<!-- /wp:image -->
+
+		<!-- wp:heading {"level":3,"fontSize":"xl"} -->
+		<h3 class="wp-block-heading has-xl-font-size">Product title 1</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem ipsum dolor sit amet, commodo erat adipiscing elit. Sed do eiusmod ut tempor incididunt ut labore.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons"><!-- wp:button -->
+		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">$1,299*&nbsp;from&nbsp;Amazon</a></div>
+		<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|16","right":"var:preset|spacing|16","bottom":"var:preset|spacing|16","left":"var:preset|spacing|16"}}},"backgroundColor":"tertiary"} -->
+		<div class="wp-block-column has-tertiary-background-color has-background" style="padding-top:var(--wp--preset--spacing--16);padding-right:var(--wp--preset--spacing--16);padding-bottom:var(--wp--preset--spacing--16);padding-left:var(--wp--preset--spacing--16)"><!-- wp:paragraph -->
+		<p><strong>Runner-up</strong></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:image {"align":"center","id":695,"sizeSlug":"large","linkDestination":"none"} -->
+		<figure class="wp-block-image aligncenter size-large"><img src="https://collectivewp.com/wp-content/uploads/2023/05/FutureofJobs-1024x1024.png" alt="" class="wp-image-695"/></figure>
+		<!-- /wp:image -->
+
+		<!-- wp:heading {"level":3,"fontSize":"xl"} -->
+		<h3 class="wp-block-heading has-xl-font-size">Product title 2</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem ipsum dolor sit amet, commodo erat adipiscing elit. Sed do eiusmod ut tempor incididunt ut labore.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons"><!-- wp:button -->
+		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">$3,299*&nbsp;from&nbsp;Amazon</a></div>
+		<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|16","right":"var:preset|spacing|16","bottom":"var:preset|spacing|16","left":"var:preset|spacing|16"}}},"backgroundColor":"tertiary"} -->
+		<div class="wp-block-column has-tertiary-background-color has-background" style="padding-top:var(--wp--preset--spacing--16);padding-right:var(--wp--preset--spacing--16);padding-bottom:var(--wp--preset--spacing--16);padding-left:var(--wp--preset--spacing--16)"><!-- wp:paragraph -->
+		<p><strong>Upgrade pick</strong></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:image {"align":"center","id":579,"sizeSlug":"large","linkDestination":"none"} -->
+		<figure class="wp-block-image aligncenter size-large"><img src="https://collectivewp.com/wp-content/uploads/2023/04/grid_0-1024x1024.webp" alt="" class="wp-image-579"/></figure>
+		<!-- /wp:image -->
+
+		<!-- wp:heading {"level":3,"fontSize":"xl"} -->
+		<h3 class="wp-block-heading has-xl-font-size">Product title 3</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem ipsum dolor sit amet, commodo erat adipiscing elit. Sed do eiusmod ut tempor incididunt ut labore.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons"><!-- wp:button -->
+		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">$3,299*&nbsp;from&nbsp;Amazon</a></div>
+		<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|16","right":"var:preset|spacing|16","bottom":"var:preset|spacing|16","left":"var:preset|spacing|16"}}},"backgroundColor":"tertiary"} -->
+		<div class="wp-block-column has-tertiary-background-color has-background" style="padding-top:var(--wp--preset--spacing--16);padding-right:var(--wp--preset--spacing--16);padding-bottom:var(--wp--preset--spacing--16);padding-left:var(--wp--preset--spacing--16)"><!-- wp:paragraph -->
+		<p><strong>Also great</strong></p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:image {"align":"center","id":597,"sizeSlug":"large","linkDestination":"none"} -->
+		<figure class="wp-block-image aligncenter size-large"><img src="https://collectivewp.com/wp-content/uploads/2023/04/Firefly_anoffice-building-in-pixar-style_art_94351-1024x1024.jpg" alt="" class="wp-image-597"/></figure>
+		<!-- /wp:image -->
+
+		<!-- wp:heading {"level":3,"fontSize":"xl"} -->
+		<h3 class="wp-block-heading has-xl-font-size">Product title 4</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem ipsum dolor sit amet, commodo erat adipiscing elit. Sed do eiusmod ut tempor incididunt ut labore.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons"><!-- wp:button -->
+		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">$1,299*&nbsp;from&nbsp;Amazon</a></div>
+		<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div>
+		<!-- /wp:column --></div>
+		<!-- /wp:columns --></div>
+		<!-- /wp:group -->
+
+		<!-- wp:spacer {"height":"50px"} -->
+		<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+
+		<!-- wp:heading -->
+		<h2 class="wp-block-heading">The research</h2>
+		<!-- /wp:heading -->
+
+		<!-- wp:list -->
+		<ul><!-- wp:list-item {"fontSize":"normal"} -->
+		<li class="has-normal-font-size"><a href="#how-our-picks-compare">How our picks compare</a></li>
+		<!-- /wp:list-item -->
+
+		<!-- wp:list-item {"fontSize":"normal"} -->
+		<li class="has-normal-font-size"><a href="#why-you-should-trust-us">Why you should trust us</a></li>
+		<!-- /wp:list-item --></ul>
+		<!-- /wp:list -->
+
+		<!-- wp:heading {"level":3} -->
+		<h3 class="wp-block-heading" id="how-our-picks-compare">How our picks compare</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:table {"className":"is-style-stripes"} -->
+		<figure class="wp-block-table is-style-stripes"><table><thead><tr><th></th><th>Product title 1</th><th>Product title 2</th><th>Product title 3</th><th>Product title 4</th></tr></thead><tbody><tr><td>Function 1</td><td>xx</td><td>xxx</td><td>xxxx</td><td>xxxxx</td></tr><tr><td>Function 2</td><td>xx</td><td>xxx</td><td>xxxx</td><td>xxxxx</td></tr><tr><td>Function 3</td><td>xx</td><td>xxx</td><td>xxxx</td><td>xxxxx</td></tr><tr><td>Function 4</td><td>xx</td><td>xxx</td><td>xxxx</td><td>xxxxx</td></tr><tr><td>Function 5</td><td>xx</td><td>xxx</td><td>xxxx</td><td>xxxxx</td></tr><tr><td>Function 6</td><td>xx</td><td>xxx</td><td>xxxx</td><td>xxxxx</td></tr></tbody></table></figure>
+		<!-- /wp:table -->
+
+		<!-- wp:heading {"level":3} -->
+		<h3 class="wp-block-heading" id="why-you-should-trust-us">Why you should trust us</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:paragraph -->
+		<p></p>
+		<!-- /wp:paragraph -->',
+	)
+);
+
+register_block_pattern(
 	'wd_s/single-page-1',
 	array(
 		'title'      => _x( 'Single Page', 'Block pattern category', 'wd_s' ) . ' 1',
