@@ -25,12 +25,11 @@ get_header(); ?>
 
 			if ( 0 === $wd_s_i ) {
 				echo '<div class="throughts-left">';
-				set_query_var( 'is_first_throught', true );
+				get_template_part( 'template-parts/content-throughts-big' );
 			} else {
-				set_query_var( 'is_first_throught', false );
+				get_template_part( 'template-parts/content-throughts-small' );
 			}
 
-			get_template_part( 'template-parts/content-throughts' );
 
 			if ( 0 === $wd_s_i ) {
 				echo '</div><div class="throughts-right">';

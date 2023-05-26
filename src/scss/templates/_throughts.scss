@@ -1,0 +1,73 @@
+.category .site-main {
+	.throughts-container {
+		@apply grid grid-cols-2 gap-48 py-48;
+
+		.throughts-right {
+			@apply grid grid-cols-2 gap-32;
+		}
+
+		.throughts-left {
+			.throught {
+				.entry-header {
+					.wp-post-image,
+					.placeholder-img {
+						min-height: 450px;
+						max-height: 450px;
+					}
+				}
+
+				.entry-content {
+					@apply p-32;
+
+					.meta-desc {
+						@apply float-left;
+
+						width: 90%;
+
+						.excerpt {
+							@apply inline-block;
+						}
+
+						.readmore {
+							@apply float-right no-underline;
+						}
+					}
+
+					.date {
+						@apply px-6 py-2 bg-white border-contrast border;
+					}
+
+					.entry-title {
+						@apply border-contrast border-b my-16 text-3xl py-16;
+
+						a {
+							@apply no-underline;
+						}
+					}
+
+					.post-author {
+						@apply block border-contrast border-t border-b my-16 py-4;
+
+						a {
+							@apply no-underline;
+						}
+					}
+				}
+
+				&.pbg-secondary {
+					.entry-title,
+					.meta-desc {
+						@apply text-gray-100;
+					}
+
+					.entry-content {
+						.entry-title,
+						.post-author {
+							@apply border-gray-100;
+						}
+					}
+				}
+			}
+		}
+	}
+}
