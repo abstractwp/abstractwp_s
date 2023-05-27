@@ -3,7 +3,7 @@
  * The template for displaying archive pages.
  *
  * @package    wd_s
- * @subpackage theme
+ * @subpackage throughts
  * @author     Thong Dang
  *
  * @link https://codex.wordpress.org/Template_Hierarchy

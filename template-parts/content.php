@@ -27,6 +27,12 @@ use function WebDevStudios\wd_s\get_theme_colors;
 				<div class="entry-meta">
 					<?php print_post_date(); ?>
 					<?php print_post_author(); ?>
+					<?php
+					$wd_s_avatar = get_avatar( get_the_author_meta( 'ID' ), 72 );
+					if ( has_category( 'throughts' ) && $wd_s_avatar ) {
+						echo '<div class="avatar-container"><div class="avatar-bubble-outer"><div class="avatar-bubble">' . $wd_s_avatar . '</div></div></div>'; // phpcs:ignore.
+					}
+					?>
 				</div><!-- .entry-meta -->
 				<?php
 				the_post_thumbnail( 'full' );
