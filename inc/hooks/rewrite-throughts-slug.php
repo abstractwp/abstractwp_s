@@ -1,9 +1,9 @@
 <?php
 /**
- * Adds custom classes to the array of body classes.
+ * Rewrite url for throughts category.
  *
  * @package    wd_s
- * @subpackage theme
+ * @subpackage throughts
  * @author     Thong Dang
  */
 

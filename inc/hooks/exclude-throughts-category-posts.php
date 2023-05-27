@@ -3,7 +3,7 @@
  * Remove throughts post from blog archive page.
  *
  * @package    wd_s
- * @subpackage theme
+ * @subpackage throughts
  * @author     Thong Dang
  */
 
