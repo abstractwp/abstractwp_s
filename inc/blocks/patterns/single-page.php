@@ -91,22 +91,6 @@ register_block_pattern(
 
 		<!-- wp:paragraph -->
 		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-		<!-- /wp:paragraph -->
-
-		<!-- wp:spacer {"height":"50px"} -->
-		<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-		<!-- /wp:spacer -->
-
-		<!-- wp:group {"layout":{"type":"constrained"}} -->
-		<div class="wp-block-group"><!-- wp:image {"align":"left","sizeSlug":"thumbnail","linkDestination":"none","className":"is-style-rounded"} -->
-		<figure class="wp-block-image alignleft size-thumbnail is-style-rounded"><img src="https://collectivewp.com/wp-content/uploads/2023/04/Andreas_Hoffbauer-150x150.jpeg" alt=""/></figure>
-		<!-- /wp:image --></div>
-		<!-- /wp:group -->
-
-		<!-- wp:post-author-name /-->
-
-		<!-- wp:paragraph -->
-		<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 		<!-- /wp:paragraph -->',
 	)
 );
