@@ -1,8 +1,8 @@
 .category .site-main {
-	.throughts-container {
+	.thoughts-container {
 		@apply grid grid-cols-1 gap-48 py-48;
 
-		.throughts-right {
+		.thoughts-right {
 			@apply grid grid-cols-1 gap-32;
 
 			@screen tablet-portrait {
@@ -54,11 +54,11 @@
 			}
 		}
 
-		.throughts-left {
+		.thoughts-left {
 			.throught {
 				@apply sticky;
 
-				top: 140px;
+				top: 120px;
 
 				.entry-header {
 					.wp-post-image,

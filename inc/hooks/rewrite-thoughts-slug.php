@@ -1,19 +1,19 @@
 <?php
 /**
- * Rewrite url for throughts category.
+ * Rewrite url for thoughts category.
  *
  * @package    wd_s
- * @subpackage throughts
+ * @subpackage thoughts
  * @author     Thong Dang
  */
 
 namespace WebDevStudios\wd_s;
 
 /**
- * Remove base category slug on throughts category.
+ * Remove base category slug on thoughts category.
  */
 function remove_category_base() {
-	$category_slug = 'throughts';
+	$category_slug = 'thoughts';
 
 	$category = get_category_by_slug( $category_slug );
 

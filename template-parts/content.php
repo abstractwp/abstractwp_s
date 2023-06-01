@@ -2,9 +2,11 @@
 /**
  * Template part for displaying posts.
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * @package    wd_s
+ * @subpackage theme
+ * @author     Thong Dang
  *
- * @package wd_s
+ * @link https://codex.wordpress.org/Template_Hierarchy
  */
 
 use function WebDevStudios\wd_s\print_post_date;
@@ -13,6 +15,7 @@ use function WebDevStudios\wd_s\print_entry_footer;
 use function WebDevStudios\wd_s\get_trimmed_excerpt;
 use function WebDevStudios\wd_s\get_dualtone_colors;
 use function WebDevStudios\wd_s\get_theme_colors;
+use function WebDevStudios\wd_s\print_time_to_read;
 
 ?>
 
@@ -21,16 +24,25 @@ use function WebDevStudios\wd_s\get_theme_colors;
 	<header class="entry-header">
 		<?php
 		if ( is_single() ) :
+			if ( has_category( 'thoughts' ) ) :
+				echo '<img src="' . esc_url( get_parent_theme_file_uri( '/build/images/thoughts-logo.png' ) ) . '" class="thoughts-logo" alt="thoughts" />';
+			endif;
 			the_title( '<h1 class="entry-title">', '</h1>' );
 			if ( 'post' === get_post_type() ) :
+				$wd_s_author_args = [];
+				if ( has_category( 'thoughts' ) ) {
+					$wd_s_author_args['author_text'] = esc_html__( 'Written by', 'wd_s' );
+				}
 				?>
 				<div class="entry-meta">
 					<?php print_post_date(); ?>
-					<?php print_post_author(); ?>
+					<?php print_post_author( $wd_s_author_args ); ?>
 					<?php
 					$wd_s_avatar = get_avatar( get_the_author_meta( 'ID' ), 72 );
-					if ( has_category( 'throughts' ) && $wd_s_avatar ) {
+					if ( has_category( 'thoughts' ) && $wd_s_avatar ) {
 						echo '<div class="avatar-container"><div class="avatar-bubble-outer"><div class="avatar-bubble">' . $wd_s_avatar . '</div></div></div>'; // phpcs:ignore.
+
+						print_time_to_read( get_the_content() );
 					}
 					?>
 				</div><!-- .entry-meta -->
@@ -91,7 +103,16 @@ use function WebDevStudios\wd_s\get_theme_colors;
 
 	<footer class="entry-footer">
 		<?php
-		print_entry_footer();
+		if ( has_category( 'thoughts' ) ) :
+			$wd_s_author_desc = get_the_author_meta( 'description' );
+
+			if ( '' !== $wd_s_author_desc ) :
+				echo '<div class="author-box"><strong>' . esc_html( get_the_author() ) . '</strong>';
+				echo '<p>' . esc_html( get_the_author_meta( 'description' ) ) . '</p></div>';
+			endif;
+		else :
+			print_entry_footer();
+		endif;
 		if ( 'post' === get_post_type() && ! is_single() ) :
 			?>
 			<div class="entry-meta">
