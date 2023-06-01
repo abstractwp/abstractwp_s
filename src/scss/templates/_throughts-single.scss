@@ -58,5 +58,9 @@
 				margin-left: 92px;
 			}
 		}
+
+		.author-box {
+			@apply p-16 border-2 rounded-md border-gray-100;
+		}
 	}
 }

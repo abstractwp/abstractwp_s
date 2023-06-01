@@ -103,7 +103,16 @@ use function WebDevStudios\wd_s\print_time_to_read;
 
 	<footer class="entry-footer">
 		<?php
-		print_entry_footer();
+		if ( has_category( 'throughts' ) ) :
+			$wd_s_author_desc = get_the_author_meta( 'description' );
+
+			if ( '' !== $wd_s_author_desc ) :
+				echo '<div class="author-box"><strong>' . esc_html( get_the_author() ) . '</strong>';
+				echo '<p>' . esc_html( get_the_author_meta( 'description' ) ) . '</p></div>';
+			endif;
+		else :
+			print_entry_footer();
+		endif;
 		if ( 'post' === get_post_type() && ! is_single() ) :
 			?>
 			<div class="entry-meta">
