@@ -2,9 +2,11 @@
 /**
  * Template part for displaying posts.
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * @package    wd_s
+ * @subpackage theme
+ * @author     Thong Dang
  *
- * @package wd_s
+ * @link https://codex.wordpress.org/Template_Hierarchy
  */
 
 use function WebDevStudios\wd_s\print_post_date;
@@ -21,6 +23,9 @@ use function WebDevStudios\wd_s\get_theme_colors;
 	<header class="entry-header">
 		<?php
 		if ( is_single() ) :
+			if ( has_category( 'throughts' ) ) :
+				echo '<img src="' . esc_url( get_parent_theme_file_uri( '/build/images/throughts-logo.png' ) ) . '" class="throughts-logo" alt="throughts" />';
+			endif;
 			the_title( '<h1 class="entry-title">', '</h1>' );
 			if ( 'post' === get_post_type() ) :
 				?>

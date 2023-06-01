@@ -30,3 +30,8 @@
 		@apply rounded-full;
 	}
 }
+
+.throughts-logo {
+	@apply mx-auto px-0 mb-40 w-full;
+	max-width: theme( 'layout.contentSize' );
+}
