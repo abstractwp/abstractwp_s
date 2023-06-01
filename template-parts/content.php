@@ -24,13 +24,13 @@ use function WebDevStudios\wd_s\print_time_to_read;
 	<header class="entry-header">
 		<?php
 		if ( is_single() ) :
-			if ( has_category( 'throughts' ) ) :
-				echo '<img src="' . esc_url( get_parent_theme_file_uri( '/build/images/throughts-logo.png' ) ) . '" class="throughts-logo" alt="throughts" />';
+			if ( has_category( 'thoughts' ) ) :
+				echo '<img src="' . esc_url( get_parent_theme_file_uri( '/build/images/thoughts-logo.png' ) ) . '" class="thoughts-logo" alt="thoughts" />';
 			endif;
 			the_title( '<h1 class="entry-title">', '</h1>' );
 			if ( 'post' === get_post_type() ) :
 				$wd_s_author_args = [];
-				if ( has_category( 'throughts' ) ) {
+				if ( has_category( 'thoughts' ) ) {
 					$wd_s_author_args['author_text'] = esc_html__( 'Written by', 'wd_s' );
 				}
 				?>
@@ -39,7 +39,7 @@ use function WebDevStudios\wd_s\print_time_to_read;
 					<?php print_post_author( $wd_s_author_args ); ?>
 					<?php
 					$wd_s_avatar = get_avatar( get_the_author_meta( 'ID' ), 72 );
-					if ( has_category( 'throughts' ) && $wd_s_avatar ) {
+					if ( has_category( 'thoughts' ) && $wd_s_avatar ) {
 						echo '<div class="avatar-container"><div class="avatar-bubble-outer"><div class="avatar-bubble">' . $wd_s_avatar . '</div></div></div>'; // phpcs:ignore.
 
 						print_time_to_read( get_the_content() );
@@ -103,7 +103,7 @@ use function WebDevStudios\wd_s\print_time_to_read;
 
 	<footer class="entry-footer">
 		<?php
-		if ( has_category( 'throughts' ) ) :
+		if ( has_category( 'thoughts' ) ) :
 			$wd_s_author_desc = get_the_author_meta( 'description' );
 
 			if ( '' !== $wd_s_author_desc ) :

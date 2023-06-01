@@ -3,7 +3,7 @@
  * The template for displaying archive pages.
  *
  * @package    wd_s
- * @subpackage throughts
+ * @subpackage thoughts
  * @author     Thong Dang
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
@@ -16,7 +16,7 @@ get_header(); ?>
 
 <main id="main" class="<?php echo esc_attr( main_classes( [] ) ); ?>">
 	<?php if ( have_posts() ) : ?>
-	<div class="container throughts-container">
+	<div class="container thoughts-container">
 		<?php
 			/* Start the Loop */
 		$wd_s_i = 0;
@@ -24,15 +24,15 @@ get_header(); ?>
 			the_post();
 
 			if ( 0 === $wd_s_i ) {
-				echo '<div class="throughts-left">';
-				get_template_part( 'template-parts/content-throughts-big' );
+				echo '<div class="thoughts-left">';
+				get_template_part( 'template-parts/content-thoughts-big' );
 			} else {
-				get_template_part( 'template-parts/content-throughts-small' );
+				get_template_part( 'template-parts/content-thoughts-small' );
 			}
 
 
 			if ( 0 === $wd_s_i ) {
-				echo '</div><div class="throughts-right">';
+				echo '</div><div class="thoughts-right">';
 			}
 
 			$wd_s_i ++;
