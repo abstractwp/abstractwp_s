@@ -13,13 +13,11 @@
 }
 
 .avatar-container {
-	@apply w-full relative h-76 mt-16;
+	@apply w-76 absolute top-0 left-0 h-76;
 }
 
 .avatar-bubble-outer {
 	@apply absolute;
-
-	left: calc( 50% - 36px );
 }
 
 .avatar-bubble {
@@ -34,4 +32,31 @@
 .throughts-logo {
 	@apply mx-auto px-0 mb-40 w-full;
 	max-width: theme( 'layout.contentSize' );
+}
+
+.single-post {
+	article.category-throughts {
+		.entry-title {
+			@apply text-left;
+		}
+
+		.entry-meta {
+			@apply mx-auto text-left w-full relative;
+
+			max-width: theme( 'layout.contentSize' );
+			min-height: 80px;
+
+			.avatar-container {
+				@apply float-left;
+			}
+
+			.posted-on,
+			.post-author,
+			.post-time-to-read {
+				@apply block;
+
+				margin-left: 92px;
+			}
+		}
+	}
 }

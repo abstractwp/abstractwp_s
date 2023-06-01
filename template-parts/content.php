@@ -15,6 +15,7 @@ use function WebDevStudios\wd_s\print_entry_footer;
 use function WebDevStudios\wd_s\get_trimmed_excerpt;
 use function WebDevStudios\wd_s\get_dualtone_colors;
 use function WebDevStudios\wd_s\get_theme_colors;
+use function WebDevStudios\wd_s\print_time_to_read;
 
 ?>
 
@@ -28,14 +29,20 @@ use function WebDevStudios\wd_s\get_theme_colors;
 			endif;
 			the_title( '<h1 class="entry-title">', '</h1>' );
 			if ( 'post' === get_post_type() ) :
+				$wd_s_author_args = [];
+				if ( has_category( 'throughts' ) ) {
+					$wd_s_author_args['author_text'] = esc_html__( 'Written by', 'wd_s' );
+				}
 				?>
 				<div class="entry-meta">
 					<?php print_post_date(); ?>
-					<?php print_post_author(); ?>
+					<?php print_post_author( $wd_s_author_args ); ?>
 					<?php
 					$wd_s_avatar = get_avatar( get_the_author_meta( 'ID' ), 72 );
 					if ( has_category( 'throughts' ) && $wd_s_avatar ) {
 						echo '<div class="avatar-container"><div class="avatar-bubble-outer"><div class="avatar-bubble">' . $wd_s_avatar . '</div></div></div>'; // phpcs:ignore.
+
+						print_time_to_read( get_the_content() );
 					}
 					?>
 				</div><!-- .entry-meta -->
