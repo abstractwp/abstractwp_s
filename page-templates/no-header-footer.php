@@ -30,8 +30,6 @@ use function WebDevStudios\wd_s\main_classes;
 
 				get_template_part( 'template-parts/content', 'no-title' );
 
-				print_comments();
-
 			endwhile; // End of the loop.
 			?>
 

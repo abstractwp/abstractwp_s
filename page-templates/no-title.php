@@ -24,8 +24,6 @@ get_header(); ?>
 
 				get_template_part( 'template-parts/content', 'no-title' );
 
-				print_comments();
-
 			endwhile; // End of the loop.
 			?>
 
