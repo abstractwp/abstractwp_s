@@ -51,11 +51,14 @@
 			}
 
 			.posted-on,
-			.post-author,
-			.post-time-to-read {
+			.post-author {
 				@apply block;
 
 				margin-left: 92px;
+			}
+
+			.post-time-to-read {
+				@apply block absolute right-0 top-24;
 			}
 		}
 

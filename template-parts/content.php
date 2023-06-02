@@ -35,9 +35,15 @@ use function WebDevStudios\wd_s\print_time_to_read;
 				}
 				?>
 				<div class="entry-meta">
-					<?php print_post_date(); ?>
-					<?php print_post_author( $wd_s_author_args ); ?>
 					<?php
+					if ( has_category( 'thoughts' ) ) {
+						print_post_author( $wd_s_author_args );
+						print_post_date();
+					} else {
+						print_post_date();
+						print_post_author( $wd_s_author_args );
+					}
+
 					$wd_s_avatar = get_avatar( get_the_author_meta( 'ID' ), 72 );
 					if ( has_category( 'thoughts' ) && $wd_s_avatar ) {
 						echo '<div class="avatar-container"><div class="avatar-bubble-outer"><div class="avatar-bubble">' . $wd_s_avatar . '</div></div></div>'; // phpcs:ignore.
