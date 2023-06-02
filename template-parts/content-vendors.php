@@ -40,6 +40,7 @@ use function WebDevStudios\wd_s\get_trimmed_excerpt;
 		<div class="meta-field">
 			<span class="address block"><strong>Address:</strong> <?php the_field( 'address' ); ?></span>
 			<strong>Phone:</strong> <a href="tel:<?php the_field( 'phone' ); ?>"><?php the_field( 'phone' ); ?></a>
+			<span class="minimum-project block"><strong>Minimum project: </strong><?php the_field( 'minimum_project' ); ?></span>
 		</div>
 			<?php
 	endif;
@@ -62,8 +63,9 @@ use function WebDevStudios\wd_s\get_trimmed_excerpt;
 	if ( ! is_single() ) :
 		?>
 		<div class="meta-field">
-			<span class="address block"><?php the_field( 'address' ); ?></span>
-			<a href="tel:<?php the_field( 'phone' ); ?>"><?php the_field( 'phone' ); ?></a>
+			<span class="address block"><strong>Address:</strong> <?php the_field( 'address' ); ?></span>
+			<strong>Phone:</strong> <a href="tel:<?php the_field( 'phone' ); ?>"><?php the_field( 'phone' ); ?></a>
+			<span class="minimum-project block"><strong>Minimum project: </strong><?php the_field( 'minimum_project' ); ?></span>
 		</div>
 		<?php
 	endif;
