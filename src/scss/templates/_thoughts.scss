@@ -31,10 +31,6 @@
 						@apply px-0;
 					}
 
-					.excerpt {
-						@apply mb-24;
-					}
-
 					.readmore {
 						@apply float-right;
 					}
@@ -92,7 +88,7 @@
 						}
 
 						.readmore {
-							@apply float-right no-underline;
+							@apply float-right no-underline mt-24;
 
 							@screen max-tablet-portrait {
 								@apply mt-16;
