@@ -24,9 +24,6 @@ use function WebDevStudios\wd_s\print_time_to_read;
 	<header class="entry-header">
 		<?php
 		if ( is_single() ) :
-			if ( has_category( 'thoughts' ) ) :
-				echo '<img src="' . esc_url( get_parent_theme_file_uri( '/build/images/thoughts-logo.png' ) ) . '" class="thoughts-logo" alt="thoughts" />';
-			endif;
 			the_title( '<h1 class="entry-title">', '</h1>' );
 			if ( 'post' === get_post_type() ) :
 				$wd_s_author_args = [];
