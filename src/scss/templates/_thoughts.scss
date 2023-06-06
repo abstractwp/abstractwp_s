@@ -13,7 +13,7 @@
 
 			.throught {
 				.entry-header {
-					@apply px-12 border border-contrast;
+					@apply px-12 border border-contrast rounded-t-md;
 
 					.entry-title {
 						@apply mt-16 mb-8 text-2xl font-normal;
@@ -37,7 +37,7 @@
 				}
 
 				.entry-footer {
-					@apply px-12 mt-0 w-full border border-t-0 border-contrast inline-flex;
+					@apply px-12 mt-0 w-full border border-t-0 border-contrast inline-flex rounded-b-md;
 
 					.date {
 						@apply pr-12 border-r border-contrast;
@@ -52,7 +52,7 @@
 
 		.thoughts-left {
 			.throught {
-				@apply sticky;
+				@apply sticky overflow-hidden rounded-md;
 
 				top: 120px;
 

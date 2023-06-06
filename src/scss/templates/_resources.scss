@@ -35,10 +35,10 @@
 		@apply relative;
 
 		.entry-header {
-			@apply relative;
+			@apply relative rounded-md;
 
 			.resource-img {
-				@apply w-full object-cover;
+				@apply w-full object-cover rounded-md;
 
 				max-height: none;
 
@@ -48,7 +48,7 @@
 			}
 
 			&::after {
-				@apply absolute w-full h-full bg-contrast top-0 left-0 bg-opacity-30;
+				@apply absolute w-full h-full bg-contrast top-0 left-0 bg-opacity-30 rounded-md;
 
 				content: '';
 			}

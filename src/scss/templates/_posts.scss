@@ -168,6 +168,8 @@
 				}
 
 				img {
+					@apply rounded-md;
+
 					/* stylelint-disable */
 					&.dualtone-secondary-primary {
 						filter: url( #wp-duotone-secondary-primary );
