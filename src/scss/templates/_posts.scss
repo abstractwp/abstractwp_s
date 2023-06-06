@@ -24,6 +24,12 @@
 	}
 }
 
+.blog-page {
+	.facet-filter {
+		@apply pt-48;
+	}
+}
+
 .post-navigation {
 	@apply container;
 
@@ -151,7 +157,6 @@
 			@screen max-tablet-portrait {
 				@apply px-16;
 			}
-
 		}
 
 		.hentry {

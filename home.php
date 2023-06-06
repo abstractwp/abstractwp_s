@@ -12,7 +12,6 @@
  * @package wd_s
  */
 
-use function WebDevStudios\wd_s\print_numeric_pagination;
 use function WebDevStudios\wd_s\main_classes;
 use function WebDevStudios\wd_s\get_blog_main_classes;
 
@@ -23,14 +22,6 @@ get_header(); ?>
 		<?php
 		if ( have_posts() ) :
 			?>
-			<header class="entry-header">
-				<h1 class="page-title with-icon">
-				<?php
-				echo get_the_post_thumbnail( get_option( 'page_for_posts' ), array( 150, 150 ) );
-				single_post_title();
-				?>
-				</h1>
-			</header>
 			<?php
 			if ( is_active_sidebar( 'sidebar-2' ) ) :
 				?>
