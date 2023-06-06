@@ -59,4 +59,25 @@
 			}
 		}
 	}
+
+	.facetwp-type-search .facetwp-input-wrap {
+		@screen max-tablet-portrait {
+			@apply w-full;
+		}
+		input {
+			@apply py-5 rounded border-black border w-full;
+
+			&::-webkit-input-placeholder { /* Edge */
+				@apply text-black;
+			}
+
+			&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+				@apply text-black;
+			}
+
+			&::placeholder {
+				@apply text-black;
+			}
+		}
+	}
 }

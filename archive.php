@@ -44,6 +44,8 @@ get_header(); ?>
 				echo do_shortcode( '[facetwp facet="tags"]' );
 			}
 
+			echo do_shortcode( '[facetwp facet="resource_search"]' );
+
 			echo '</div>';
 			echo '<div class="resources-facets-list facetwp-template">';
 		}
