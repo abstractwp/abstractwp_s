@@ -67,11 +67,15 @@
 		input {
 			@apply py-5 rounded border-black border w-full;
 
-			&::-webkit-input-placeholder { /* Edge */
+			&::-webkit-input-placeholder {
+
+				/* Edge */
 				@apply text-black;
 			}
 
-			&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			&:-ms-input-placeholder {
+
+				/* Internet Explorer 10-11 */
 				@apply text-black;
 			}
 

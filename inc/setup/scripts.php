@@ -19,7 +19,7 @@ function scripts() {
 		$asset_file = include $asset_file_path;
 	} else {
 		$asset_file = [
-			'version'      => '1.1.1',
+			'version'      => '1.1.5',
 			'dependencies' => [ 'wp-polyfill' ],
 		];
 	}
