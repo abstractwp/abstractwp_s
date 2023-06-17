@@ -317,6 +317,10 @@
 			}
 		}
 
+		.sk-app-container {
+			@apply mt-32 mb-24;
+		}
+
 		.entry-content .wp-block-image {
 			@apply mb-gap;
 		}
