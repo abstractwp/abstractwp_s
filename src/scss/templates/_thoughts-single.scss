@@ -54,6 +54,12 @@
 
 			.post-time-to-read {
 				@apply block absolute right-0 top-24;
+
+				@screen max-tablet-portrait {
+					@apply relative top-0 left-0;
+
+					margin-left: 92px;
+				}
 			}
 		}
 
