@@ -16,6 +16,7 @@ use function WebDevStudios\wd_s\get_trimmed_excerpt;
 use function WebDevStudios\wd_s\get_dualtone_colors;
 use function WebDevStudios\wd_s\get_theme_colors;
 use function WebDevStudios\wd_s\print_time_to_read;
+use function WebDevStudios\wd_s\get_bp_avatar;
 
 ?>
 
@@ -41,7 +42,22 @@ use function WebDevStudios\wd_s\print_time_to_read;
 						print_post_author( $wd_s_author_args );
 					}
 
+					$wd_s_bp_avatar = get_bp_avatar( get_the_author_meta( 'ID' ) );
+					if ( $wd_s_bp_avatar['is_found'] ) {
+						add_filter(
+							'get_avatar',
+							function () {
+								$wd_s_bp_avatar = get_bp_avatar( get_the_author_meta( 'ID' ) );
+								return $wd_s_bp_avatar['html'];
+							},
+							10,
+							6
+						);
+					}
+
 					$wd_s_avatar = get_avatar( get_the_author_meta( 'ID' ), 72 );
+
+
 					if ( has_category( 'thoughts' ) && $wd_s_avatar ) {
 						echo '<div class="avatar-container"><div class="avatar-bubble-outer"><div class="avatar-bubble">' . $wd_s_avatar . '</div></div></div>'; // phpcs:ignore.
 
