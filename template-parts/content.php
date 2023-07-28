@@ -16,7 +16,6 @@ use function WebDevStudios\wd_s\get_trimmed_excerpt;
 use function WebDevStudios\wd_s\get_dualtone_colors;
 use function WebDevStudios\wd_s\get_theme_colors;
 use function WebDevStudios\wd_s\print_time_to_read;
-use function WebDevStudios\wd_s\get_bp_avatar;
 
 ?>
 
@@ -40,19 +39,6 @@ use function WebDevStudios\wd_s\get_bp_avatar;
 					} else {
 						print_post_date();
 						print_post_author( $wd_s_author_args );
-					}
-
-					$wd_s_bp_avatar = get_bp_avatar( get_the_author_meta( 'ID' ) );
-					if ( $wd_s_bp_avatar['is_found'] ) {
-						add_filter(
-							'get_avatar',
-							function () {
-								$wd_s_bp_avatar = get_bp_avatar( get_the_author_meta( 'ID' ) );
-								return $wd_s_bp_avatar['html'];
-							},
-							10,
-							6
-						);
 					}
 
 					$wd_s_avatar = get_avatar( get_the_author_meta( 'ID' ), 72 );
