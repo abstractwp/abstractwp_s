@@ -20,9 +20,6 @@
 .alignfull {
 	@screen tablet-landscape {
 		@apply w-full;
-
-		margin-left: calc( ( -100vw + 15px ) / 2 + 100% / 2 );
-		margin-right: calc( ( -100vw + 15px ) / 2 + 100% / 2 );
 	}
 
 	@screen max-tablet-portrait {
