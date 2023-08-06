@@ -24,5 +24,12 @@ function remove_category_base() {
 			'top'
 		);
 	}
+
+	// Add rewrite rule for pagination.
+	add_rewrite_rule(
+		'^' . $category_slug . '/page/([0-9]+)/?$',
+		'index.php?category_name=' . $category_slug . '&paged=$matches[1]',
+		'top'
+	);
 }
 add_action( 'init', __NAMESPACE__ . '\remove_category_base' );

@@ -136,5 +136,9 @@
 		@screen tablet-landscape {
 			@apply grid-cols-2;
 		}
+
+		.pagination-container {
+			grid-column: span 2;
+		}
 	}
 }
