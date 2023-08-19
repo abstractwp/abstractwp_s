@@ -33,6 +33,10 @@ function resources_archive_query( $query ) {
 		$query->set( 'posts_per_page', 12 );
 	}
 
+	if ( is_category( 'thoughts' ) ) {
+		$query->set( 'posts_per_page', 11 );
+	}
+
 	if ( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
 		$query->set(
 			'post_type',
