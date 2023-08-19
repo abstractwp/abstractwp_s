@@ -12,8 +12,10 @@
 			align-self: flex-start;
 
 			.throught {
+				@apply border border-contrast rounded-md relative;
+
 				.entry-header {
-					@apply px-12 border border-contrast rounded-t-md;
+					@apply px-12;
 
 					.entry-title {
 						@apply mt-16 mb-8 text-2xl font-normal;
@@ -25,7 +27,7 @@
 				}
 
 				.entry-content {
-					@apply px-12 py-16 border border-t-0 border-contrast;
+					@apply px-12 py-16 border border-b-0 border-l-0 border-r-0 border-contrast mb-24;
 
 					.meta-desc {
 						@apply px-0;
@@ -37,7 +39,7 @@
 				}
 
 				.entry-footer {
-					@apply px-12 mt-0 w-full border border-t-0 border-contrast inline-flex rounded-b-md;
+					@apply px-12 mt-0 bottom-0 left-0 w-full border border-b-0 border-l-0 border-r-0 border-contrast inline-flex rounded-b-md absolute;
 
 					.date {
 						@apply pr-12 border-r border-contrast;
