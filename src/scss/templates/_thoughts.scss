@@ -27,14 +27,14 @@
 				}
 
 				.entry-content {
-					@apply px-12 py-16 border border-b-0 border-l-0 border-r-0 border-contrast mb-24;
+					@apply px-12 py-16 border border-b-0 border-l-0 border-r-0 border-contrast mb-64;
 
 					.meta-desc {
 						@apply px-0;
 					}
 
 					.readmore {
-						@apply float-right;
+						@apply absolute bottom-32 right-16;
 					}
 				}
 
