@@ -7,7 +7,6 @@
 .testimonial-block {
 	@apply flex flex-col;
 
-
 	/* stylelint-disable */
 	max-width: theme( 'screens.desktop' ) !important;
 	/* stylelint-enable */
@@ -17,22 +16,21 @@
 
 		.left-content {
 			@apply justify-center flex flex-col z-10 relative bg-tertiary;
-			height: calc(100% + 60px);
+			height: calc( 100% + 60px );
 		}
 	}
 
 	.testimonial-slider-container {
-
 		.slick-list {
 			max-width: 690px;
 			overflow: visible;
 
 			.slick-slide {
-				transform: translate(-7%) scale(0.8);
+				transform: translate( -7% ) scale( 0.8 );
 				transition: transform 0.3s ease-in-out;
 
 				&.slick-current {
-					transform: translate(0%) scale(1);
+					transform: translate( 0% ) scale( 1 );
 				}
 			}
 		}
@@ -85,7 +83,6 @@
 				}
 			}
 		}
-
 	}
 
 	@screen tablet-portrait {
@@ -98,7 +95,7 @@
 				@apply bg-tertiary absolute top-0 left-0 z-0;
 				content: '';
 				width: 100vw;
-				height: calc(100% + 60px);
+				height: calc( 100% + 60px );
 				margin-left: -80vw;
 			}
 
@@ -111,7 +108,6 @@
 			@apply w-3/5;
 
 			.testimonial-container {
-
 				.t-content {
 					@apply p-40;
 				}

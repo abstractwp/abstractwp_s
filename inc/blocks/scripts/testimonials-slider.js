@@ -1,7 +1,7 @@
 'use strict';
 ( function ( $ ) {
 	$( document ).ready( function () {
-		var slider = $('.testimonial-slider');
+		const slider = $( '.testimonial-slider' );
 
 		// slider.on('init reInit afterChange', function(event, slick, currentSlide) {
 		// 	var slides = slider.find('.testimonial-item');
@@ -19,8 +19,7 @@
 			autoplaySpeed: 5000,
 			dots: false,
 			prevArrow: $( '.slick-prev' ),
-			nextArrow: $( '.slick-next' )
+			nextArrow: $( '.slick-next' ),
 		} );
 	} );
-
 } )( jQuery );
