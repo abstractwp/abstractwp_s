@@ -1,0 +1,104 @@
+//----------------------------------------
+// Testimonials slider - Custom Block
+//----------------------------------------
+
+.testimonial-block {
+	@apply flex flex-row container;
+
+	/* stylelint-disable */
+	max-width: theme( 'screens.desktop' )!important;
+	/* stylelint-enable */
+
+	.left-nav {
+		@apply w-1/3;
+	}
+
+	.testimonial-slider-container {
+		@apply w-2/3;
+
+		.slick-list {
+			max-width: 690px;
+		}
+
+		.testimonial-container {
+			@apply relative flex m-40;
+
+			height: calc(100% + 60px);
+
+			.bg-cover {
+				@apply top-0 right-0 absolute;
+				width: 148px;
+				height: 60px;
+				border-top-right-radius: 20px;
+				background: url( ../images/testimonial-bg-top.png ) 50% 50% no-repeat transparent;
+				background-size: contain;
+			}
+
+			.t-content {
+				@apply relative z-10 p-40;
+				margin-top: 40px;
+				background: #FDFBF7;
+				border-top-left-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				box-shadow: 0 30px 20px 0 #14353C1F;
+
+				&::before {
+					@apply absolute;
+					content: '';
+					width: 70px;
+					height: 60px;
+					background: url( ../images/quote.svg ) 50% 50% no-repeat transparent;
+					background-size: contain;
+				}
+			}
+
+			.t-description {
+				@apply z-10 relative;
+
+				margin-top: 80px;
+			}
+			.t-meta {
+				@apply z-10 mt-20;
+
+				.title {
+					@apply font-bold mb-6;
+				}
+			}
+		}
+	}
+
+	button.slick-arrow {
+		@apply rounded-full;
+
+		box-shadow: 0 10px 10px 0 #0000001F;
+
+		background-color: #FDFBF7;
+		width: 64px;
+		height: 64px;
+
+		&:hover, &:active, &:focus {
+			@apply bg-primary;
+			svg {
+				path {
+					stroke: #FDFBF7;
+				}
+			}
+		}
+
+		&.slick-next {
+			@apply ml-24;
+		}
+
+		&.slick-disabled {
+			&:hover, &:active, &:focus {
+				background-color: #FDFBF7;
+			}
+			svg {
+				path {
+					stroke: #DBDBDB;
+				}
+			}
+		}
+	}
+}

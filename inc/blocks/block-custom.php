@@ -1,6 +1,6 @@
 <?php
 /**
- * Block patterns.
+ * Custom Blocks.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
