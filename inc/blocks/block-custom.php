@@ -28,12 +28,12 @@ function collectivewp_register_blocks() {
 				'category'        => 'collectivewp-blocks',
 				'icon'            => 'embed-generic',
 				'keywords'        => array( 'testimonials', 'slider', 'collectivewp' ),
+				'mode'            => 'edit',
 				'supports'        => array(
 					'align' => false,
+					'mode'  => false,
 				),
 				'enqueue_assets'  => function() {
-					wp_enqueue_style( 'slick-style', get_template_directory_uri() . '/inc/blocks/styles/slick.css', '', '1.8.1' );
-
 					wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/inc/blocks/scripts/slick.min.js', array( 'jquery' ), '1.8.1', true );
 					wp_enqueue_script( 'testimonials-script', get_template_directory_uri() . '/inc/blocks/scripts/testimonials-slider.js', array( 'jquery', 'slick-script' ), '1.0', true );
 				},
@@ -59,4 +59,4 @@ function collective_block_category( $categories, $post ) {
 		)
 	);
 }
-add_filter( 'block_categories', 'collective_block_category', 10, 2 );
+add_filter( 'block_categories', __NAMESPACE__ . '\collective_block_category', 10, 2 );

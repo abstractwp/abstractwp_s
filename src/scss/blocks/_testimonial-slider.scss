@@ -4,6 +4,7 @@
 .testimonial-group {
 	@apply overflow-hidden;
 }
+
 .testimonial-block {
 	@apply flex flex-col;
 
@@ -15,7 +16,7 @@
 		@apply text-center mb-48 z-50 relative;
 
 		.left-content {
-			@apply justify-center flex flex-col z-10 relative bg-tertiary;
+			@apply justify-center flex flex-col z-10 relative bg-white;
 			height: calc( 100% + 60px );
 		}
 	}
@@ -92,7 +93,7 @@
 			@apply w-2/5 text-left mb-0;
 
 			&::before {
-				@apply bg-tertiary absolute top-0 left-0 z-0;
+				@apply bg-white absolute top-0 left-0 z-0;
 				content: '';
 				width: 100vw;
 				height: calc( 100% + 60px );
@@ -151,6 +152,111 @@
 					stroke: #dbdbdb;
 				}
 			}
+		}
+	}
+}
+
+.has-tertiary-background-color {
+	.testimonial-block {
+		@screen tablet-portrait {
+			.left-container {
+				&::before {
+					@apply bg-tertiary;
+				}
+			}
+		}
+		.left-content {
+			@apply bg-tertiary;
+		}
+	}
+}
+
+.has-primary-background-color {
+	.testimonial-block {
+		@screen tablet-portrait {
+			.left-container {
+				&::before {
+					@apply bg-primary;
+				}
+			}
+		}
+		.left-content {
+			@apply bg-primary;
+		}
+	}
+}
+
+.has-secondary-background-color {
+	.testimonial-block {
+		@screen tablet-portrait {
+			.left-container {
+				&::before {
+					@apply bg-secondary;
+				}
+			}
+		}
+		.left-content {
+			@apply bg-secondary;
+		}
+	}
+}
+
+.has-contrast-background-color {
+	.testimonial-block {
+		@screen tablet-portrait {
+			.left-container {
+				&::before {
+					@apply bg-contrast;
+				}
+			}
+		}
+		.left-content {
+			@apply bg-contrast;
+		}
+	}
+}
+
+.has-yellow-background-color {
+	.testimonial-block {
+		@screen tablet-portrait {
+			.left-container {
+				&::before {
+					@apply bg-yellow;
+				}
+			}
+		}
+		.left-content {
+			@apply bg-yellow;
+		}
+	}
+}
+
+.has-base-background-color {
+	.testimonial-block {
+		@screen tablet-portrait {
+			.left-container {
+				&::before {
+					@apply bg-base;
+				}
+			}
+		}
+		.left-content {
+			@apply bg-base;
+		}
+	}
+}
+
+.has-gray-600-background-color {
+	.testimonial-block {
+		@screen tablet-portrait {
+			.left-container {
+				&::before {
+					@apply bg-gray-600;
+				}
+			}
+		}
+		.left-content {
+			@apply bg-gray-600;
 		}
 	}
 }
