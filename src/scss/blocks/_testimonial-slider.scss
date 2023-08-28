@@ -140,6 +140,7 @@
 		}
 
 		&.slick-disabled {
+			@apply cursor-default;
 			&:hover,
 			&:active,
 			&:focus {
