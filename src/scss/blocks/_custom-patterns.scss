@@ -2,6 +2,46 @@
 // Custom Patterns
 //----------------------------------------
 
+.header-search-group {
+	/* stylelint-disable */
+	.wp-block-search__inside-wrapper {
+		@apply flex flex-col items-center relative;
+
+		width: 500px;
+
+		&::before {
+			@apply absolute left-16 top-12;
+			content: '';
+			width: 24px;
+			height: 24px;
+			background: url( ../images/icons/search-icon.svg ) 50% 50% no-repeat
+				transparent;
+			background-size: contain;
+		}
+
+		.wp-block-search__input {
+			@apply w-full mb-24;
+
+			padding-left: 48px !important;
+			border-color: theme( 'colors.contrast' ) !important;
+
+			@screen tablet-landscape {
+				width: 500px;
+			}
+
+			&.error {
+				border-color: theme( 'colors.primary' ) !important;
+			}
+		}
+
+		button {
+			@apply ml-0;
+			max-width: 105px;
+		}
+	}
+	/* stylelint-enable */
+}
+
 .folder-group {
 	@apply relative pb-40;
 	box-shadow: 0 30px 20px 0 #14353c1f;
