@@ -3,6 +3,9 @@
 //----------------------------------------
 
 .header-search-group {
+	@apply mx-auto;
+	max-width: 1380px;
+
 	/* stylelint-disable */
 	.wp-block-search__inside-wrapper {
 		@apply flex flex-col items-center relative;
