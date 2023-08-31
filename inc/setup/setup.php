@@ -136,6 +136,13 @@ function setup() {
 	add_theme_support( 'responsive-embeds' );
 
 	remove_theme_support( 'block-templates' );
+
+	// Render all custom duotone svg.
+	$filters = wp_get_global_styles_svg_filters();
+	if ( ! empty( $filters ) ) {
+		echo $filters;
+	}
+
 }
 
 add_action( 'after_setup_theme', __NAMESPACE__ . '\setup' );
