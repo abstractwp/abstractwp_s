@@ -24,7 +24,7 @@
 				@apply relative;
 
 				.button {
-					@apply absolute right-0 top-12 bg-transparent border border-gray-600;
+					@apply absolute right-48 top-12 bg-transparent border border-gray-600;
 
 					&:hover,
 					&:focus,
@@ -32,14 +32,63 @@
 						@apply bg-primary bg-opacity-100 text-base border-primary;
 					}
 
+					@screen desktop-min {
+						@apply right-0;
+					}
 				}
 			}
 		}
 	}
 
 	.site-main {
-		@apply mt-0;
+		@apply mt-0 pb-0;
 
 		top: 0;
+	}
+
+	.site-footer {
+		@apply bg-secondary flex flex-col justify-between text-base;
+
+		.footer-logo {
+			@apply mx-16 mb-16;
+			max-width: 200px;
+			max-height: 30px;
+		}
+
+		.lp-footer-nav {
+			@apply text-center;
+		}
+
+		.site-info {
+			@apply text-center mt-16;
+		}
+
+		@screen desktop {
+			.footer-logo{
+				@apply mx-0;
+			}
+
+			.site-info {
+				@apply px-0;
+			}
+		}
+
+		@screen max-tablet-portrait {
+			.footer-logo{
+				@apply mx-auto;
+			}
+		}
+
+		@screen tablet-portrait {
+			@apply flex-row;
+
+			.footer-logo {
+				@apply mb-10;
+			}
+
+			.site-info {
+				@apply text-right mx-0 mt-0;
+			}
+		}
 	}
 }

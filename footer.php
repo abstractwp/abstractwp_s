@@ -48,14 +48,25 @@ if ( is_active_sidebar( 'sidebar-3' ) && ! is_page_template( 'page-templates/no-
 			<?php print_social_network_links(); ?>
 		</div><!-- .site-info -->
 	<?php else : ?>
-		<div class="lp-footer-logo"><?php the_custom_logo(); ?></div>
+		<div class="lp-footer-logo">
+			<?php
+			$image          = '<img src="' . esc_url( get_parent_theme_file_uri( '/build/images/footer-logo.png' ) ) . '" class="footer-logo" alt="Collective Work And Place" width="300" />';
+			$wd_s_logo_html = sprintf(
+				'<a href="%1$s" class="footer-logo-link" rel="Collective Work And Place">%2$s</a>',
+				esc_url( home_url() ),
+				$image
+			);
+
+			echo $wd_s_logo_html;
+			?>
+		</div>
 		<div class="lp-footer-nav">
 			<nav id="site-footer-navigation" class="footer-navigation navigation-menu" aria-label="<?php esc_attr_e( 'Footer Navigation', 'wd_s' ); ?>">
 				<?php
 				wp_nav_menu(
 					[
 						'fallback_cb'    => false,
-						'theme_location' => 'landing-footer',
+						'theme_location' => 'ld-footer',
 						'menu_id'        => 'footer-menu',
 						'menu_class'     => 'menu',
 						'container'      => false,
