@@ -20,7 +20,7 @@ namespace WebDevStudios\wd_s;
 function filter_primary_nav_menu_objects( $items, $args ) {
 	$has_button = get_theme_mod( 'wd_s_convert_last_menu_item_to_button' );
 
-	if ( 'primary' === $args->theme_location && $has_button ) {
+	if ( in_array( $args->theme_location, [ 'primary', 'landing' ], true ) && $has_button ) {
 		foreach ( $items as $index => &$item ) {
 			if ( $has_button && count( $items ) === $index ) {
 				$item->classes[] = 'button';
