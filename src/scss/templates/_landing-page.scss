@@ -16,6 +16,8 @@
 	.site-header {
 		@apply bg-transparent border-none py-24;
 
+		transition: background 0.1s ease-in-out;
+
 		.main-navigation {
 			@apply w-full h-48 pr-0;
 			margin-left: 150px;
@@ -26,6 +28,8 @@
 				.button {
 					@apply absolute right-48 top-12 bg-transparent border border-gray-600;
 
+					transition: top 0.3s ease-in-out;
+
 					&:hover,
 					&:focus,
 					&:active {
@@ -34,6 +38,18 @@
 
 					@screen desktop-min {
 						@apply right-0;
+					}
+				}
+			}
+		}
+
+		&.scrolled {
+			@apply bg-tertiary;
+
+			.main-navigation {
+				#primary-menu {
+					.button {
+						@apply top-0;
 					}
 				}
 			}

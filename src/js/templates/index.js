@@ -6,3 +6,4 @@
  */
 
 // import './template-name';
+import './landing-page';
