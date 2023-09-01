@@ -27,6 +27,10 @@ function print_mobile_menu() {
 	if ( has_nav_menu( 'mobile' ) ) {
 		$menu_location = 'mobile';
 	}
+
+	if ( is_page_template( 'page-templates/landing-page.php' ) ) {
+		$menu_location = 'landing';
+	}
 	?>
 	<div class="off-canvas-screen"></div>
 	<nav class="off-canvas-container" aria-label="<?php esc_attr_e( 'Mobile Menu', 'wd_s' ); ?>" aria-hidden="true" tabindex="-1">

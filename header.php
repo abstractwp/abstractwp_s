@@ -84,10 +84,14 @@
 
 		<nav id="site-navigation" class="main-navigation navigation-menu" aria-label="<?php esc_attr_e( 'Main Navigation', 'wd_s' ); ?>">
 			<?php
+			$wd_s_location = 'primary';
+			if ( is_page_template( 'page-templates/landing-page.php' ) ) {
+				$wd_s_location = 'landing';
+			}
 			wp_nav_menu(
 				[
 					'fallback_cb'    => false,
-					'theme_location' => 'primary',
+					'theme_location' => $wd_s_location,
 					'menu_id'        => 'primary-menu',
 					'menu_class'     => 'menu dropdown container',
 					'container'      => false,

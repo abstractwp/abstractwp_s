@@ -50,9 +50,11 @@ function setup() {
 	// Register navigation menus.
 	register_nav_menus(
 		[
-			'primary' => esc_html__( 'Primary Menu', 'wd_s' ),
-			'footer'  => esc_html__( 'Footer Menu', 'wd_s' ),
-			'mobile'  => esc_html__( 'Mobile Menu', 'wd_s' ),
+			'primary'   => esc_html__( 'Primary Menu', 'wd_s' ),
+			'landing'   => esc_html__( 'Landing page Menu', 'wd_s' ),
+			'footer'    => esc_html__( 'Footer Menu', 'wd_s' ),
+			'mobile'    => esc_html__( 'Mobile Menu', 'wd_s' ),
+			'ld-footer' => esc_html__( 'Lading page footer Menu', 'wd_s' ),
 		]
 	);
 

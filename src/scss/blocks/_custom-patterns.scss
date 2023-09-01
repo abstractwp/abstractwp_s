@@ -3,10 +3,24 @@
 //----------------------------------------
 
 .header-search-group {
-	@apply mx-auto;
+	@apply mx-auto relative;
 	max-width: 1380px;
+	@screen tablet-landscape {
+		&::before {
+			@apply absolute right-0;
+			content: '';
+			top: -85px;
+			width: 400px;
+			height: 130px;
+			background: url( ../images/lp-header-bg-tr.png ) 50% 50% no-repeat
+				transparent;
+			background-size: contain;
+		}
+	}
 
 	/* stylelint-disable */
+	margin-top: 50px !important;
+
 	.wp-block-search__inside-wrapper {
 		@apply flex flex-col items-center relative;
 
