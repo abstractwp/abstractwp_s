@@ -39,6 +39,7 @@
 		.wp-block-search__input {
 			@apply w-full mb-24;
 
+			background-color: rgba(219, 219, 219, 0.3) !important;
 			padding-left: 48px !important;
 			border-color: theme( 'colors.contrast' ) !important;
 

@@ -40,6 +40,10 @@
 						@apply right-0;
 					}
 				}
+
+				&.menu .menu-item:not(.button) a:hover {
+					@apply bg-transparent text-primary;
+				}
 			}
 		}
 
