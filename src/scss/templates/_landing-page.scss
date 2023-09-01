@@ -1,0 +1,45 @@
+//--------------------------------------------------------------
+// Landing page styles.
+//--------------------------------------------------------------
+
+.page-template-landing-page {
+	@apply bg-tertiary;
+
+	.landing-page-group {
+		@apply overflow-hidden;
+
+		/* stylelint-disable */
+		padding-block-start: 48px !important;
+		/* stylelint-enable */
+	}
+
+	.site-header {
+		@apply bg-transparent border-none py-24;
+
+		.main-navigation {
+			@apply w-full h-48 pr-0;
+			margin-left: 150px;
+
+			#primary-menu {
+				@apply relative;
+
+				.button {
+					@apply absolute right-0 top-12 bg-transparent border border-gray-600;
+
+					&:hover,
+					&:focus,
+					&:active {
+						@apply bg-primary bg-opacity-100 text-base border-primary;
+					}
+
+				}
+			}
+		}
+	}
+
+	.site-main {
+		@apply mt-0;
+
+		top: 0;
+	}
+}
