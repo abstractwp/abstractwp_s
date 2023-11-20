@@ -45,5 +45,5 @@ jobs:
                   SLACK_COLOR: ${{ job.status }}
                   SLACK_ICON: https://avatars.slack-edge.com/2021-09-02/2472786275504_23fa532873531951ddd3_32.png
                   SLACK_USERNAME: Github
-                  SLACK_WEBHOOK: https://hooks.slack.com/services/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
+                  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
                   SLACK_FOOTER: ${{ github.repository }}
