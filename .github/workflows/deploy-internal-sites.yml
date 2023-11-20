@@ -27,7 +27,7 @@ jobs:
             - name: Remove node_modules
               run: rm -rf node_modules
 
-            - name: Deploy WordPress to WP Engine
+            - name: Deploy Theme to my sellwp101 dev
               uses: wpengine/github-action-wpe-site-deploy@v3.1.1
               with:
                   # Keys, lint & url options
@@ -37,6 +37,39 @@ jobs:
                   REMOTE_PATH: 'wp-content/themes/abstractwp_s'
                   CACHE_CLEAR: TRUE
                   WPE_ENV: mysellwp101dev
+
+            - name: Deploy Theme to sellwp101 dev
+              uses: wpengine/github-action-wpe-site-deploy@v3.1.1
+              with:
+                  # Keys, lint & url options
+                  WPE_SSHG_KEY_PRIVATE: ${{secrets.WPENGINE_SSH_KEY_PRIVATE}}
+                  PHP_LINT: FALSE
+                  SRC_PATH: './'
+                  REMOTE_PATH: 'wp-content/themes/abstractwp_s'
+                  CACHE_CLEAR: TRUE
+                  WPE_ENV: sellwpdev
+
+            - name: Deploy Theme to clientabstr dev
+              uses: wpengine/github-action-wpe-site-deploy@v3.1.1
+              with:
+                  # Keys, lint & url options
+                  WPE_SSHG_KEY_PRIVATE: ${{secrets.WPENGINE_SSH_KEY_PRIVATE}}
+                  PHP_LINT: FALSE
+                  SRC_PATH: './'
+                  REMOTE_PATH: 'wp-content/themes/abstractwp_s'
+                  CACHE_CLEAR: TRUE
+                  WPE_ENV: sellwpdev
+
+            - name: Deploy Theme to abstractwp dev
+              uses: wpengine/github-action-wpe-site-deploy@v3.1.1
+              with:
+                  # Keys, lint & url options
+                  WPE_SSHG_KEY_PRIVATE: ${{secrets.WPENGINE_SSH_KEY_PRIVATE}}
+                  PHP_LINT: FALSE
+                  SRC_PATH: './'
+                  REMOTE_PATH: 'wp-content/themes/abstractwp_s'
+                  CACHE_CLEAR: TRUE
+                  WPE_ENV: abstractwp
 
             # - name: Notify Slack
             #   uses: rtCamp/action-slack-notify@v2
