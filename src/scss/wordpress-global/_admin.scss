@@ -162,4 +162,17 @@
 	.wp-block.is-selected {
 		margin-bottom: 1rem;
 	}
+
+	> .wp-block-paragraph,
+	.wp-block .wp-block-paragraph,
+	> div.rich-text,
+	ol div.rich-text,
+	ul div.rich-text {
+		@apply text-normal;
+	}
+
+	.wp-block-list ul:not(.menu, .sub-menu),
+	.wp-block-list ol {
+		list-style-position: inherit;
+	}
 }

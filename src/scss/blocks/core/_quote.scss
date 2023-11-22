@@ -5,10 +5,6 @@
 .wp-block-quote {
 	@apply my-gap py-24 border-0;
 
-	.wp-block-paragraph {
-		@apply px-0 pb-0;
-	}
-
 	p {
 		@apply mb-16;
 	}
