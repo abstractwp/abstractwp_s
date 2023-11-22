@@ -24,7 +24,7 @@
 	.wp-block-cover.alignfull {
 		@apply px-16;
 
-		padding-block: calc( theme( 'spacing.gap' ) * 3 );
+		padding-block: calc(theme('spacing.gap') * 3);
 
 		@screen max-tablet-portrait {
 			> .alignfull,
@@ -39,16 +39,16 @@
 	.wp-block-cover.alignwide {
 		@apply px-16;
 
-		padding-block: calc( theme( 'spacing.gap' ) * 2.5 );
+		padding-block: calc(theme('spacing.gap') * 2.5);
 	}
 
-	.wp-block-group.has-background:not( .alignfull ),
-	.wp-block-group.alignfull:not( .has-background ),
-	.wp-block-group.is-layout-flow:not( .alignfull ),
-	.wp-block-cover:not( .alignfull ) {
+	.wp-block-group.has-background:not(.alignfull),
+	.wp-block-group.alignfull:not(.has-background),
+	.wp-block-group.is-layout-flow:not(.alignfull),
+	.wp-block-cover:not(.alignfull) {
 		@apply px-16;
 
-		padding-block: calc( theme( 'spacing.gap' ) * 1.75 );
+		padding-block: calc(theme('spacing.gap') * 1.75);
 
 		@screen max-tablet-portrait {
 			@apply px-16;
@@ -58,8 +58,8 @@
 	.wp-block-cover {
 		&.alignwide {
 			/* stylelint-disable */
-			max-width: calc( theme( 'screens.desktop' ) - 32px ) !important;
-			@media screen and ( min-width: 783px ) and ( max-width: theme('screens.desktop') ) {
+			max-width: calc(theme('screens.desktop') - 32px) !important;
+			@media screen and (min-width: 783px) and (max-width: theme('screens.desktop')) {
 				padding-left: 0 !important;
 				padding-right: 0 !important;
 			}
@@ -112,23 +112,23 @@
 
 		&.is-primary {
 			@apply text-white;
-			background: var( --wp-admin-theme-color );
+			background: var(--wp-admin-theme-color);
 
 			&:hover {
-				background: var( --wp-admin-theme-color-darker-10 );
+				background: var(--wp-admin-theme-color-darker-10);
 			}
 		}
 
 		&.is-secondary,
 		&.is-tertiary {
 			white-space: nowrap;
-			color: var( --wp-admin-theme-color );
+			color: var(--wp-admin-theme-color);
 			background: transparent;
 
-			&:hover:not( :disabled ) {
-				color: var( --wp-admin-theme-color-darker-10 );
+			&:hover:not(:disabled) {
+				color: var(--wp-admin-theme-color-darker-10);
 				box-shadow: inset 0 0 0 1px
-					var( --wp-admin-theme-color-darker-10 );
+					var(--wp-admin-theme-color-darker-10);
 			}
 		}
 	}

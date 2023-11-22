@@ -42,7 +42,7 @@ pre {
 	.entry-header,
 	.entry-footer {
 		@apply mx-auto px-0;
-		max-width: theme( 'layout.contentSize' );
+		max-width: theme('layout.contentSize');
 
 		@screen max-tablet-portrait {
 			@apply px-16;

@@ -3,10 +3,10 @@
 //----------------------------------------
 
 .wp-block-list {
-	@apply block;
+	@apply block mb-gap;
 
 	ul {
-		&:not( .menu, .sub-menu ) {
+		&:not(.menu, .sub-menu) {
 			@apply mb-16 list-disc list-inside;
 		}
 	}

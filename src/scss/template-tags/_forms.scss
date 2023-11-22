@@ -10,7 +10,7 @@
 }
 
 textarea,
-input:not( .button ),
+input:not(.button),
 input[type='search'] {
 	/* stylelint-disable */
 	@extend .input-field;

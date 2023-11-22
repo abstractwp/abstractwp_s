@@ -12,9 +12,9 @@
 			@apply float-left py-gap px-16;
 		}
 
-		&.widget-halves .widget:nth-child( odd ),
-		&.widget-thirds .widget:nth-child( 3n + 1 ),
-		&.widget-fourths .widget:nth-child( 4n + 1 ) {
+		&.widget-halves .widget:nth-child(odd),
+		&.widget-thirds .widget:nth-child(3n + 1),
+		&.widget-fourths .widget:nth-child(4n + 1) {
 			@apply clear-left;
 		}
 

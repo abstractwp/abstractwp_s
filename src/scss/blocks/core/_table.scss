@@ -3,7 +3,7 @@
 //----------------------------------------
 
 .wp-block-table {
-	@apply block border-0 border-collapse;
+	@apply block border-0 border-collapse mb-gap;
 
 	table {
 		@apply w-full;
@@ -38,7 +38,7 @@
 		&::before {
 			@apply block uppercase;
 
-			content: attr( data-label );
+			content: attr(data-label);
 
 			@screen desktop {
 				@apply hidden;

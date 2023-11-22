@@ -17,3 +17,7 @@
 	}
 }
 /* stylelint-enable */
+
+.wp-block-buttons {
+	@apply mb-gap;
+}
