@@ -3,7 +3,7 @@
 //----------------------------------------
 
 .wp-block-gallery {
-	@apply block mb-80;
+	@apply block mb-gap;
 
 	&.is-layout-flex {
 		@apply flex;

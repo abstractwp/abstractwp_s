@@ -2,11 +2,19 @@
 // WordPress Alignments
 //--------------------------------------------------------------
 .alignleft {
-	@apply float-left mr-16;
+	@apply float-left;
+
+	@screen tablet-landscape {
+		@apply mr-16;
+	}
 }
 
 .alignright {
-	@apply float-right ml-16;
+	@apply float-right;
+
+	@screen tablet-landscape {
+		@apply ml-16;
+	}
 }
 
 .aligncenter {
@@ -18,13 +26,6 @@
 }
 
 .alignfull {
-	@screen tablet-landscape {
-		@apply w-full;
-
-		margin-left: calc((-100vw + 15px) / 2 + 100% / 2);
-		margin-right: calc((-100vw + 15px) / 2 + 100% / 2);
-	}
-
 	@screen max-tablet-portrait {
 		.alignwide {
 			@apply px-0;
@@ -33,12 +34,16 @@
 }
 
 .entry-content
-	> *:not( .alignwide ):not( .alignfull ):not( .alignleft ):not( .alignright ) {
+	> *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright) {
 	@apply px-16;
 
 	@screen tablet-landscape {
-		@apply mx-auto px-0;
-		max-width: theme( 'layout.contentSize' );
+		@apply mx-auto;
+		max-width: theme('layout.contentSize');
+
+		&:not(blockquote) {
+			@apply px-0;
+		}
 
 		&.has-background {
 			@apply px-16;
