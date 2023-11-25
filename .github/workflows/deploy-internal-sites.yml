@@ -71,6 +71,17 @@ jobs:
                   CACHE_CLEAR: TRUE
                   WPE_ENV: abstractwp
 
+            - name: Deploy Theme to victor dev site
+              uses: wpengine/github-action-wpe-site-deploy@v3.1.1
+              with:
+                  # Keys, lint & url options
+                  WPE_SSHG_KEY_PRIVATE: ${{secrets.WPENGINE_SSH_KEY_PRIVATE}}
+                  PHP_LINT: FALSE
+                  SRC_PATH: './'
+                  REMOTE_PATH: 'wp-content/themes/abstractwp_s'
+                  CACHE_CLEAR: TRUE
+                  WPE_ENV: devvictor
+
             # - name: Notify Slack
             #   uses: rtCamp/action-slack-notify@v2
             #   env:
