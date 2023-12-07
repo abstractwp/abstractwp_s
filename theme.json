@@ -260,6 +260,56 @@
 					"name": "Secondary 300"
 				},
 				{
+					"color": "#FFFCF2",
+					"slug": "secondary-50",
+					"name": "Secondary 50"
+				},
+				{
+					"color": "#FFF4CC",
+					"slug": "secondary-100",
+					"name": "Secondary 100"
+				},
+				{
+					"color": "#FFEEB2",
+					"slug": "secondary-200",
+					"name": "Secondary 200"
+				},
+				{
+					"color": "#FFE380",
+					"slug": "secondary-300",
+					"name": "Secondary 300"
+				},
+				{
+					"color": "#FFD233",
+					"slug": "secondary-400",
+					"name": "Secondary 400"
+				},
+				{
+					"color": "#FFC700",
+					"slug": "secondary-500",
+					"name": "Secondary 500"
+				},
+				{
+					"color": "#E6A100",
+					"slug": "secondary-600",
+					"name": "Secondary 600"
+				},
+				{
+					"color": "#B36100",
+					"slug": "secondary-700",
+					"name": "Secondary 700"
+				},
+				{
+					"color": "#803100",
+					"slug": "secondary-800",
+					"name": "Secondary 800"
+				},
+				{
+					"color": "#330800",
+					"slug": "secondary-900",
+					"name": "Secondary 900"
+				},
+				{
 					"color": "#f48d60",
 					"slug": "tertiary-100",
 					"name": "Tertiary 100"
