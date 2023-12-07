@@ -398,7 +398,7 @@
 		},
 		"color": {
 			"background": "var(--wp--preset--color--white)",
-			"text": "var(--wp--preset--color--black)"
+			"text": "var(--wp--preset--color--neutral-900)"
 		},
 		"elements": {
 			"h1": {
