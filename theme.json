@@ -195,19 +195,54 @@
 			"gradients": [],
 			"palette": [
 				{
-					"color": "#425a5e",
+					"color": "#FBFAFF",
+					"slug": "primary-50",
+					"name": "Primary 50"
+				},
+				{
+					"color": "#EBE6FD",
 					"slug": "primary-100",
 					"name": "Primary 100"
 				},
 				{
-					"color": "#2d3d40",
+					"color": "#C5B3F8",
 					"slug": "primary-200",
 					"name": "Primary 200"
 				},
 				{
-					"color": "#3f4040",
+					"color": "#8A66F0",
 					"slug": "primary-300",
 					"name": "Primary 300"
+				},
+				{
+					"color": "#6333EB",
+					"slug": "primary-400",
+					"name": "Primary 400"
+				},
+				{
+					"color": "#3C00E7",
+					"slug": "primary-500",
+					"name": "Primary 500"
+				},
+				{
+					"color": "#2A00A1",
+					"slug": "primary-600",
+					"name": "Primary 600"
+				},
+				{
+					"color": "#1E0073",
+					"slug": "primary-700",
+					"name": "Primary 700"
+				},
+				{
+					"color": "#120045",
+					"slug": "primary-800",
+					"name": "Primary 800"
+				},
+				{
+					"color": "#0C002E",
+					"slug": "primary-900",
+					"name": "Primary 900"
 				},
 				{
 					"color": "#fff",
