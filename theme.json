@@ -360,17 +360,17 @@
 					"name": "Neutral 900"
 				},
 				{
-					"color": "#22C55E",
+					"color": "#0F8A56",
 					"slug": "success",
 					"name": "Success"
 				},
 				{
-					"color": "#EAB308",
+					"color": "#F29100",
 					"slug": "warning",
 					"name": "Warning"
 				},
 				{
-					"color": "#EF4444",
+					"color": "#DF2A4A",
 					"slug": "error",
 					"name": "Error"
 				}
