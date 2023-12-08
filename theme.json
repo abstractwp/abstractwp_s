@@ -50,11 +50,34 @@
 						{
 							"fontFamily": "Inter",
 							"fontStyle": "normal",
-							"fontWeight": "300",
+							"fontWeight": "500",
 							"src": [
-								"file:./build/fonts/inter/Inter-Light.woff2"
+								"file:./build/fonts/inter/Inter-Medium.ttf"
 							]
 						},
+						{
+							"fontFamily": "Inter",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./build/fonts/inter/Inter-SemiBold.ttf"
+							]
+						},
+						{
+							"fontFamily": "Inter",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./build/fonts/inter/Inter-Bold.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "Inter, sans-serif",
+					"name": "Body",
+					"slug": "body",
+					"fontFace": [
 						{
 							"fontFamily": "Inter",
 							"fontStyle": "normal",
@@ -66,63 +89,17 @@
 						{
 							"fontFamily": "Inter",
 							"fontStyle": "normal",
-							"fontWeight": "700",
+							"fontWeight": "500",
 							"src": [
-								"file:./build/fonts/inter/Inter-Bold.woff2"
+								"file:./build/fonts/inter/Inter-Medium.ttf"
 							]
 						},
 						{
 							"fontFamily": "Inter",
 							"fontStyle": "normal",
-							"fontWeight": "900",
+							"fontWeight": "700",
 							"src": [
-								"file:./build/fonts/inter/Inter-Black.woff2"
-							]
-						}
-					]
-				},
-				{
-					"fontFamily": "Oxygen, sans-serif",
-					"name": "Body",
-					"slug": "body",
-					"fontFace": [
-						{
-							"fontFamily": "Oxygen",
-							"fontStyle": "normal",
-							"fontWeight": "300",
-							"src": [
-								"file:./build/fonts/oxygen/oxygen-v15-latin-300.woff2"
-							]
-						},
-						{
-							"fontFamily": "Oxygen",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./build/fonts/oxygen/oxygen-v15-latin-regular.woff2"
-							]
-						},
-						{
-							"fontFamily": "Oxygen",
-							"fontStyle": "normal",
-							"fontWeight": "900",
-							"src": [
-								"file:./build/fonts/oxygen/oxygen-v15-latin-700.woff2"
-							]
-						}
-					]
-				},
-				{
-					"fontFamily": "Oxygen Mono, sans-serif",
-					"name": "Mono",
-					"slug": "mono",
-					"fontFace": [
-						{
-							"fontFamily": "Oxygen Mono",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./build/fonts/oxygen/oxygen-mono-v14-latin-regular.woff2"
+								"file:./build/fonts/inter/Inter-Bold.woff2"
 							]
 						}
 					]
@@ -385,7 +362,8 @@
 	"styles": {
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--body)",
-			"fontSize": "var(--wp--preset--font-size--normal)"
+			"fontSize": "var(--wp--preset--font-size--normal)",
+			"fontWeight": "400"
 		},
 		"spacing": {
 			"blockGap": "var(--wp--preset--spacing--50)",
@@ -759,7 +737,7 @@
 					"text": "var(--wp--preset--color--black)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--mono)",
+					"fontFamily": "var(--wp--preset--font-family--body)",
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
