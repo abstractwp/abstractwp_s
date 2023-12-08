@@ -13,29 +13,34 @@
 			"defaultPresets": false,
 			"presets": [
 				{
-					"name": "Primary 200",
-					"slug": "primary-200",
-					"shadow": "0 4px 8px 0 rgba(59, 40, 204, 0.1), 0 0 1px 0 rgba(59, 40, 204, 0.05)"
+					"name": "X Small",
+					"slug": "x-small",
+					"shadow": "0px 1px 2px 0px rgba(0, 0, 0, 0.10)"
 				},
 				{
-					"name": "Primary 300",
-					"slug": "primary-300",
-					"shadow": "0 4px 8px 0 rgba(59, 40, 204, 0.1), 0 0 1px 0 rgba(59, 40, 204, 0.05)"
+					"name": "Small",
+					"slug": "small",
+					"shadow": "0px 3px 8px -1px rgba(0, 0, 0, 0.10)"
 				},
 				{
-					"name": "Primary 400",
-					"slug": "primary-400",
-					"shadow": "0 8px 16px 0 rgba(59, 40, 204, 0.1), 0 0 1px 0 rgba(59, 40, 204, 0.05)"
+					"name": "Medium",
+					"slug": "medium",
+					"shadow": "0px 6px 20px -4px rgba(0, 0, 0, 0.10)"
 				},
 				{
-					"name": "Primary 500",
-					"slug": "primary-500",
-					"shadow": "0 16px 24px 0 rgba(59, 40, 204, 0.09), 0 0 1px 0 rgba(59, 40, 204, 0.05)"
+					"name": "Large",
+					"slug": "Large",
+					"shadow": "0px 16px 40px -8px rgba(0, 0, 0, 0.10)"
 				},
 				{
-					"name": "Primary 600",
-					"slug": "primary-600",
-					"shadow": "0 24px 40px 0 rgba(59, 40, 204, 0.08), 0 0 1px 0 rgba(59, 40, 204, 0.05)"
+					"name": "X Large",
+					"slug": "x-large",
+					"shadow": "0px 20px 56px -10px rgba(0, 0, 0, 0.15)"
+				},
+				{
+					"name": "XX Large",
+					"slug": "xx-large",
+					"shadow": "0px 24px 64px -12px rgba(0, 0, 0, 0.20)"
 				}
 			]
 		},
