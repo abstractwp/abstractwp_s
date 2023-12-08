@@ -560,16 +560,16 @@
 				"variations": {
 					"outline": {
 						"border": {
-							"color": "currentColor",
+							"color": "var(--wp--preset--color--neutral-400)",
 							"style": "solid",
 							"width": "1px"
 						},
 						"spacing": {
 							"padding": {
-								"top": "7px",
-								"right": "15px",
-								"bottom": "7px",
-								"left": "15px"
+								"top": "15px",
+								"right": "20px",
+								"bottom": "15px",
+								"left": "20px"
 							}
 						}
 					}
