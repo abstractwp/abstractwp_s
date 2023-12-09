@@ -2,7 +2,7 @@
 --------------------------------------------- */
 .wp-block-post-comments-form .comment-form {
 	button,
-	input:not( [type='submit'] ):not( [type='checkbox'] ),
+	input:not( [type='submit'] ):not( [type='checkbox'] ):not( [type='radio'] ),
 	optgroup,
 	select,
 	textarea {
@@ -32,6 +32,7 @@ input[type='checkbox'] {
 /* Search form */
 .wp-block-search {
 	input {
+		@apply rounded;
 		padding-top: 12px;
 		padding-right: 16px;
 		padding-bottom: 12px;
@@ -43,5 +44,37 @@ input[type='checkbox'] {
 			border: 1px var( --wp--preset--color--primary-500 ) solid;
 			box-shadow: 0 0 0 3px rgba( 60, 0, 230, 0.1 );
 		}
+	}
+}
+
+/* stylelint-disable */
+.gform-theme--framework .gform-body {
+	/* stylelint-enable */
+	input:not( [type='radio'] ),
+	select,
+	textarea {
+		@apply rounded;
+		padding-top: 12px;
+		padding-right: 16px;
+		padding-bottom: 12px;
+		padding-left: 16px;
+		outline: 0;
+		border: 1px var( --wp--preset--color--neutral-300 ) solid;
+		font-size: var( --wp--preset--font-size--normal );
+		line-height: 1.31;
+
+		&:focus {
+			border: 1px var( --wp--preset--color--primary-500 ) solid;
+			box-shadow: 0 0 0 3px rgba( 60, 0, 230, 0.1 );
+		}
+	}
+
+	select,
+	input:not( [type='radio'] ) {
+		height: 3rem;
+	}
+
+	input[type='radio'] {
+		box-shadow: none;
 	}
 }
