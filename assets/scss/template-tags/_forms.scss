@@ -1,16 +1,32 @@
 /* Comments
 --------------------------------------------- */
-button,
-input,
-optgroup,
-select,
-textarea {
-	@apply rounded;
-	border: 1px var( --wp--preset--color--neutral-300 ) solid;
-	padding-top: 12px;
-	padding-right: 16px;
-	padding-bottom: 12px;
-	padding-left: 16px;
+.wp-block-post-comments-form .comment-form {
+	button,
+	input:not( [type='submit'] ):not( [type='checkbox'] ),
+	optgroup,
+	select,
+	textarea {
+		@apply rounded;
+		border: 1px var( --wp--preset--color--neutral-300 ) solid;
+		padding-top: 12px;
+		padding-right: 16px;
+		padding-bottom: 12px;
+		padding-left: 16px;
+		outline: 0;
+
+		&:focus {
+			border: 1px var( --wp--preset--color--primary-500 ) solid;
+			box-shadow: 0 0 0 3px rgba( 60, 0, 230, 0.1 );
+		}
+	}
+
+	.comment-form-cookies-consent #wp-comment-cookies-consent {
+		margin-top: 0;
+	}
+}
+
+input[type='checkbox'] {
+	width: 20px;
 }
 
 /* Search form */

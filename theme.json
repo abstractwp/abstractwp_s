@@ -701,9 +701,6 @@
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
-			"core/post-comments-form": {
-				"css": "& textarea, input{border-radius:.33rem}"
-			},
 			"core/comments-pagination": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
