@@ -27,6 +27,7 @@
 
 input[type='checkbox'] {
 	width: 20px;
+	accent-color: var( --wp--preset--color--primary-500 );
 }
 
 /* Search form */
@@ -39,6 +40,7 @@ input[type='checkbox'] {
 		padding-left: 16px;
 		outline: 0;
 		border: 1px var( --wp--preset--color--neutral-300 ) solid;
+		height: 3rem;
 
 		&:focus {
 			border: 1px var( --wp--preset--color--primary-500 ) solid;
@@ -48,8 +50,14 @@ input[type='checkbox'] {
 }
 
 /* stylelint-disable */
-.gform-theme--framework .gform-body {
+.gform-theme--framework.gform-theme.gform_wrapper .gform-body {
 	/* stylelint-enable */
+	input:is( [type='submit'], [type='button'] ) {
+		height: 48px;
+		font-size: var( --wp--preset--font-size--normal );
+		line-height: 1;
+	}
+
 	input:not( [type='radio'] ),
 	select,
 	textarea {
@@ -77,6 +85,10 @@ input[type='checkbox'] {
 	input[type='radio'] {
 		box-shadow: none;
 	}
+}
+
+.wp-element-button {
+	line-height: 1;
 }
 
 [type='radio']:checked,
