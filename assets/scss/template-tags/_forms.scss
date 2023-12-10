@@ -91,6 +91,20 @@ input[type='checkbox'] {
 	line-height: 1;
 }
 
+.wp-block-button.is-style-outline {
+	/* stylelint-disable */
+	.wp-block-button__link:not( .has-background ),
+	/* stylelint-enable */
+	.wp-element-button:not( .has-background ) {
+		&:hover {
+			background-color: var( --wp--preset--color--neutral-50 );
+		}
+		&:active {
+			background-color: var( --wp--preset--color--neutral-200 );
+		}
+	}
+}
+
 [type='radio']:checked,
 [type='radio']:not( :checked ) {
 	position: absolute;
