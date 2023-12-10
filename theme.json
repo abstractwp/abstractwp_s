@@ -571,9 +571,9 @@
 						},
 						"spacing": {
 							"padding": {
-								"top": "15px",
+								"top": "14px",
 								"right": "20px",
-								"bottom": "15px",
+								"bottom": "14px",
 								"left": "20px"
 							}
 						}

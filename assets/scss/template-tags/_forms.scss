@@ -98,6 +98,7 @@ input[type='checkbox'] {
 	.wp-element-button:not( .has-background ) {
 		&:hover {
 			background-color: var( --wp--preset--color--neutral-50 );
+			color: var( --wp--preset--color--neutral-900 );
 		}
 		&:active {
 			background-color: var( --wp--preset--color--neutral-200 );
