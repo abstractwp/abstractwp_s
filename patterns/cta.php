@@ -8,8 +8,8 @@
  */
 
 ?>
-<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/inner-banner.jpg","id":129,"dimRatio":40,"overlayColor":"black","focalPoint":{"x":0.5,"y":0.54},"align":"full"} -->
-<div class="wp-block-cover alignfull"><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim-40 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-129" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/inner-banner.jpg" style="object-position:50% 54%" data-object-fit="cover" data-object-position="50% 54%"/><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"inherit":true,"type":"constrained"}} -->
+<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/inner-banner.jpg","id":129,"dimRatio":40,"overlayColor":"black","focalPoint":{"x":0.5,"y":0.54},"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-cover alignfull" style="margin-top:0;margin-bottom:0"><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim-40 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-129" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/inner-banner.jpg" style="object-position:50% 54%" data-object-fit="cover" data-object-position="50% 54%"/><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"inherit":false}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"textAlign":"center","level":5,"textColor":"white"} -->
 <h5 class="wp-block-heading has-text-align-center has-white-color has-text-color">Subheading goes here</h5>
