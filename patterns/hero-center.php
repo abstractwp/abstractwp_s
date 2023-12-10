@@ -35,6 +35,6 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"align":"wide","id":232,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image alignwide size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/hero.jpg" alt="Hero" class="wp-image-232"/></figure>
+<figure class="wp-block-image alignwide size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/media.jpg" alt="Hero" class="wp-image-232"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
