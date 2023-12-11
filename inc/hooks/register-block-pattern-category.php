@@ -40,6 +40,13 @@ function register_custom_block_pattern_category() {
 		]
 	);
 
+	register_block_pattern_category(
+		'wds-pricing',
+		[
+			'label' => __( 'Pricing', 'wd_s' ),
+		]
+	);
+
 	// Remove default patterns.
 	remove_theme_support( 'core-block-patterns' );
 }
