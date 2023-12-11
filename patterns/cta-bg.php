@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Call to Action
+ * Title: CTA with background
  * Slug: wds/cta
- * Categories: wds-patterns
+ * Categories: wds-cta
  *
  * @package wd_s
  */
