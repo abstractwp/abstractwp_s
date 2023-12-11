@@ -20,6 +20,13 @@ function register_custom_block_pattern_category() {
 	);
 
 	register_block_pattern_category(
+		'wds-content',
+		[
+			'label' => __( 'Content', 'wd_s' ),
+		]
+	);
+
+	register_block_pattern_category(
 		'wds-features',
 		[
 			'label' => __( 'Features', 'wd_s' ),

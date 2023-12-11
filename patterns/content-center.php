@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Hero Center
- * Slug: wds/hero-center
- * Categories: wds-patterns
+ * Title: Content Center
+ * Slug: wds/content-center
+ * Categories: wds-content
  *
  * @package wd_s
  */
