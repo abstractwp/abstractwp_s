@@ -26,10 +26,8 @@ function register_acf_blocks() {
 				'category'        => 'wds-blocks-category',
 				'icon'            => 'testimonial',
 				'keywords'        => array( 'testimonials', 'slider' ),
-				'mode'            => 'edit',
 				'supports'        => array(
 					'align' => false,
-					'mode'  => false,
 				),
 			)
 		);
