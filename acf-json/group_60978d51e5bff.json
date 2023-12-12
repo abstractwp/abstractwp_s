@@ -145,7 +145,7 @@
                     "name": "rating",
                     "aria-label": "",
                     "type": "range",
-                    "instructions": "",
+                    "instructions": "Set 0 to hide rating.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -154,7 +154,7 @@
                         "id": ""
                     },
                     "default_value": 5,
-                    "min": 1,
+                    "min": 0,
                     "max": 5,
                     "step": 1,
                     "prepend": "",
@@ -182,5 +182,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702384715
+    "modified": 1702401659
 }

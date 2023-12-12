@@ -29,20 +29,21 @@ if ( $wd_s_testimonials ) :
 					<div class="t-content">
 						<div class="t-description">
 						<?php
-						if ( $wd_s_testimonial['rating'] ) {
+						if ( 0 != $wd_s_testimonial['rating'] ) { // phpcs:ignore
 							$wd_s_testimonial_rating = $wd_s_testimonial['rating'];
-							?>
-							<div class="rating">
-							<?php
+
+							echo '<div class="rating">';
+
 							for ( $wd_s_i = 0; $wd_s_i < $wd_s_testimonial_rating; $wd_s_i++ ) {
 								echo '<div class="star star-soild"></div>';
 							}
 							for ( $wd_s_i = $wd_s_testimonial_rating; $wd_s_i < 5; $wd_s_i++ ) {
 								echo '<div class="star star-regular"></div>';
 							}
+
+							echo '</div>';
 						}
 						?>
-							</div>
 							<p><?php echo esc_html( $wd_s_testimonial['content'] ); ?></p>
 						</div>
 						<div class="t-meta">
