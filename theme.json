@@ -571,9 +571,9 @@
 						},
 						"spacing": {
 							"padding": {
-								"top": "15px",
+								"top": "14px",
 								"right": "20px",
-								"bottom": "15px",
+								"bottom": "14px",
 								"left": "20px"
 							}
 						}
@@ -700,9 +700,6 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
-			},
-			"core/post-comments-form": {
-				"css": "& textarea, input{border-radius:.33rem}"
 			},
 			"core/comments-pagination": {
 				"typography": {
