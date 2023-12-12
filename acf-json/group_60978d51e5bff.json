@@ -18,9 +18,7 @@
             },
             "choices": {
                 "simple": "Simple",
-                "center-slider": "Center with slider",
-                "img-text": "Media & text",
-                "img-text-slider": "Media & text slider"
+                "center-slider": "Center with slider"
             },
             "default_value": "simple",
             "return_format": "value",
@@ -184,5 +182,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702382474
+    "modified": 1702384715
 }
