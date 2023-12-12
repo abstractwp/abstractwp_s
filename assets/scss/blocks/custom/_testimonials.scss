@@ -1,0 +1,77 @@
+//----------------------------------------
+// Testimonials slider - Custom Block
+//----------------------------------------
+
+.testimonial-block {
+	&.simple {
+		background-color: var( --wp--preset--color--neutral-50 );
+		padding: 24px;
+
+		@screen sm {
+			padding: 40px;
+		}
+
+		.t-description {
+			p {
+				margin-top: 24px;
+				margin-bottom: 24px;
+				padding: 0;
+				font-style: italic;
+			}
+		}
+
+		.t-meta {
+			@apply flex flex-row items-center;
+
+			img {
+				margin-right: 24px;
+				width: 72px;
+				height: 72px;
+			}
+
+			p {
+				@apply text-left;
+				padding: 0;
+
+				&.author-title {
+					padding: 0;
+					margin-bottom: 4px;
+					margin-top: 0;
+				}
+
+				&.position {
+					margin: 0;
+					color: var( --wp--preset--color--neutral-400 );
+					font-size: var( --wp--preset--font-size--small );
+				}
+			}
+		}
+	}
+
+	.rating {
+		display: inline-block;
+	}
+
+	.star {
+		display: inline-block;
+		margin: 0 4px;
+		width: 18px;
+		height: 16px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&.star-soild {
+			background: url( ../images/icons/star-soild.svg ) 50% 50% no-repeat
+				transparent;
+			background-size: 18px 16px;
+		}
+
+		&.star-regular {
+			background: url( ../images/icons/star-regular.svg ) 50% 50%
+				no-repeat transparent;
+			background-size: 18px 16px;
+		}
+	}
+}
