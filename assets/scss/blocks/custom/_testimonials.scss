@@ -71,7 +71,7 @@
 		.slick-dots {
 			@apply flex justify-center;
 			margin-top: 64px;
-
+			padding: 0;
 			font-size: 0;
 
 			button {
@@ -118,7 +118,6 @@
 
 			.slick-dots {
 				margin-top: 56px;
-				padding: 0;
 			}
 		}
 	}
