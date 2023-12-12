@@ -195,19 +195,54 @@
 			"gradients": [],
 			"palette": [
 				{
-					"color": "#425a5e",
+					"color": "#FBFAFF",
+					"slug": "primary-50",
+					"name": "Primary 50"
+				},
+				{
+					"color": "#EBE6FD",
 					"slug": "primary-100",
 					"name": "Primary 100"
 				},
 				{
-					"color": "#2d3d40",
+					"color": "#C5B3F8",
 					"slug": "primary-200",
 					"name": "Primary 200"
 				},
 				{
-					"color": "#3f4040",
+					"color": "#8A66F0",
 					"slug": "primary-300",
 					"name": "Primary 300"
+				},
+				{
+					"color": "#6333EB",
+					"slug": "primary-400",
+					"name": "Primary 400"
+				},
+				{
+					"color": "#3C00E7",
+					"slug": "primary-500",
+					"name": "Primary 500"
+				},
+				{
+					"color": "#2A00A1",
+					"slug": "primary-600",
+					"name": "Primary 600"
+				},
+				{
+					"color": "#1E0073",
+					"slug": "primary-700",
+					"name": "Primary 700"
+				},
+				{
+					"color": "#120045",
+					"slug": "primary-800",
+					"name": "Primary 800"
+				},
+				{
+					"color": "#0C002E",
+					"slug": "primary-900",
+					"name": "Primary 900"
 				},
 				{
 					"color": "#fff",
@@ -225,32 +260,117 @@
 					"name": "Secondary 300"
 				},
 				{
-					"color": "#f48d60",
-					"slug": "tertiary-100",
-					"name": "Tertiary 100"
+					"color": "#FFFCF2",
+					"slug": "secondary-50",
+					"name": "Secondary 50"
 				},
 				{
-					"color": "#f47c48",
-					"slug": "tertiary-200",
-					"name": "Tertiary 200"
+					"color": "#FFF4CC",
+					"slug": "secondary-100",
+					"name": "Secondary 100"
 				},
 				{
-					"color": "#f3713c",
-					"slug": "tertiary-300",
-					"name": "Tertiary 300"
+					"color": "#FFEEB2",
+					"slug": "secondary-200",
+					"name": "Secondary 200"
 				},
 				{
-					"color": "#22C55E",
+					"color": "#FFE380",
+					"slug": "secondary-300",
+					"name": "Secondary 300"
+				},
+				{
+					"color": "#FFD233",
+					"slug": "secondary-400",
+					"name": "Secondary 400"
+				},
+				{
+					"color": "#FFC700",
+					"slug": "secondary-500",
+					"name": "Secondary 500"
+				},
+				{
+					"color": "#E6A100",
+					"slug": "secondary-600",
+					"name": "Secondary 600"
+				},
+				{
+					"color": "#B36100",
+					"slug": "secondary-700",
+					"name": "Secondary 700"
+				},
+				{
+					"color": "#803100",
+					"slug": "secondary-800",
+					"name": "Secondary 800"
+				},
+				{
+					"color": "#330800",
+					"slug": "secondary-900",
+					"name": "Secondary 900"
+				},
+				{
+					"color": "#FAFAFA",
+					"slug": "neutral-50",
+					"name": "Neutral 50"
+				},
+				{
+					"color": "#F5F5F5",
+					"slug": "neutral-100",
+					"name": "Neutral 100"
+				},
+				{
+					"color": "#EEEEEE",
+					"slug": "neutral-200",
+					"name": "Neutral 200"
+				},
+				{
+					"color": "#E0E0E0",
+					"slug": "neutral-300",
+					"name": "Neutral 300"
+				},
+				{
+					"color": "#BDBDBD",
+					"slug": "neutral-400",
+					"name": "Neutral 400"
+				},
+				{
+					"color": "#9E9E9E",
+					"slug": "neutral-500",
+					"name": "Neutral 500"
+				},
+				{
+					"color": "#757575",
+					"slug": "neutral-600",
+					"name": "Neutral 600"
+				},
+				{
+					"color": "#616161",
+					"slug": "neutral-700",
+					"name": "Neutral 700"
+				},
+				{
+					"color": "#424242",
+					"slug": "neutral-800",
+					"name": "Neutral 800"
+				},
+				{
+					"color": "#212121",
+					"slug": "neutral-900",
+					"name": "Neutral 900"
+				},
+				{
+					"color": "#0F8A56",
 					"slug": "success",
 					"name": "Success"
 				},
 				{
-					"color": "#EAB308",
+					"color": "#F29100",
 					"slug": "warning",
 					"name": "Warning"
 				},
 				{
-					"color": "#EF4444",
+					"color": "#DF2A4A",
 					"slug": "error",
 					"name": "Error"
 				}
@@ -316,7 +436,7 @@
 					"width": "0"
 				},
 				"color": {
-					"background": "var(--wp--preset--color--tertiary-300)",
+					"background": "var(--wp--preset--color--neutral-300)",
 					"text": "var(--wp--preset--color--white)"
 				},
 				"typography": {
@@ -333,37 +453,37 @@
 				},
 				":hover": {
 					"color": {
-						"background": "var(--wp--preset--color--tertiary-200)"
+						"background": "var(--wp--preset--color--neutral-200)"
 					}
 				},
 				":focus": {
 					"color": {
-						"background": "var(--wp--preset--color--tertiary-200)"
+						"background": "var(--wp--preset--color--neutral-200)"
 					}
 				},
 				":active": {
 					"color": {
-						"background": "var(--wp--preset--color--tertiary-100)"
+						"background": "var(--wp--preset--color--neutral-100)"
 					}
 				}
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--tertiary-300)"
+					"text": "var(--wp--preset--color--neutral-300)"
 				},
 				":active": {
 					"color": {
-						"text": "var(--wp--preset--color--tertiary-200)"
+						"text": "var(--wp--preset--color--neutral-200)"
 					}
 				},
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--tertiary-200)"
+						"text": "var(--wp--preset--color--neutral-200)"
 					}
 				},
 				":focus": {
 					"color": {
-						"text": "var(--wp--preset--color--tertiary-200)"
+						"text": "var(--wp--preset--color--neutral-200)"
 					}
 				}
 			}
@@ -480,7 +600,7 @@
 				"elements": {
 					"link": {
 						"color": {
-							"text": "var(--wp--preset--color--tertiary-300)"
+							"text": "var(--wp--preset--color--neutral-300)"
 						},
 						"typography": {
 							"textDecoration": "none"
@@ -692,7 +812,7 @@
 					"radius": "var(--wp--preset--spacing--20)"
 				},
 				"color": {
-					"background": "var(--wp--preset--color--tertiary-100)"
+					"background": "var(--wp--preset--color--neutral-100)"
 				},
 				"css": "& :where(p) {margin-block-start:0;margin-block-end:calc(var(--wp--preset--spacing--20) + 0.5rem);}",
 				"elements": {
