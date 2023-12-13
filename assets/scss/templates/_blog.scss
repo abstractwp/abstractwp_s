@@ -1,0 +1,71 @@
+.posts-list {
+	@apply grid grid-cols-1 gap-10 mx-6;
+	margin-top: 40px;
+	max-width: var( --wp--style--global--wide-size );
+
+	@screen xl {
+		@apply mx-auto grid-cols-2 gap-x-9 gap-y-24;
+	}
+
+	.post-container {
+		@apply mb-0;
+
+		.entry-title {
+			@apply mb-3;
+			margin-top: var( --wp--preset--spacing--20 );
+		}
+
+		a {
+			color: var( --wp--preset--color--neutral-900 );
+		}
+	}
+}
+
+.post-container {
+	.entry-header {
+		.entry-title,
+		.entry-meta {
+			@screen md {
+				padding-left: var( --wp--preset--spacing--40 );
+				padding-right: var( --wp--preset--spacing--40 );
+			}
+		}
+	}
+	.entry-content {
+		margin-top: var( --wp--preset--spacing--30 );
+		margin-bottom: var( --wp--preset--spacing--30 );
+
+		@screen md {
+			padding-left: var( --wp--preset--spacing--40 );
+			padding-right: var( --wp--preset--spacing--40 );
+		}
+	}
+
+	.entry-footer {
+		@screen md {
+			padding-left: var( --wp--preset--spacing--40 );
+			padding-right: var( --wp--preset--spacing--40 );
+		}
+		.wp-element-button {
+			@apply inline-block;
+		}
+	}
+}
+
+.wp-post-image,
+.placeholder-img {
+	@apply object-cover w-full;
+
+	min-height: 170px;
+	max-height: 170px;
+
+	@screen sm {
+		min-height: 206px;
+		max-height: 206px;
+	}
+
+	@screen xl {
+		min-height: 319px;
+		max-height: 319px;
+	}
+}

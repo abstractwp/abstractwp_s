@@ -1,0 +1,17 @@
+@mixin generate-pbg-styles(
+	$base-class,
+	$color-name,
+	$start-index,
+	$end-index
+) {
+	@for $i from $start-index through $end-index {
+		.#{$base-class}-#{$i} {
+			background-color: var( --wp--preset--color--#{$color-name}-#{$i} );
+		}
+	}
+}
+
+// This is for blog image placeholder
+@include generate-pbg-styles( 'pbg-secondary', 'secondary', 100, 400 );
+@include generate-pbg-styles( 'pbg-primary', 'primary', 100, 400 );
+@include generate-pbg-styles( 'pbg-neutral', 'neutral', 100, 400 );
