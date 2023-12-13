@@ -1,6 +1,7 @@
 .posts-list {
 	@apply grid grid-cols-1 gap-10 mx-6;
 	margin-top: 40px;
+	margin-bottom: var( --wp--preset--spacing--80 );
 	max-width: var( --wp--style--global--wide-size );
 
 	@screen xl {
@@ -84,6 +85,7 @@
 		padding: 80px;
 		padding-bottom: 0;
 		margin-top: -264px;
+		min-height: 300px;
 		margin-bottom: 120px;
 
 		.btn-continue {
@@ -188,6 +190,12 @@
 					}
 				}
 			}
+		}
+	}
+
+	.navigation {
+		@media only screen and ( max-width: 600px ) {
+			@apply px-6;
 		}
 	}
 }
