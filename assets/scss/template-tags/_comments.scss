@@ -2,6 +2,12 @@
 --------------------------------------------- */
 
 .comments-area {
+	@apply px-6;
+
+	@screen lg {
+		@apply px-0;
+	}
+
 	.comment-list {
 		@apply list-none mb-0 p-0;
 
@@ -21,7 +27,6 @@
 
 				textarea {
 					@apply rounded-md;
-					border: 1px var( --wp--preset--color--primary-300 ) solid;
 				}
 			}
 		}
