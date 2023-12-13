@@ -4,6 +4,8 @@
 .site-footer {
 	@apply flex p-10 flex-nowrap justify-center items-center bottom-0;
 
+	background-color: var( --wp--preset--color--neutral-50 );
+
 	.site-info {
 		@apply text-center;
 
