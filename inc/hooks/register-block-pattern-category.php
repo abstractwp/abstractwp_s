@@ -47,6 +47,13 @@ function register_custom_block_pattern_category() {
 		]
 	);
 
+	register_block_pattern_category(
+		'wds-testimonial',
+		[
+			'label' => __( 'Testimonials', 'wd_s' ),
+		]
+	);
+
 	// Remove default patterns.
 	remove_theme_support( 'core-block-patterns' );
 }
