@@ -31,14 +31,6 @@ use function WebDevStudios\wd_s\print_post_taxonomies;
 						]
 					);
 					the_title( '<h1 class="entry-title">', '</h1>' );
-					echo esc_html(
-						get_trimmed_excerpt(
-							[
-								'length' => 50,
-								'more'   => '',
-							]
-						)
-					);
 				?>
 				</div>
 			</div>
