@@ -33,7 +33,7 @@
 
 	<div class="wp-site-blocks">
 
-			<header class="wp-block-template-part site-header">
+			<header class="wp-block-template-part site-header sticky-header">
 				<?php block_header_area(); ?>
 			</header>
 
