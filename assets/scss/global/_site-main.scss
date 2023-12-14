@@ -3,4 +3,9 @@ main,
 .site-main {
 	margin-top: 100px;
 	margin-block-start: 100px !important;
+
+	@media only screen and ( max-width: 600px ) {
+		margin-top: 72px;
+		margin-block-start: 72px !important;
+	}
 }
