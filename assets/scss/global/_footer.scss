@@ -2,19 +2,16 @@
 // Global Site Footer
 //--------------------------------------------------------------
 .site-footer {
-	@apply flex p-10 flex-nowrap justify-center items-center bottom-0;
+	@apply flex p-8 flex-nowrap justify-center items-center bottom-0;
 
 	background-color: var( --wp--preset--color--neutral-50 );
+	font-size: var( --wp--preset--font-size--small );
 
 	.site-info {
 		@apply text-center;
 
 		.custom-logo {
 			@apply max-h-12 w-auto;
-		}
-
-		p {
-			@apply text-xs;
 		}
 	}
 }
