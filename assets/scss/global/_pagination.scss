@@ -1,0 +1,44 @@
+//----------------------------------------
+// Pagination
+// Styles for print-numeric-pagination.php.
+//----------------------------------------
+/* stylelint-disable declaration-no-important */
+.pagination-container {
+	@apply container flex justify-center relative text-center h-10 mt-24;
+	margin-block-end: var( --wp--preset--spacing--80 ) !important;
+	max-width: var( --wp--style--global--wide-size ) !important;
+
+	.page-numbers {
+		border-radius: 3px;
+		padding: 10px 18px;
+		justify-content: center;
+		align-items: flex-start;
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 1;
+		color: var( --wp--preset--color--neutral-900 );
+		border: 1px var( --wp--preset--color--neutral-900 ) solid;
+		margin-left: 2px;
+		margin-right: 2px;
+
+		&:hover,
+		&.current {
+			background-color: var( --wp--preset--color--neutral-200 );
+		}
+
+		&.prev {
+			@apply absolute left-0 top-0 ml-0;
+		}
+
+		&.next {
+			@apply absolute right-0 top-0 mr-0;
+		}
+	}
+
+	@media only screen and ( max-width: 600px ) {
+		.prev,
+		.next {
+			@apply hidden;
+		}
+	}
+}
