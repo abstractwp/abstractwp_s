@@ -1,0 +1,12 @@
+//--------------------------------------------------------------
+// Override variable of theme.json
+//--------------------------------------------------------------
+
+@media only screen and ( max-width: 600px ) {
+	body {
+		--wp--preset--spacing--60: 32px;
+		--wp--preset--spacing--70: 32px;
+		--wp--preset--spacing--80: 40px;
+		--wp--preset--spacing--90: 40px;
+	}
+}
