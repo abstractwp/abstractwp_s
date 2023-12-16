@@ -13,8 +13,8 @@ $wds_site_logo = has_custom_logo() ? '<!-- wp:site-logo /-->' : '<!-- wp:site-ti
 ?>
 <!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull">
-	<!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false,"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
-	<div class="wp-block-columns alignwide are-vertically-aligned-center is-not-stacked-on-mobile" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+	<!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false,"align":"wide"} -->
+	<div class="wp-block-columns alignwide are-vertically-aligned-center is-not-stacked-on-mobile">
 		<!-- wp:column {"verticalAlignment":"center","width":"100%"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:100%">
 			<?php echo wp_kses_post( $wds_site_logo ); ?>
