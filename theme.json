@@ -12,11 +12,9 @@
 				{ "name": "1", "slug": "20", "size": "1.5rem" },
 				{ "name": "2", "slug": "30", "size": "2rem" },
 				{ "name": "3", "slug": "40", "size": "2.5rem" },
-				{ "name": "4", "slug": "50", "size": "3rem" },
-				{ "name": "5", "slug": "60", "size": "4rem" },
-				{ "name": "6", "slug": "70", "size": "4.5rem" },
-				{ "name": "7", "slug": "80", "size": "6rem" },
-				{ "name": "8", "slug": "90", "size": "7.5rem" }
+				{ "name": "4", "slug": "60", "size": "4rem" },
+				{ "name": "5", "slug": "80", "size": "6rem" },
+				{ "name": "6", "slug": "90", "size": "7.5rem" }
 			]
 		},
 		"shadow": {
