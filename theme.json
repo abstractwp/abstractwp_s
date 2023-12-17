@@ -518,8 +518,8 @@
 			"core/heading": {
 				"spacing": {
 					"margin": {
-						"top": "0.5em",
-						"bottom": "0.25em"
+						"top": "1rem",
+						"bottom": "1rem"
 					}
 				},
 				"elements": {
@@ -561,11 +561,8 @@
 				},
 				"spacing": {
 					"margin": {
-						"top": "var(--wp--preset--spacing--20)",
-						"bottom": "var(--wp--preset--spacing--20)"
-					},
-					"padding": {
-						"bottom": "var(--wp--preset--spacing--20)"
+						"top": "1rem",
+						"bottom": "1rem"
 					}
 				}
 			},
