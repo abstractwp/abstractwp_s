@@ -11,7 +11,7 @@
 
 		@screen sm {
 			margin-top: 0;
-			padding-left: var(--wp--preset--spacing--30) !important;
+			padding-left: var( --wp--preset--spacing--30 ) !important;
 		}
 
 		@screen lg {
@@ -25,7 +25,7 @@
 			padding-right: 0 !important;
 
 			@screen sm {
-				padding-right: var(--wp--preset--spacing--30) !important;
+				padding-right: var( --wp--preset--spacing--30 ) !important;
 			}
 			@screen lg {
 				padding-right: 139px !important;
