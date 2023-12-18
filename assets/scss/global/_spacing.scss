@@ -1,0 +1,13 @@
+/* stylelint-disable declaration-no-important */
+body .is-layout-constrained,
+body .is-layout-flow > {
+	.wp-block-heading:not(:first-child) {
+		margin-block-start: 1rem;
+		margin-block-end: var(--wp--preset--spacing--20);
+	}
+
+	.wp-block-group {
+		margin-block-start: 0;
+	}
+}
+/* stylelint-enable declaration-no-important */
