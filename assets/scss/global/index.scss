@@ -2,10 +2,13 @@
 // Global site styles
 //----------------------------------------
 
+@import 'variables';
 @import 'mixins';
 @import 'alignment';
+@import 'spacing';
 @import 'global';
 @import 'editor';
 @import 'header';
 @import 'site-main';
 @import 'footer';
+@import 'pagination';

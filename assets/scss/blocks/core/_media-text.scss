@@ -1,0 +1,35 @@
+/* stylelint-disable selector-class-pattern, declaration-no-important, value-keyword-case */
+.wp-block-media-text {
+	.wp-block-media-text__content {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		margin-top: 40px;
+
+		> *:last-child {
+			margin-bottom: 0;
+		}
+
+		@screen sm {
+			margin-top: 0;
+			padding-left: var( --wp--preset--spacing--30 ) !important;
+		}
+
+		@screen lg {
+			padding-left: 139px !important;
+		}
+	}
+
+	&.has-media-on-the-right {
+		.wp-block-media-text__content {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+
+			@screen sm {
+				padding-right: var( --wp--preset--spacing--30 ) !important;
+			}
+			@screen lg {
+				padding-right: 139px !important;
+			}
+		}
+	}
+}

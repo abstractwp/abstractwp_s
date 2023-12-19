@@ -26,8 +26,8 @@ function print_numeric_pagination( $args = [], $query = null ) {
 
 	// Set defaults.
 	$defaults = [
-		'prev_text' => '&laquo;',
-		'next_text' => '&raquo;',
+		'prev_text' => 'Previous',
+		'next_text' => 'Next',
 		'mid_size'  => 4,
 		'total'     => $total_pages,
 	];
