@@ -12,6 +12,7 @@ use function WebDevStudios\wd_s\print_post_author;
 use function WebDevStudios\wd_s\print_similar_posts;
 use function WebDevStudios\wd_s\get_trimmed_excerpt;
 use function WebDevStudios\wd_s\print_post_taxonomies;
+use function WebDevStudios\wd_s\get_theme_colors;
 ?>
 
 <article <?php post_class( 'post-container' ); ?>>
@@ -40,7 +41,7 @@ use function WebDevStudios\wd_s\print_post_taxonomies;
 				if ( has_post_thumbnail() ) :
 					the_post_thumbnail( 'blog-thumb' );
 				else :
-					$wd_s_colors = [ 'primary-100', 'primary-200', 'primary-300', 'primary-400', 'secondary-100', 'secondary-200', 'secondary-300', 'secondary-400', 'neutral-100', 'neutral-200', 'neutral-300', 'neutral-400' ];
+					$wd_s_colors = get_theme_colors();
 					echo '<div class="placeholder-img pbg-' . $wd_s_colors[ array_rand( $wd_s_colors )] . '"></div>'; // phpcs:ignore.
 				endif;
 			endif;

@@ -24,9 +24,7 @@ get_header(); ?>
 	</header><!-- .page-header -->
 
 		<?php
-		if ( 'post' === get_post_type() ) {
-			echo '<div class="posts-list container">';
-		}
+		echo '<div class="posts-list container">';
 			/* Start the Loop */
 		while ( have_posts() ) :
 			the_post();
@@ -34,9 +32,7 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', get_post_type() );
 
 				endwhile;
-		if ( 'post' === get_post_type() ) {
-			echo '</div>';
-		}
+		echo '</div>';
 
 			print_numeric_pagination();
 
