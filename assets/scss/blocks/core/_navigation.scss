@@ -3,6 +3,29 @@
 /* Navigation
 --------------------------------------------- */
 
+.wp-block-navigation .wp-block-page-list,
+.wp-block-navigation__container,
+.wp-block-navigation__responsive-close,
+.wp-block-navigation__responsive-container,
+.wp-block-navigation__responsive-container-content,
+.wp-block-navigation__responsive-dialog {
+	gap: 0 !important;
+
+	.wp-block-navigation-item {
+		margin-right: 32px;
+
+		@screen sm {
+			&.button {
+				margin-right: 10px;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
 .wp-block-navigation-item__content {
 	font-size: 16px;
 	line-height: 1.4;
