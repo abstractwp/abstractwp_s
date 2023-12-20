@@ -1,0 +1,32 @@
+.single-service {
+	.entry-header {
+		.entry-meta,
+		.entry-title {
+			@apply mx-auto text-center;
+			max-width: var( --wp--style--global--content-size );
+		}
+	}
+
+	.post-container {
+		@apply mb-0;
+
+		.entry-content {
+			@apply mb-0;
+
+			@screen md {
+				padding-left: var( --wp--preset--spacing--20 );
+				padding-right: var( --wp--preset--spacing--20 );
+			}
+
+			> *:last-child {
+				&:not( .wp-block-cover ) {
+					margin-bottom: var( --wp--preset--spacing--90 );
+				}
+			}
+		}
+	}
+
+	.navigation {
+		@apply hidden;
+	}
+}
