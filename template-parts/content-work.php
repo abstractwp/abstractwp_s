@@ -9,10 +9,11 @@
 
 use function WebDevStudios\wd_s\get_trimmed_excerpt;
 use function WebDevStudios\wd_s\get_theme_colors;
+use function WebDevStudios\wd_s\get_work_taxonomies;
 ?>
 
 <article <?php post_class( 'post-container' ); ?>>
-
+<?php if ( ! is_single() ) : ?>
 	<div class="wp-block-group">
 		<div class="wp-block-columns alignwide is-layout-flex">
 			<div class="wp-block-column is-layout-flow">
@@ -37,7 +38,7 @@ use function WebDevStudios\wd_s\get_theme_colors;
 							]
 						)
 					);
-					?>
+				?>
 
 				<!-- wp:buttons {"layout":{"type":"flex"}} -->
 				<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex"><!-- wp:button {"backgroundColor":"neutral-100","textColor":"neutral-900","style":{"elements":{"link":{"color":{"text":"var:preset|color|neutral-900"}}}}} -->
@@ -49,3 +50,23 @@ use function WebDevStudios\wd_s\get_theme_colors;
 
 </article><!-- #post-## -->
 
+<?php else : ?>
+	<header class="entry-header">
+		<?php
+			echo '<div class="hero-banner">';
+				the_post_thumbnail( 'full' );
+		?>
+				<div class="hero-meta-box">
+				<?php
+					echo get_work_taxonomies( get_the_ID() ); // phpcs:ignore.
+					the_title( '<h1 class="entry-title">', '</h1>' );
+				?>
+				</div>
+			</div>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<?php the_content(); ?>
+	</div><!-- .entry-content -->
+
+<?php endif; ?>
