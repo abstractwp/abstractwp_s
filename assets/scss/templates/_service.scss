@@ -46,6 +46,12 @@
 		}
 	}
 
+	.service-content {
+		@apply mx-auto;
+		margin-top: var( --wp--preset--spacing--90 );
+		max-width: var( --wp--style--global--wide-size );
+	}
+
 	.posts-group {
 		.section-title {
 			@apply mx-auto;

@@ -14,15 +14,26 @@ use function WebDevStudios\wd_s\get_service_posts;
 get_header(); ?>
 
 <main id="main" class="<?php echo esc_attr( main_classes( [] ) ); ?>">
+	<header class="entry-header">
+	<?php
+		echo '<div class="hero-banner">';
+		$wd_s_tax_img = get_field( 'feature_image', 'service_' . get_queried_object_id() );
+		echo wp_get_attachment_image( $wd_s_tax_img, 'full', '', array( 'class' => 'wp-post-image' ) );
+	?>
+			<div class="hero-meta-box">
+			<?php
+			the_archive_title( '<h1 class="page-title">', '</h1>' );
+			the_archive_description( '<div class="archive-description">', '</div>' );
+			?>
+			</div>
+		</div>
+	</header><!-- .entry-header -->
 
-	<header class="page-header is-layout-constrained">
 		<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-		?>
-	</header><!-- .page-header -->
+		echo '<div class="wp-block-group has-global-padding"><div class="service-content">';
+			the_field( 'content', 'service_' . get_queried_object_id() );
+		echo '</div></div>';
 
-		<?php
 		// Show list of sub taxonomies.
 		$wd_s_service_sub_taxs = get_service_taxonomies( get_queried_object_id() );
 
