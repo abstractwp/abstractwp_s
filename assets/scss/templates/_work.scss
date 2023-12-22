@@ -3,9 +3,7 @@
 		@apply mb-0;
 
 		.entry-content {
-			@apply mb-0;
-			padding-left: var( --wp--preset--spacing--20 );
-			padding-right: var( --wp--preset--spacing--20 );
+			@apply mb-0 px-0;
 
 			> *:last-child {
 				&:not( .wp-block-cover ) {
