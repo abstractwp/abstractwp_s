@@ -15,7 +15,7 @@ $wd_s_tax = get_query_var( 'wd_s_tax' );
 	<header class="entry-header">
 	<?php
 		$wd_s_tax_img = get_field( 'feature_image', 'service_' . $wd_s_tax->term_id );
-		echo wp_get_attachment_image( $wd_s_tax_img, [ '582, 304' ] );
+		echo wp_get_attachment_image( $wd_s_tax_img, [ '582, 304' ], '', array( 'class' => 'wp-post-image' ) );
 		printf( '<h2 class="entry-title"><a href="%s" rel="bookmark">%s</a></h2>', esc_url( get_term_link( $wd_s_tax->term_id, 'service' ) ), esc_html( $wd_s_tax->name ) );
 	?>
 	</header><!-- .entry-header -->

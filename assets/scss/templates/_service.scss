@@ -49,6 +49,7 @@
 	.service-content {
 		@apply mx-auto;
 		margin-top: var( --wp--preset--spacing--90 );
+		margin-bottom: var( --wp--preset--spacing--90 );
 		max-width: var( --wp--style--global--wide-size );
 	}
 
@@ -89,8 +90,8 @@
 		}
 
 		.wp-post-image {
-			min-height: 200px;
-			max-height: 200px;
+			min-height: 304px;
+			max-height: 304px;
 		}
 	}
 
@@ -99,11 +100,6 @@
 		max-width: var( --wp--style--global--wide-size );
 		margin-top: var( --wp--preset--spacing--60 );
 		margin-bottom: var( --wp--preset--spacing--80 );
-
-		.wp-post-image {
-			min-height: 304px;
-			max-height: 304px;
-		}
 	}
 }
 
