@@ -30,3 +30,32 @@
 		@apply hidden;
 	}
 }
+
+.tax-service {
+	.page-header {
+		margin-bottom: var( --wp--preset--spacing--90 );
+	}
+}
+
+.sub-taxonomies {
+	@apply grid grid-cols-1 gap-9;
+
+	padding-top: var( --wp--preset--spacing--90 );
+	padding-bottom: var( --wp--preset--spacing--90 );
+
+	@screen md {
+		@apply grid-cols-2;
+	}
+
+	.post-container {
+		.entry-title a {
+			color: var( --wp--preset--color--neutral-900 );
+		}
+
+		.entry-content,
+		.entry-title,
+		.entry-footer {
+			@apply px-0;
+		}
+	}
+}
