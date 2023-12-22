@@ -13,7 +13,7 @@ namespace WebDevStudios\wd_s;
  * @param  mixed $parent_tax_id the parent tax.
  * @return array
  */
-function get_services_taxonomies( $parent_tax_id ) {
+function get_service_taxonomies( $parent_tax_id ) {
 
 	$taxonomy = 'service';
 

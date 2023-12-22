@@ -7,9 +7,9 @@
  * @package wd_s
  */
 
-use function WebDevStudios\wd_s\print_numeric_pagination;
 use function WebDevStudios\wd_s\main_classes;
-use function WebDevStudios\wd_s\get_services_taxonomies;
+use function WebDevStudios\wd_s\get_service_taxonomies;
+use function WebDevStudios\wd_s\get_service_posts;
 
 get_header(); ?>
 
@@ -24,7 +24,7 @@ get_header(); ?>
 
 		<?php
 		// Show list of sub taxonomies.
-		$wd_s_service_sub_taxs = get_services_taxonomies( get_queried_object_id() );
+		$wd_s_service_sub_taxs = get_service_taxonomies( get_queried_object_id() );
 
 		if ( ! empty( $wd_s_service_sub_taxs ) ) :
 			echo '<div class="wp-block-group alignfull has-neutral-100-background-color has-background has-global-padding is-layout-constrained"><div class="wp-block-group sub-taxonomies alignwide">';
@@ -35,19 +35,22 @@ get_header(); ?>
 			echo '</div></div>';
 		endif;
 
-		if ( have_posts() ) :
+		$wd_s_tax_posts = get_service_posts( get_queried_object_id() );
+
+		if ( $wd_s_tax_posts ) :
 			echo '<div class="wp-block-group posts-group">';
 			printf( '<h2 class="section-title">%s</h2>', esc_html__( 'Articles', 'wd_s' ) );
 			echo '<div class="posts-list">';
 
 			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+			foreach ( $wd_s_tax_posts as $post ) : // phpcs:ignore.
+				setup_postdata( $post );
 
 				get_template_part( 'template-parts/content', get_post_type() );
 
-					endwhile;
+			endforeach;
 			echo '</div></div>';
+			wp_reset_postdata();
 		endif;
 		?>
 
