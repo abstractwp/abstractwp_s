@@ -13,6 +13,13 @@ $wd_s_testimonials = get_field( 'testimonials' );
 $wd_s_block_style  = get_field( 'style' ) ? get_field( 'style' ) : 'simple';
 $wd_s_block_id     = 'tslider' . wp_rand( 1, 100 );
 
+if ( get_query_var( 'testimonials' ) ) {
+	$wd_s_testimonials = get_query_var( 'testimonials' );
+	if ( count( $wd_s_testimonials ) > 1 ) {
+		$wd_s_block_style = 'center-slider';
+	}
+}
+
 echo '<div class="testimonial-block ' . esc_html( $wd_s_block_style ) . '">';
 
 if ( $wd_s_testimonials ) :

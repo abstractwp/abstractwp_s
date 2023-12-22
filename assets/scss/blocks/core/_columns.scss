@@ -1,7 +1,7 @@
 /* stylelint-disable selector-class-pattern, declaration-no-important, value-keyword-case */
 .wp-block-columns {
 	.wp-block-column {
-		> *:first-child {
+		> *:first-child:not( .testimonial-block ) {
 			@apply pt-0 mt-0;
 		}
 	}

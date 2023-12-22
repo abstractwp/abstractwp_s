@@ -64,6 +64,29 @@ get_header(); ?>
 			wp_reset_postdata();
 		endif;
 
+		$wd_s_tax_testimonials = get_service_posts( get_queried_object_id(), 'testimonial' );
+
+		if ( $wd_s_tax_testimonials ) :
+			echo '<div class="wp-block-group posts-group has-global-padding">';
+			printf( '<h2 class="section-title">%s</h2>', esc_html__( 'Testimonials', 'wd_s' ) );
+			echo '<div class="works-list alignwide">';
+
+			/* Start the Loop */
+			$wd_s_testimonials = [];
+			foreach ( $wd_s_tax_testimonials as $wd_s_tax_testimonial ) :
+				$wd_s_testimonial            = [];
+				$wd_s_testimonial['author']  = $wd_s_tax_testimonial->post_title;
+				$wd_s_testimonial['content'] = wp_strip_all_tags( $wd_s_tax_testimonial->post_content );
+				$wd_s_testimonial['avatar']  = get_the_post_thumbnail_url( $wd_s_tax_testimonial->ID, [ '64', '64' ] );
+				$wd_s_testimonial['rating']  = get_field( 'rating', $wd_s_tax_testimonial->ID );
+				$wd_s_testimonials[]         = $wd_s_testimonial;
+			endforeach;
+
+			set_query_var( 'testimonials', $wd_s_testimonials );
+			get_template_part( 'blocks/testimonials' );
+			echo '</div></div>';
+		endif;
+
 
 		$wd_s_tax_posts = get_service_posts( get_queried_object_id() );
 
