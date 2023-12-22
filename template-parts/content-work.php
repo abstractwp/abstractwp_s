@@ -28,21 +28,21 @@ use function WebDevStudios\wd_s\get_work_taxonomies;
 			</div>
 			<div class="wp-block-column is-vertically-aligned-center is-layout-flow">
 				<?php
-					the_title( '<h3 class="entry-title">', '</h3>' );
+					the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink( get_the_ID() ) ) . '" rel="bookmark">', '</a></h3>' );
 
-					echo esc_html(
+					echo '<p>' . esc_html(
 						get_trimmed_excerpt(
 							[
 								'length' => 30,
 								'post'   => get_the_ID(),
 							]
 						)
-					);
+					) . '</p>';
 				?>
 
 				<!-- wp:buttons {"layout":{"type":"flex"}} -->
-				<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex"><!-- wp:button {"backgroundColor":"neutral-100","textColor":"neutral-900","style":{"elements":{"link":{"color":{"text":"var:preset|color|neutral-900"}}}}} -->
-				<div class="wp-block-button"><a href="<?php echo esc_attr( get_permalink() ); ?>" class="wp-block-button__link has-neutral-900-color has-neutral-100-background-color has-text-color has-background has-link-color wp-element-button"><?php echo esc_html__( 'Read more', 'wd_s' ); ?></a></div>
+				<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex"><!-- wp:button -->
+				<div class="wp-block-button"><a href="<?php echo esc_attr( get_permalink() ); ?>" class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Read more', 'wd_s' ); ?></a></div>
 				<!-- /wp:button --></div>
 			</div>
 		</div>

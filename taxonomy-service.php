@@ -38,7 +38,7 @@ get_header(); ?>
 		$wd_s_service_sub_taxs = get_service_taxonomies( get_queried_object_id() );
 
 		if ( ! empty( $wd_s_service_sub_taxs ) ) :
-			echo '<div class="wp-block-group alignfull has-neutral-100-background-color has-background has-global-padding is-layout-constrained"><div class="wp-block-group sub-taxonomies alignwide">';
+			echo '<div class="wp-block-group alignfull taxonomies-group has-neutral-100-background-color has-background has-global-padding is-layout-constrained"><div class="wp-block-group sub-taxonomies alignwide">';
 			foreach ( $wd_s_service_sub_taxs as $wd_s_service_sub_tax ) {
 				set_query_var( 'wd_s_tax', $wd_s_service_sub_tax );
 				get_template_part( 'template-parts/content-tax-service' );

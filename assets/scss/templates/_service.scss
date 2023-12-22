@@ -52,6 +52,10 @@
 		max-width: var( --wp--style--global--wide-size );
 	}
 
+	.taxonomies-group {
+		margin-bottom: var( --wp--preset--spacing--90 );
+	}
+
 	.posts-group {
 		@apply flex flex-col;
 
@@ -59,7 +63,6 @@
 			@apply mx-auto flex text-center my-0;
 			max-width: var( --wp--style--global--wide-size );
 		}
-
 
 		&.has-background {
 			margin-top: var( --wp--preset--spacing--90 );
@@ -69,10 +72,11 @@
 				margin-top: var( --wp--preset--spacing--90 );
 			}
 		}
-
 	}
 
 	.post-container {
+		@apply mb-0;
+
 		.entry-title a {
 			color: var( --wp--preset--color--neutral-900 );
 		}
