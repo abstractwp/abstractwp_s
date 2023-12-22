@@ -49,7 +49,8 @@ get_header(); ?>
 		$wd_s_tax_works = get_service_posts( get_queried_object_id(), 'work' );
 
 		if ( $wd_s_tax_works ) :
-			echo '<div class="wp-block-group posts-group has-global-padding">';
+			$wd_s_works_class = $wd_s_service_sub_taxs ? '' : ' has-neutral-100-background-color has-background';
+			echo '<div class="wp-block-group posts-group has-global-padding ' . esc_html( $wd_s_works_class ) . '">';
 			printf( '<h2 class="section-title">%s</h2>', esc_html__( 'Case studies', 'wd_s' ) );
 			echo '<div class="works-list alignwide">';
 

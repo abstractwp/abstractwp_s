@@ -53,11 +53,23 @@
 	}
 
 	.posts-group {
+		@apply flex flex-col;
+
 		.section-title {
-			@apply mx-auto;
-			margin-top: var( --wp--preset--spacing--90 );
+			@apply mx-auto flex text-center my-0;
 			max-width: var( --wp--style--global--wide-size );
 		}
+
+
+		&.has-background {
+			margin-top: var( --wp--preset--spacing--90 );
+			margin-bottom: var( --wp--preset--spacing--90 );
+
+			.section-title {
+				margin-top: var( --wp--preset--spacing--90 );
+			}
+		}
+
 	}
 
 	.post-container {
