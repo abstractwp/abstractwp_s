@@ -35,6 +35,20 @@ get_header(); ?>
 			echo '</div></div>';
 		endif;
 
+		if ( have_posts() ) :
+			echo '<div class="wp-block-group posts-group">';
+			printf( '<h2 class="section-title">%s</h2>', esc_html__( 'Articles', 'wd_s' ) );
+			echo '<div class="posts-list">';
+
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
+
+				get_template_part( 'template-parts/content', get_post_type() );
+
+					endwhile;
+			echo '</div></div>';
+		endif;
 		?>
 
 </main><!-- #main -->

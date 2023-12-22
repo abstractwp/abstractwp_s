@@ -33,7 +33,43 @@
 
 .tax-service {
 	.page-header {
+		@apply text-center;
 		margin-bottom: var( --wp--preset--spacing--90 );
+	}
+
+	.posts-list {
+		@apply grid grid-cols-1;
+		margin-top: var( --wp--preset--spacing--60 );
+
+		@screen xl {
+			@apply mx-auto grid-cols-3 gap-x-9 gap-y-24;
+		}
+	}
+
+	.posts-group {
+		.section-title {
+			@apply mx-auto;
+			margin-top: var( --wp--preset--spacing--90 );
+			max-width: var( --wp--style--global--wide-size );
+		}
+	}
+
+	.post-container {
+		.entry-title a {
+			color: var( --wp--preset--color--neutral-900 );
+		}
+
+		.entry-content,
+		.entry-meta,
+		.entry-title,
+		.entry-footer {
+			@apply px-0;
+		}
+
+		.wp-post-image {
+			min-height: 200px;
+			max-height: 200px;
+		}
 	}
 }
 
@@ -45,17 +81,5 @@
 
 	@screen md {
 		@apply grid-cols-2;
-	}
-
-	.post-container {
-		.entry-title a {
-			color: var( --wp--preset--color--neutral-900 );
-		}
-
-		.entry-content,
-		.entry-title,
-		.entry-footer {
-			@apply px-0;
-		}
 	}
 }
