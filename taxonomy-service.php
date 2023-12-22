@@ -35,10 +35,29 @@ get_header(); ?>
 			echo '</div></div>';
 		endif;
 
+		$wd_s_tax_works = get_service_posts( get_queried_object_id(), 'work' );
+
+		if ( $wd_s_tax_works ) :
+			echo '<div class="wp-block-group posts-group has-global-padding">';
+			printf( '<h2 class="section-title">%s</h2>', esc_html__( 'Case studies', 'wd_s' ) );
+			echo '<div class="works-list alignwide">';
+
+			/* Start the Loop */
+			foreach ( $wd_s_tax_works as $post ) : // phpcs:ignore.
+				setup_postdata( $post );
+
+				get_template_part( 'template-parts/content', get_post_type() );
+
+			endforeach;
+			echo '</div></div>';
+			wp_reset_postdata();
+		endif;
+
+
 		$wd_s_tax_posts = get_service_posts( get_queried_object_id() );
 
 		if ( $wd_s_tax_posts ) :
-			echo '<div class="wp-block-group posts-group">';
+			echo '<div class="wp-block-group posts-group has-global-padding">';
 			printf( '<h2 class="section-title">%s</h2>', esc_html__( 'Articles', 'wd_s' ) );
 			echo '<div class="posts-list">';
 

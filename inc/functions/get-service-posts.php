@@ -11,14 +11,15 @@ namespace WebDevStudios\wd_s;
  * Get service posts.
  *
  * @param  mixed $parent_tax_id the parent tax.
+ * @param  mixed $post_type the type of post. e.g. work, testimonial.
  * @return object
  */
-function get_service_posts( $parent_tax_id ) {
+function get_service_posts( $parent_tax_id, $post_type = 'post' ) {
 
 	$taxonomy = 'service';
 
 	$args = array(
-		'post_type'      => 'post',
+		'post_type'      => $post_type,
 		'posts_per_page' => -1,
 		'tax_query'      => array(
 			array(
