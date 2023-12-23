@@ -23,9 +23,10 @@ function get_service_posts( $parent_tax_id, $post_type = 'post' ) {
 		'posts_per_page' => -1,
 		'tax_query'      => array(
 			array(
-				'taxonomy' => $taxonomy,
-				'field'    => 'id',
-				'terms'    => $parent_tax_id,
+				'taxonomy'         => $taxonomy,
+				'field'            => 'id',
+				'terms'            => $parent_tax_id,
+				'include_children' => false,
 			),
 		),
 	);
