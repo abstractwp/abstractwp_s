@@ -15,6 +15,10 @@ A starter theme from WebDevStudios. <https://wdunderscores.com>
 	- [Advanced](#advanced)
 - [Setup](#setup)
 	- [Development](#development)
+	- [Building a block with wpcli](#building-a-block-with-wpcli)
+	- [Available Patterns](#available-patterns)
+	- [Updated Styles](#updated-styles)
+	- [Custom Post Types](#custom-post-types)
 - [Contributing and Support](#contributing-and-support)
 
 ## Introduction
@@ -105,6 +109,23 @@ wp wds create_portable_block myblock --title="This is myblock" --desc="This bloc
 This will scaffold out a block inside of the `blocks` folder in the theme. Replace `myblock` with the name of your block and update the other items `title`, `desc`, `keyword`, `icon`, `namespace` with the appropriate information.
 
 Note: If you don't see your new block available under the block listing in the editor after following the above steps, try changing the namespacing in your block's `block.json` to the following format `your-namespace/blockname` and check again.
+
+### Available Patterns
+
+- Content patterns
+- Feature patterns
+- Pricing patterns
+- Testimonial patterns
+- CTA patterns
+
+### Updated Styles
+
+The basic style applied from DesignKit 1.3
+
+### Custom Post Types
+
+- Added Testimonial cpt
+- Added Work cpt
 
 ## Contributing and Support
 
