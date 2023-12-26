@@ -24,6 +24,10 @@
 			}
 		}
 	}
+
+	ul.wp-block-navigation-submenu .wp-block-navigation-item {
+		@apply mr-0;
+	}
 }
 
 .wp-block-navigation-item__content {
