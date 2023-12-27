@@ -169,7 +169,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/testimonials-slider-block"
+                "value": "wds\/testimonial"
             }
         ]
     ],
@@ -182,5 +182,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702401659
+    "modified": 1703691375
 }
