@@ -28,8 +28,8 @@
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"64px"} -->
-<div class="wp-block-column" style="flex-basis:64px"><!-- wp:image {"id":67,"width":"64px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/feature-icon.png" alt="" class="wp-image-67" style="width:64px"/></figure>
+<div class="wp-block-column" style="flex-basis:64px"><!-- wp:image {"id":67,"width":64,"height":64,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/feature-icon.png" alt="" class="wp-image-67"width="64" height="64"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -48,8 +48,8 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"64px"} -->
-<div class="wp-block-column" style="flex-basis:64px"><!-- wp:image {"id":67,"width":"64px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/feature-icon.png" alt="" class="wp-image-67" style="width:64px"/></figure>
+<div class="wp-block-column" style="flex-basis:64px"><!-- wp:image {"id":67,"width":64,"height":64,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/feature-icon.png" alt="" class="wp-image-67"width="64" height="64"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -70,8 +70,8 @@
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"64px"} -->
-<div class="wp-block-column" style="flex-basis:64px"><!-- wp:image {"id":67,"width":"64px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/feature-icon.png" alt="" class="wp-image-67" style="width:64px"/></figure>
+<div class="wp-block-column" style="flex-basis:64px"><!-- wp:image {"id":67,"width":64,"height":64,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/feature-icon.png" alt="" class="wp-image-67"width="64" height="64"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -90,8 +90,8 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"64px"} -->
-<div class="wp-block-column" style="flex-basis:64px"><!-- wp:image {"id":67,"width":"64px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/feature-icon.png" alt="" class="wp-image-67" style="width:64px"/></figure>
+<div class="wp-block-column" style="flex-basis:64px"><!-- wp:image {"id":67,"width":64,"height":64,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/feature-icon.png" alt="" class="wp-image-67"width="64" height="64"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
