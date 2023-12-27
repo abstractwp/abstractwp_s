@@ -1,0 +1,54 @@
+// Frontend styles.
+.accordions {
+	.accordion-item {
+		box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.10);
+		margin-bottom: 1px;
+	}
+
+	.accordion-title {
+		@apply cursor-pointer relative;
+		background-color: var( --wp--preset--color--neutral-50 );
+		margin-bottom: 0;
+		margin-top: 0;
+		padding: 24px;
+		padding-right: 48px;
+
+		&::after {
+			@apply absolute;
+			width: 12px;
+			right: 24px;
+			content: '';
+			top: calc( 50% - 9px );
+			height: 18px;
+			background: url( ../images/icons/arrow.svg ) 50% 50% no-repeat
+				transparent;
+			background-size: 12px 18px;
+		}
+
+		&.open {
+			background: transparent;
+
+			&::after {
+				transform: rotate( 90deg );
+				background: url( ../images/icons/arrow-open.svg ) 50% 50%
+					no-repeat transparent;
+				background-size: 12px 18px;
+			}
+		}
+
+		@media only screen and ( max-width: 600px ) {
+			padding: 16px;
+			padding-right: 40px;
+
+			&::after {
+				right: 16px;
+			}
+		}
+	}
+
+	.accordion-content {
+		@apply hidden;
+		padding: 24px;
+		padding-top: 0;
+	}
+}
