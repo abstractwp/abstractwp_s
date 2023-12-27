@@ -232,21 +232,6 @@
 					"name": "Primary 900"
 				},
 				{
-					"color": "#fff",
-					"slug": "secondary-100",
-					"name": "Secondary 100"
-				},
-				{
-					"color": "#e3e4eb",
-					"slug": "secondary-200",
-					"name": "Secondary 200"
-				},
-				{
-					"color": "#d3d3d3",
-					"slug": "secondary-300",
-					"name": "Secondary 300"
-				},
-				{
 					"color": "#FFFCF2",
 					"slug": "secondary-50",
 					"name": "Secondary 50"
