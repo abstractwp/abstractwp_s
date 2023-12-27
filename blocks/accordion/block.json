@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
 	"name": "wds/accordion",
-	"title": "This is accordion block",
+	"title": "Accordion",
 	"description": "This is block for accordion",
 	"editorScript": "file:./editor.js",
 	"editorStyle": "file:../../build/accordion.editor.css",
