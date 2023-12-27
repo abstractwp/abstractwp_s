@@ -117,6 +117,7 @@ Note: If you don't see your new block available under the block listing in the e
 - Pricing patterns
 - Testimonial patterns
 - CTA patterns
+- FAQ patterns
 
 ### Updated Styles
 
