@@ -16,7 +16,7 @@
 		"renderTemplate": "accordion.php"
 	},
 	"supports": {
-		"align": false,
+		"align": ["wide", "full"],
 		"anchor": true,
 		"color": {},
 		"customClassName": true,
