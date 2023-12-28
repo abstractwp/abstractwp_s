@@ -84,7 +84,7 @@ get_header(); ?>
 			endforeach;
 
 			set_query_var( 'testimonials', $wd_s_testimonials );
-			get_template_part( 'blocks/testimonials' );
+			get_template_part( 'blocks/testimonial/testimonial' );
 			echo '</div></div>';
 		endif;
 

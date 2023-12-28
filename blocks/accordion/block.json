@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "wds/accordion",
+	"title": "Accordion",
+	"description": "This is block for accordion",
+	"editorScript": "file:./editor.js",
+	"editorStyle": "file:../../build/accordion.editor.css",
+	"script": "file:./script.js",
+	"style": "file:../../build/accordion.css",
+	"category": "wds-blocks-category",
+	"icon": "excerpt-view",
+	"keywords": [ "accordion", "accordion", "block" ],
+	"acf": {
+		"mode": "auto",
+		"renderTemplate": "accordion.php"
+	},
+	"supports": {
+		"align": ["wide", "full"],
+		"anchor": true,
+		"color": {},
+		"customClassName": true,
+		"jsx": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

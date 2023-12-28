@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "wds/testimonial",
+	"title": "Testimonial",
+	"description": "Single or slider of testimonials",
+	"editorScript": "file:./editor.js",
+	"editorStyle": "file:../../build/testimonial.editor.css",
+	"script": "file:./script.js",
+	"style": "file:../../build/testimonial.css",
+	"category": "wds-blocks-category",
+	"icon": "testimonial",
+	"keywords": [ "testimonial", "testimonial", "block" ],
+	"acf": {
+		"mode": "auto",
+		"renderTemplate": "testimonial.php"
+	},
+	"supports": {
+		"align": ["wide", "full"],
+		"anchor": true,
+		"color": {},
+		"customClassName": true,
+		"jsx": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}
