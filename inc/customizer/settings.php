@@ -37,6 +37,26 @@ function customize_additional_scripts( $wp_customize ) {
 
 	// Register a setting.
 	$wp_customize->add_setting(
+		'wd_s_body_scripts',
+		[
+			'default'           => '',
+			'sanitize_callback' => 'force_balance_tags',
+		]
+	);
+
+	// Create the setting field.
+	$wp_customize->add_control(
+		'wd_s_body_scripts',
+		[
+			'label'       => esc_attr__( 'Body Scripts', 'wd_s' ),
+			'description' => esc_attr__( 'Additional scripts to add to the body. Basic HTML tags are allowed.', 'wd_s' ),
+			'section'     => 'wd_s_additional_scripts_section',
+			'type'        => 'textarea',
+		]
+	);
+
+	// Register a setting.
+	$wp_customize->add_setting(
 		'wd_s_footer_scripts',
 		[
 			'default'           => '',
