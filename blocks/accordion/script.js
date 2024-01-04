@@ -6,7 +6,7 @@
  */
 
 // add JS here.
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener( 'DOMContentLoaded', () => {
 	// Get all the accordion items
 	const accordionItems = document.querySelectorAll( '.accordion-item' );
 

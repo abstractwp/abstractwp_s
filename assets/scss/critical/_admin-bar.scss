@@ -1,0 +1,24 @@
+/* stylelint-disable selector-class-pattern, declaration-no-important, value-keyword-case */
+.admin-bar {
+	#wpadminbar {
+		display: none;
+	}
+	@media only screen and ( min-width: 782px ) {
+		#wpadminbar {
+			display: block;
+		}
+		padding-top: 32px;
+
+		.site-header {
+			top: 32px !important;
+		}
+	}
+}
+.has-modal-open
+	.admin-bar
+	.is-menu-open
+	.wp-block-navigation__responsive-dialog {
+	margin-top: 0 !important;
+}
+
+/* stylelint-enable selector-class-pattern, declaration-no-important, value-keyword-case */
