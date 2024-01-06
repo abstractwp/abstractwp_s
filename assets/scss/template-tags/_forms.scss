@@ -1,5 +1,6 @@
 /* Comments
 --------------------------------------------- */
+/* stylelint-disable selector-class-pattern, declaration-no-important, value-keyword-case */
 .comment-respond,
 .wp-block-post-comments-form {
 	.comment-form {
@@ -54,9 +55,8 @@ input[type='checkbox'] {
 	}
 }
 
-/* stylelint-disable */
+.gform-theme--no-framework.gform_wrapper .gform-body,
 .gform-theme--framework.gform-theme.gform_wrapper .gform-body {
-	/* stylelint-enable */
 	input:is( [type='submit'], [type='button'] ) {
 		height: 48px;
 		font-size: var( --wp--preset--font-size--normal );
@@ -67,14 +67,15 @@ input[type='checkbox'] {
 	select,
 	textarea {
 		@apply rounded;
-		padding-top: 12px;
-		padding-right: 16px;
-		padding-bottom: 12px;
-		padding-left: 16px;
+		padding-top: 12px!important;
+		padding-right: 16px !important;
+		padding-bottom: 12px!important;
+		padding-left: 16px!important;
 		outline: 0;
 		border: 1px var( --wp--preset--color--neutral-300 ) solid;
 		font-size: var( --wp--preset--font-size--normal );
 		line-height: 1.31;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
 
 		&:focus {
 			border: 1px var( --wp--preset--color--primary-500 ) solid;
@@ -97,9 +98,7 @@ input[type='checkbox'] {
 }
 
 .wp-block-button.is-style-outline {
-	/* stylelint-disable */
 	.wp-block-button__link:not( .has-background ),
-	/* stylelint-enable */
 	.wp-element-button:not( .has-background ) {
 		&:hover {
 			background-color: var( --wp--preset--color--neutral-50 );
@@ -110,6 +109,8 @@ input[type='checkbox'] {
 		}
 	}
 }
+
+/* stylelint-enable selector-class-pattern, declaration-no-important, value-keyword-case */
 
 [type='radio']:checked,
 [type='radio']:not( :checked ) {
