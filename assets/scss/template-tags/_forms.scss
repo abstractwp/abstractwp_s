@@ -67,15 +67,15 @@ input[type='checkbox'] {
 	select,
 	textarea {
 		@apply rounded;
-		padding-top: 12px!important;
+		padding-top: 12px !important;
 		padding-right: 16px !important;
-		padding-bottom: 12px!important;
-		padding-left: 16px!important;
+		padding-bottom: 12px !important;
+		padding-left: 16px !important;
 		outline: 0;
 		border: 1px var( --wp--preset--color--neutral-300 ) solid;
 		font-size: var( --wp--preset--font-size--normal );
 		line-height: 1.31;
-		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+		box-shadow: 0 1px 2px 0 rgba( 0, 0, 0, 0.1 );
 
 		&:focus {
 			border: 1px var( --wp--preset--color--primary-500 ) solid;

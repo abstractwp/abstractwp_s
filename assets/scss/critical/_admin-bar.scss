@@ -12,6 +12,12 @@
 		.site-header {
 			top: 32px !important;
 		}
+
+		main,
+		.site-main {
+			margin-top: 68px !important;
+			margin-block-start: 68px !important;
+		}
 	}
 }
 .has-modal-open
