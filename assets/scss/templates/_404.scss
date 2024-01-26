@@ -1,0 +1,15 @@
+/* 404 error
+--------------------------------------------- */
+.error-404 {
+	@apply text-center;
+	padding: 120px 24px;
+
+	h5 {
+		margin-top: 0;
+		margin-bottom: 24px;
+	}
+
+	h1 {
+		margin-top: 0;
+	}
+}

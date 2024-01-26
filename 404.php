@@ -15,7 +15,8 @@ get_header(); ?>
 
 		<section class="error-404 not-found is-layout-constrained">
 			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( "Sorry, this page doesn't exist.", 'wd_s' ); ?></h1>
+				<h5><?php esc_html_e( '404 error', 'wd_s' ); ?></h5>
+				<h2 class="page-title"><?php esc_html_e( "Sorry, this page doesn't exist.", 'wd_s' ); ?></h2>
 			</header><!-- .page-header -->
 
 			<div class="page-content">
