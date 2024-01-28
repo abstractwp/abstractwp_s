@@ -50,7 +50,7 @@
     "publicly_queryable": 1,
     "hierarchical": 1,
     "show_ui": 1,
-    "show_in_menu": 1,
+    "show_in_menu": 0,
     "show_in_nav_menus": 1,
     "show_in_rest": 1,
     "rest_base": "",
@@ -73,5 +73,5 @@
     "meta_box": "default",
     "meta_box_cb": "",
     "meta_box_sanitize_cb": "",
-    "modified": 1703240275
+    "modified": 1706442054
 }

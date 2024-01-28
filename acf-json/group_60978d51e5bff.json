@@ -29,14 +29,47 @@
             "placeholder": ""
         },
         {
+            "key": "field_65b6292d3f5f5",
+            "label": "Select Testimonials",
+            "name": "select_testimonials",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "testimonial"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 1,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
+        },
+        {
             "key": "field_60978d67b0fad",
             "label": "Testimonials",
             "name": "testimonials",
             "aria-label": "",
             "type": "repeater",
-            "instructions": "",
+            "instructions": "Enter testimonials manually.",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_65b6292d3f5f5",
+                        "operator": "==empty"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -182,5 +215,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1703691375
+    "modified": 1706438164
 }
