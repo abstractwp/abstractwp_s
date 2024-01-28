@@ -14,9 +14,22 @@ if ( ! empty( $block['align'] ) ) {
 	$wds_classes[] = 'align' . $block['align'];
 }
 
-$wd_s_testimonials = get_field( 'testimonials' );
-$wd_s_block_style  = get_field( 'style' ) ? get_field( 'style' ) : 'simple';
-$wd_s_block_id     = 'tslider' . wp_rand( 1, 100 );
+$wd_s_select_testimonials = get_field( 'select_testimonials' );
+
+if ( $wd_s_select_testimonials ) {
+	foreach ( $wd_s_select_testimonials as $wd_s_key => $wd_s_select_testimonial ) {
+		$wd_s_testimonials[ $wd_s_key ]['author']    = $wd_s_select_testimonial->post_title;
+		$wd_s_testimonials[ $wd_s_key ]['content']   = $wd_s_select_testimonial->post_content;
+		$wd_s_testimonials[ $wd_s_key ]['avatar']    = get_the_post_thumbnail_url( $wd_s_select_testimonial->ID );
+		$wd_s_testimonials[ $wd_s_key ]['rating']    = get_field( 'rating', $wd_s_select_testimonial->ID ) ? get_field( 'rating', $wd_s_select_testimonial->ID ) : 0;
+		$wd_s_testimonials[ $wd_s_key ]['job_title'] = get_field( 'position', $wd_s_select_testimonial->ID ) ? get_field( 'position', $wd_s_select_testimonial->ID ) : '';
+	}
+} else {
+	$wd_s_testimonials = get_field( 'testimonials' );
+}
+
+$wd_s_block_style = get_field( 'style' ) ? get_field( 'style' ) : 'simple';
+$wd_s_block_id    = 'tslider' . wp_rand( 1, 100 );
 
 if ( get_query_var( 'testimonials' ) ) {
 	$wd_s_testimonials = get_query_var( 'testimonials' );
@@ -61,7 +74,7 @@ $wds_anchor = ( ! empty( $block['anchor'] ) ) ? 'id="' . esc_attr( $block['ancho
 								echo '</div>';
 							}
 							?>
-								<p><?php echo esc_html( $wd_s_testimonial['content'] ); ?></p>
+								<p><?php echo esc_html( wp_strip_all_tags( $wd_s_testimonial['content'] ) ); ?></p>
 							</div>
 							<div class="t-meta">
 								<?php if ( $wd_s_testimonial['avatar'] ) : ?>
