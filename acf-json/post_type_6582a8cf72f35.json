@@ -16,7 +16,7 @@
         "view_item": "View Testimonial",
         "view_items": "View Testimonial",
         "add_new_item": "Add New Testimonial",
-        "add_new": "",
+        "add_new": "Add New Testimonial",
         "new_item": "New Testimonial",
         "parent_item_colon": "Parent Testimonial:",
         "search_items": "Search Testimonial",
@@ -24,10 +24,10 @@
         "not_found_in_trash": "No testimonial found in Trash",
         "archives": "Testimonial Archives",
         "attributes": "Testimonial Attributes",
-        "featured_image": "Avatar",
-        "set_featured_image": "Set avatar",
-        "remove_featured_image": "Remove avatar",
-        "use_featured_image": "Use avatar",
+        "featured_image": "Testimonial image",
+        "set_featured_image": "Set testimonial image",
+        "remove_featured_image": "Remove testimonial image",
+        "use_featured_image": "Use testimonial image",
         "insert_into_item": "Insert into testimonial",
         "uploaded_to_this_item": "Uploaded to this testimonial",
         "filter_items_list": "Filter testimonial list",
@@ -80,5 +80,6 @@
     "can_export": true,
     "delete_with_user": false,
     "register_meta_box_cb": "",
-    "modified": 1703062019
+    "enter_title_here": "First and last name",
+    "modified": 1706433207
 }
