@@ -182,167 +182,167 @@
 			"gradients": [],
 			"palette": [
 				{
-					"color": "#FBFAFF",
+					"color": "#DDE0D7",
 					"slug": "primary-50",
 					"name": "Primary 50"
 				},
 				{
-					"color": "#EBE6FD",
+					"color": "#BDC4B3",
 					"slug": "primary-100",
 					"name": "Primary 100"
 				},
 				{
-					"color": "#C5B3F8",
+					"color": "#9DA78E",
 					"slug": "primary-200",
 					"name": "Primary 200"
 				},
 				{
-					"color": "#8A66F0",
+					"color": "#7E8A69",
 					"slug": "primary-300",
 					"name": "Primary 300"
 				},
 				{
-					"color": "#6333EB",
+					"color": "#5E6E44",
 					"slug": "primary-400",
 					"name": "Primary 400"
 				},
 				{
-					"color": "#3C00E7",
+					"color": "#3E511F",
 					"slug": "primary-500",
 					"name": "Primary 500"
 				},
 				{
-					"color": "#2A00A1",
+					"color": "#34441A",
 					"slug": "primary-600",
 					"name": "Primary 600"
 				},
 				{
-					"color": "#1E0073",
+					"color": "#2A3615",
 					"slug": "primary-700",
 					"name": "Primary 700"
 				},
 				{
-					"color": "#120045",
+					"color": "#1F2910",
 					"slug": "primary-800",
 					"name": "Primary 800"
 				},
 				{
-					"color": "#0C002E",
+					"color": "#151C0B",
 					"slug": "primary-900",
 					"name": "Primary 900"
 				},
 				{
-					"color": "#FFFCF2",
+					"color": "#EBE6D2",
 					"slug": "secondary-50",
 					"name": "Secondary 50"
 				},
 				{
-					"color": "#FFF4CC",
+					"color": "#D8CFA8",
 					"slug": "secondary-100",
 					"name": "Secondary 100"
 				},
 				{
-					"color": "#FFEEB2",
+					"color": "#C6B87E",
 					"slug": "secondary-200",
 					"name": "Secondary 200"
 				},
 				{
-					"color": "#FFE380",
+					"color": "#B3A154",
 					"slug": "secondary-300",
 					"name": "Secondary 300"
 				},
 				{
-					"color": "#FFD233",
+					"color": "#A18A2A",
 					"slug": "secondary-400",
 					"name": "Secondary 400"
 				},
 				{
-					"color": "#FFC700",
+					"color": "#8E7300",
 					"slug": "secondary-500",
 					"name": "Secondary 500"
 				},
 				{
-					"color": "#E6A100",
+					"color": "#776100",
 					"slug": "secondary-600",
 					"name": "Secondary 600"
 				},
 				{
-					"color": "#B36100",
+					"color": "#5F4E00",
 					"slug": "secondary-700",
 					"name": "Secondary 700"
 				},
 				{
-					"color": "#803100",
+					"color": "#483B00",
 					"slug": "secondary-800",
 					"name": "Secondary 800"
 				},
 				{
-					"color": "#330800",
+					"color": "#302800",
 					"slug": "secondary-900",
 					"name": "Secondary 900"
 				},
 				{
-					"color": "#FAFAFA",
+					"color": "#C6C6BD",
 					"slug": "neutral-50",
 					"name": "Neutral 50"
 				},
 				{
-					"color": "#F5F5F5",
+					"color": "#B4B4A8",
 					"slug": "neutral-100",
 					"name": "Neutral 100"
 				},
 				{
-					"color": "#EEEEEE",
+					"color": "#A1A293",
 					"slug": "neutral-200",
 					"name": "Neutral 200"
 				},
 				{
-					"color": "#E0E0E0",
+					"color": "#8F907E",
 					"slug": "neutral-300",
 					"name": "Neutral 300"
 				},
 				{
-					"color": "#BDBDBD",
+					"color": "#7D7E69",
 					"slug": "neutral-400",
 					"name": "Neutral 400"
 				},
 				{
-					"color": "#9E9E9E",
+					"color": "#6B6C54",
 					"slug": "neutral-500",
 					"name": "Neutral 500"
 				},
 				{
-					"color": "#757575",
+					"color": "#595A3F",
 					"slug": "neutral-600",
 					"name": "Neutral 600"
 				},
 				{
-					"color": "#616161",
+					"color": "#46482A",
 					"slug": "neutral-700",
 					"name": "Neutral 700"
 				},
 				{
-					"color": "#424242",
+					"color": "#343615",
 					"slug": "neutral-800",
 					"name": "Neutral 800"
 				},
 				{
-					"color": "#212121",
+					"color": "#222400",
 					"slug": "neutral-900",
 					"name": "Neutral 900"
 				},
 				{
-					"color": "#0F8A56",
+					"color": "#8F9F35",
 					"slug": "success",
 					"name": "Success"
 				},
 				{
-					"color": "#F29100",
+					"color": "#BF7135",
 					"slug": "warning",
 					"name": "Warning"
 				},
 				{
-					"color": "#DF2A4A",
+					"color": "#572D00",
 					"slug": "error",
 					"name": "Error"
 				}
