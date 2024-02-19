@@ -4,7 +4,8 @@
 .site-footer {
 	@apply flex p-8 flex-nowrap justify-center items-center bottom-0;
 
-	background-color: var( --wp--preset--color--neutral-50 );
+	background-color: var( --wp--preset--color--neutral-900 );
+	color: #fff;
 	font-size: var( --wp--preset--font-size--small );
 
 	.site-info {
