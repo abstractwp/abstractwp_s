@@ -12,7 +12,13 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header is-layout-constrained has-global-padding">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php
+		if ( is_front_page() ) {
+			the_title( '<h1 class="entry-title screen-reader-text">', '</h1>' );
+		} else {
+			the_title( '<h1 class="entry-title">', '</h1>' );
+		}
+		?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content is-layout-constrained has-global-padding">
