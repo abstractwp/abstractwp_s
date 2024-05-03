@@ -2,7 +2,9 @@
 // Global Site Header
 //--------------------------------------------------------------
 .site-header {
-	background-color: #fff;
+	background-color: #fcfcfc;
+
+	width: 280px;
 
 	.wp-block-columns {
 		padding: 30px 0;
@@ -24,5 +26,114 @@
 		left: 0;
 		width: 100%;
 		z-index: 9999;
+	}
+
+	#primary-menu {
+		list-style: none;
+		padding-left: 16px;
+		//-----------------------------------------
+		// The Down Caret
+		//-----------------------------------------
+		.caret-down {
+			@apply block transition-all duration-200 ease-in-out;
+
+			background: url( ../images/icons/caret-down.svg ) 50% 50%
+				no-repeat;
+			background-size: 100%;
+			width: 16px;
+			height: 16px;
+			margin-top: 6px;
+			margin-left: 8px;
+			transform: rotate( -90deg );
+		}
+
+		.menu-item-has-children {
+			.caret-down {
+				@apply hidden;
+			}
+			a {
+				@apply inline-flex;
+			}
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 16px;
+		}
+		// level 2.
+		.sub-menu {
+			.caret-down {
+				@apply block;
+			}
+
+			.back-button {
+				@apply hidden absolute top-0 left-0 cursor-pointer;
+
+				height: 100vh;
+				width: 32px;
+				background-color: #ddd;
+
+				&::after {
+					@apply absolute;
+
+					content: '';
+					left: 8px;
+					top: 100px;
+					width: 16px;
+					height: 16px;
+					background: url( ../images/icons/caret-down.svg ) 50% 50%
+						no-repeat;
+					background-size: 100%;
+					transform: rotate( 90deg );
+				}
+			}
+
+			> .menu-item-has-children > .sub-menu {
+				padding-top: 100px;
+				padding-left: 48px;
+
+				.sub-menu {
+					padding-top: 0;
+				}
+			}
+
+			// level 3.
+			.sub-menu {
+				@apply block fixed top-0;
+				left: -280px;
+				width: 280px;
+				height: 100vh;
+				z-index: 999;
+				background-color: #fdfdfd;
+				transition: all 0.5s ease;
+
+				a .caret-down {
+					@apply hidden;
+				}
+
+				// level 4.
+				.sub-menu {
+					@apply block relative w-auto;
+					background-color: transparent;
+					transition: none;
+					padding-left: 16px;
+				}
+			}
+
+			.focus {
+
+				.back-button {
+					@apply block;
+
+				}
+				.sub-menu {
+					left: 0;
+
+					.sub-menu .back-button {
+						@apply hidden;
+					}
+				}
+			}
+		}
 	}
 }

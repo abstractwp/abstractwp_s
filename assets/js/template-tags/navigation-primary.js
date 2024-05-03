@@ -10,7 +10,35 @@
 	);
 
 	document.addEventListener( 'DOMContentLoaded', addDownArrow );
+	document.addEventListener( 'DOMContentLoaded', addBackButton );
 	document.addEventListener( 'DOMContentLoaded', toggleFocusClass );
+
+	/**
+	 * Adds back button on sub-menu level 3.
+	 *
+	 * @author Thong Dang
+	 * @since May 3, 2024
+	 */
+	function addBackButton() {
+		subMenuParentItem.forEach( ( parentItem ) => {
+			const menuItem = parentItem.querySelector( '.sub-menu' );
+			const menuItemlv3 = menuItem.querySelector( '.sub-menu' );
+			if ( menuItemlv3 !== null ) {
+				const backBtn = document.createElement( 'span' );
+				backBtn.classList.add( 'back-button' );
+				backBtn.addEventListener( 'click', () => {
+					const activeItems = document.querySelectorAll(
+						'.main-navigation .focus'
+					);
+
+					activeItems.forEach( ( activeItem ) => {
+						activeItem.classList.remove( 'focus' );
+					} );
+				} );
+				menuItemlv3.append( backBtn );
+			}
+		} );
+	}
 
 	/**
 	 * Adds the down arrow to parent menu items.

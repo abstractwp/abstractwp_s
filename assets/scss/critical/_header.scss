@@ -2,7 +2,7 @@
 // Global Site Header
 //--------------------------------------------------------------
 .site-header {
-	@apply fixed top-0 left-0 w-72 h-full;
+	@apply fixed top-0 left-0 h-full;
 
 	.site-header-content {
 		@apply m-0;
@@ -16,44 +16,6 @@
 					.custom-logo {
 						@apply w-auto max-h-14;
 					}
-				}
-			}
-		}
-
-		#primary-menu {
-			//-----------------------------------------
-			// The Down Caret
-			//-----------------------------------------
-			.caret-down {
-				@apply block transition-all duration-200 ease-in-out;
-
-				background: url( ../images/icons/caret-down.svg ) 50% 50%
-					no-repeat;
-				background-size: 100%;
-				width: 16px;
-				height: 16px;
-				margin-top: 6px;
-				margin-left: 8px;
-				transform: rotate( -90deg );
-			}
-
-			.menu-item-has-children {
-				.caret-down {
-					@apply hidden;
-				}
-				a {
-					@apply inline-flex;
-				}
-			}
-			// level 2.
-			.sub-menu {
-				.caret-down {
-					@apply block;
-				}
-
-				// level 3 & 4.
-				.sub-menu {
-					@apply hidden;
 				}
 			}
 		}
