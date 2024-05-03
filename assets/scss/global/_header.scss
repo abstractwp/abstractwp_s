@@ -2,7 +2,7 @@
 // Global Site Header
 //--------------------------------------------------------------
 .site-header {
-	background-color: #fcfcfc;
+	background-color: #fff;
 
 	width: 280px;
 
@@ -28,7 +28,13 @@
 		z-index: 9999;
 	}
 
+	.off-canvas-open {
+		@apply hidden;
+	}
+
 	#primary-menu {
+
+		margin-top: 32px;
 		list-style: none;
 		padding-left: 16px;
 		//-----------------------------------------
@@ -37,8 +43,7 @@
 		.caret-down {
 			@apply block transition-all duration-200 ease-in-out;
 
-			background: url( ../images/icons/caret-down.svg ) 50% 50%
-				no-repeat;
+			background: url( ../images/icons/caret-down.svg ) 50% 50% no-repeat;
 			background-size: 100%;
 			width: 16px;
 			height: 16px;
@@ -62,6 +67,10 @@
 		}
 		// level 2.
 		.sub-menu {
+			.sub-menu-header {
+				@apply hidden;
+			}
+
 			.caret-down {
 				@apply block;
 			}
@@ -78,7 +87,7 @@
 
 					content: '';
 					left: 8px;
-					top: 100px;
+					top: 202px;
 					width: 16px;
 					height: 16px;
 					background: url( ../images/icons/caret-down.svg ) 50% 50%
@@ -89,7 +98,7 @@
 			}
 
 			> .menu-item-has-children > .sub-menu {
-				padding-top: 100px;
+				padding-top: 202px;
 				padding-left: 48px;
 
 				.sub-menu {
@@ -111,20 +120,27 @@
 					@apply hidden;
 				}
 
+				.sub-menu-header {
+					@apply block font-medium text-xl mb-3 pb-2;
+					border-bottom: 1px solid #ddd;
+				}
+
 				// level 4.
 				.sub-menu {
 					@apply block relative w-auto;
 					background-color: transparent;
 					transition: none;
 					padding-left: 16px;
+
+					.sub-menu-header {
+						@apply hidden;
+					}
 				}
 			}
 
 			.focus {
-
 				.back-button {
 					@apply block;
-
 				}
 				.sub-menu {
 					left: 0;

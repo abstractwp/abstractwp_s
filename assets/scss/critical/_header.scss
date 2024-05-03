@@ -7,15 +7,17 @@
 	.site-header-content {
 		@apply m-0;
 
-		.wp-block-site-logo {
-			.site-branding {
-				@apply flex-auto;
-				a {
-					@apply no-underline;
+		.site-branding {
+			@apply flex-auto;
+			height: 170px;
 
-					.custom-logo {
-						@apply w-auto max-h-14;
-					}
+			a {
+				@apply no-underline;
+
+				.custom-logo {
+					width: 150px;
+					max-height: 170px;
+					margin-left: 16px;
 				}
 			}
 		}

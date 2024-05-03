@@ -22,6 +22,10 @@
 	function addBackButton() {
 		subMenuParentItem.forEach( ( parentItem ) => {
 			const menuItem = parentItem.querySelector( '.sub-menu' );
+			let subMenuLabel = '';
+			if ( parentItem.classList.contains( 'menu-item-has-children' ) ) {
+				subMenuLabel = parentItem.querySelector( 'a' ).textContent;
+			}
 			const menuItemlv3 = menuItem.querySelector( '.sub-menu' );
 			if ( menuItemlv3 !== null ) {
 				const backBtn = document.createElement( 'span' );
@@ -35,6 +39,14 @@
 						activeItem.classList.remove( 'focus' );
 					} );
 				} );
+
+				const subMenuHeader = document.createElement( 'span' );
+				subMenuHeader.classList.add( 'sub-menu-header' );
+				subMenuHeader.innerText = subMenuLabel;
+				menuItem.insertAdjacentHTML(
+					'afterbegin',
+					subMenuHeader.outerHTML
+				);
 				menuItemlv3.append( backBtn );
 			}
 		} );
