@@ -371,9 +371,11 @@
 
 	"styles": {
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--body)",
+			"fontFamily": "adorn-smooth-condensed-sans",
 			"fontSize": "var(--wp--preset--font-size--normal)",
-			"fontWeight": "400"
+			"fontWeight": "400",
+			"lineHeight": "1.6",
+			"letterSpacing": ".02em"
 		},
 		"spacing": {
 			"blockGap": "var(--wp--preset--spacing--30)",
@@ -391,38 +393,38 @@
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--headline)",
+					"fontFamily": "chantal",
 					"fontSize": "var(--wp--preset--font-size--xx-large)",
-					"fontWeight": "600",
-					"lineHeight": "1.25",
-					"letterSpacing": "-1.44px"
+					"fontWeight": "300",
+					"lineHeight": "1.2",
+					"letterSpacing": ".01em"
 				}
 			},
 			"h2": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--headline)",
 					"fontSize": "var(--wp--preset--font-size--x-large)",
-					"fontWeight": "600",
-					"lineHeight": "1.25",
-					"letterSpacing": "-1.08px"
+					"fontWeight": "300",
+					"lineHeight": "1.2",
+					"letterSpacing": ".01em"
 				}
 			},
 			"h3": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--headline)",
 					"fontSize": "var(--wp--preset--font-size--large)",
-					"fontWeight": "600",
-					"lineHeight": "1.5",
-					"letterSpacing": "-0.72px"
+					"fontWeight": "300",
+					"lineHeight": "1.2",
+					"letterSpacing": ".01em"
 				}
 			},
 			"h4": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--headline)",
 					"fontSize": "var(--wp--preset--font-size--medium)",
-					"fontWeight": "600",
-					"lineHeight": "1.5",
-					"letterSpacing": "-0.63px"
+					"fontWeight": "300",
+					"lineHeight": "1.2",
+					"letterSpacing": ".01em"
 				}
 			},
 			"h5": {
@@ -430,17 +432,18 @@
 					"fontFamily": "var(--wp--preset--font-family--headline)",
 					"fontSize": "var(--wp--preset--font-size--xxsmall)",
 					"textTransform": "uppercase",
-					"fontWeight": "700",
-					"lineHeight": "1.5",
-					"letterSpacing": "0.6px"
+					"fontWeight": "300",
+					"lineHeight": "1.2",
+					"letterSpacing": ".01em"
 				}
 			},
 			"h6": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--headline)",
 					"fontSize": "var(--wp--preset--font-size--normal)",
-					"fontWeight": "500",
-					"lineHeight": "1.5"
+					"fontWeight": "300",
+					"lineHeight": "1.2",
+					"letterSpacing": ".01em"
 				}
 			},
 			"button": {

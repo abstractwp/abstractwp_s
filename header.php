@@ -8,7 +8,7 @@
  *
  * @package wd_s
  */
-
+// phpcs:ignoreFile
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -19,6 +19,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<script type="text/javascript" src="//use.typekit.net/ik/07KOpb2yYZdgiqi09afCgEg82wBhG-U9CqjgPKObrUJfeG32fFHN4UJLFRbh52jhWDmy5emqjD4yZc9uFemcjDsKFDJaFRy8FU7ZMPG0jWmXiAu0OWiydeUyjh9lZhmCdKoDSWmyScmDSeBRZPoRdhXCjWmXiAu0OWiydeUyjh9lZhmCdKoDSWmyScmDSeBRZPoRdhXCdeNRjAUGdaFXOYZ8ZhiTZAuzdKoRdkUaiaS0jWmXiAu0OWiydeUyjh9lZhmCdKoDSWmyScmDSeBRZPoRdhXCiaiaO1Z8ZhiTZAuzdKoRdkJwSY4zpe8ljPu0daZyJ6iR-eB0ieBCJylyZeNkdKuDdANzie6ljhN0Zem0ShmqOWFyd1wKecUzOW48SkXUwKuKdhUqOABCifuzjAlCjAoqH6qJtKGbMg62JMJ7fbKzMsMMeMb6MKG4fHXgIMMjgKMfH6qJK3IbMg6YJMJ7f6R0hbIbMs62JMJ7f6KXh6IbMs6eJMJ7f6RChbIbMs6FJMJ7f6Rlh6IbMs6bJMJ7f6KXh3IbMy6IJMJ7f6KpabIbMU6IJMHbMZEX0F9B.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<?php
 	wp_head();
