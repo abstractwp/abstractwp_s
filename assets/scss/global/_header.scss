@@ -33,10 +33,19 @@
 	}
 
 	#primary-menu {
-
 		margin-top: 32px;
 		list-style: none;
 		padding-left: 16px;
+
+		a {
+			font-weight: 400;
+			font-style: normal;
+			text-transform: none;
+			letter-spacing: 0;
+			line-height: 1.6;
+			font-size: 21px;
+			padding: .2em;
+		}
 		//-----------------------------------------
 		// The Down Caret
 		//-----------------------------------------
@@ -45,9 +54,9 @@
 
 			background: url( ../images/icons/caret-down.svg ) 50% 50% no-repeat;
 			background-size: 100%;
-			width: 16px;
-			height: 16px;
-			margin-top: 6px;
+			width: 12px;
+			height: 12px;
+			margin-top: 11px;
 			margin-left: 8px;
 			transform: rotate( -90deg );
 		}
@@ -87,7 +96,7 @@
 
 					content: '';
 					left: 8px;
-					top: 202px;
+					top: 206px;
 					width: 16px;
 					height: 16px;
 					background: url( ../images/icons/caret-down.svg ) 50% 50%

@@ -75,7 +75,6 @@
 	function toggleFocusClass() {
 		subMenuParentItem.forEach( ( parentItem ) => {
 			parentItem.addEventListener( 'focusin', toggleIn );
-			parentItem.addEventListener( 'focusout', toggleOut );
 		} );
 	}
 
@@ -93,23 +92,6 @@
 		);
 		parentMenuItems.forEach( ( parentItem ) => {
 			parentItem.classList.add( 'focus' );
-		} );
-	}
-
-	/**
-	 * Handle toggling a parent menu off.
-	 *
-	 * @since January 31, 2020
-	 * @author Corey Collins
-	 * @param {Object} event The triggered event.
-	 */
-	function toggleOut( event ) {
-		const parentMenuItems = getParents(
-			event.target.parentNode,
-			'.menu-item-has-children'
-		);
-		parentMenuItems.forEach( ( parentItem ) => {
-			parentItem.classList.remove( 'focus' );
 		} );
 	}
 
