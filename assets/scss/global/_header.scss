@@ -11,7 +11,6 @@
 		transition: all 0.5s ease;
 	}
 
-
 	&.is-visible {
 		margin-left: 0;
 	}
@@ -196,7 +195,6 @@
 	// Off-Canvas Elements and Overlays
 	//--------------------------------------------------------------
 	.off-canvas {
-
 		&-open {
 			@apply hidden fixed;
 			transition: all 0.5s ease;
@@ -225,5 +223,4 @@
 			}
 		}
 	}
-
 }
