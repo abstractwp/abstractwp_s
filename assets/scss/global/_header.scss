@@ -46,6 +46,21 @@
 			font-size: 21px;
 			padding: 0.2em;
 		}
+
+		.small {
+			a {
+				/* stylelint-disable */
+				font-family: 'proxima-nova';
+				/* stylelint-enable */
+				font-weight: 400;
+				font-style: normal;
+				line-height: 1.6;
+				text-transform: none;
+				letter-spacing: 0.02em;
+				font-size: 14px;
+			}
+		}
+
 		//-----------------------------------------
 		// The Down Caret
 		//-----------------------------------------
