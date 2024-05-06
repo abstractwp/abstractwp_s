@@ -26,29 +26,27 @@
 			if ( parentItem.classList.contains( 'menu-item-has-children' ) ) {
 				subMenuLabel = parentItem.querySelector( 'a' ).textContent;
 			}
-			const menuItemlv3 = menuItem.querySelector( '.sub-menu' );
-			if ( menuItemlv3 !== null ) {
-				const backBtn = document.createElement( 'span' );
-				backBtn.classList.add( 'back-button' );
-				backBtn.addEventListener( 'click', () => {
-					const activeItems = document.querySelectorAll(
-						'.main-navigation .focus'
-					);
 
-					activeItems.forEach( ( activeItem ) => {
-						activeItem.classList.remove( 'focus' );
-					} );
-				} );
-
-				const subMenuHeader = document.createElement( 'span' );
-				subMenuHeader.classList.add( 'sub-menu-header' );
-				subMenuHeader.innerText = subMenuLabel;
-				menuItem.insertAdjacentHTML(
-					'afterbegin',
-					subMenuHeader.outerHTML
+			const backBtn = document.createElement( 'span' );
+			backBtn.classList.add( 'back-button' );
+			backBtn.addEventListener( 'click', () => {
+				const activeItems = document.querySelectorAll(
+					'.main-navigation .focus'
 				);
-				menuItemlv3.append( backBtn );
-			}
+
+				activeItems.forEach( ( activeItem ) => {
+					activeItem.classList.remove( 'focus' );
+				} );
+			} );
+
+			const subMenuHeader = document.createElement( 'span' );
+			subMenuHeader.classList.add( 'sub-menu-header' );
+			subMenuHeader.innerText = subMenuLabel;
+			menuItem.insertAdjacentHTML(
+				'afterbegin',
+				subMenuHeader.outerHTML
+			);
+			parentItem.append( backBtn );
 		} );
 	}
 
