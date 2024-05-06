@@ -9,14 +9,7 @@
  * @package wd_s
  */
 
-use function WebDevStudios\wd_s\print_footer_block;
-
 ?>
-	<div class="wp-site-blocks">
-		<footer class="wp-block-template-part site-footer">
-			<?php block_footer_area(); ?>
-		</footer>
-	</div><!-- .wp-site-blocks -->
 
 	<?php wp_footer(); ?>
 
