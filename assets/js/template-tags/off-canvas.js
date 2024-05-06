@@ -22,19 +22,10 @@ if (
  * @since January 31, 2020
  */
 function wdsOffCanvas() {
-	const offCanvasScreen = document.querySelector( '.off-canvas-screen' );
-
-	if ( ! offCanvasScreen ) {
-		return;
-	}
-
-	const offCanvasContainer = document.querySelector(
-			'.off-canvas-container'
-		),
+	const offCanvasContainer = document.querySelector( '.site-header' ),
 		offCanvasOpen = document.querySelector( '.off-canvas-open' );
 
 	offCanvasOpen.addEventListener( 'click', toggleOffCanvas );
-	offCanvasScreen.addEventListener( 'click', closeOffCanvas );
 	document.body.addEventListener( 'keydown', closeOnEscape );
 
 	/**
@@ -59,10 +50,17 @@ function wdsOffCanvas() {
 	function closeOffCanvas() {
 		offCanvasContainer.classList.remove( 'is-visible' );
 		offCanvasOpen.classList.remove( 'is-visible' );
-		offCanvasScreen.classList.remove( 'is-visible' );
 
 		offCanvasContainer.setAttribute( 'aria-hidden', true );
 		offCanvasOpen.setAttribute( 'aria-expanded', false );
+
+		const activeItems = document.querySelectorAll(
+			'.main-navigation .focus'
+		);
+
+		activeItems.forEach( ( activeItem ) => {
+			activeItem.classList.remove( 'focus' );
+		} );
 	}
 
 	/**
@@ -88,7 +86,6 @@ function wdsOffCanvas() {
 	function openOffCanvas() {
 		offCanvasContainer.classList.add( 'is-visible' );
 		offCanvasOpen.classList.add( 'is-visible' );
-		offCanvasScreen.classList.add( 'is-visible' );
 
 		offCanvasContainer.setAttribute( 'aria-hidden', false );
 		offCanvasOpen.setAttribute( 'aria-expanded', true );

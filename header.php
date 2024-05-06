@@ -51,10 +51,6 @@
 
 			</div><!-- .site-branding -->
 
-			<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'mobile' ) ) : ?>
-				<button type="button" class="off-canvas-open" aria-expanded="false" aria-label="<?php esc_attr_e( 'Open Menu', 'wd_s' ); ?>"></button>
-			<?php endif; ?>
-
 			<nav id="site-navigation" class="main-navigation navigation-menu" aria-label="<?php esc_attr_e( 'Main Navigation', 'wd_s' ); ?>">
 				<?php
 				wp_nav_menu(
@@ -69,4 +65,7 @@
 				?>
 			</nav><!-- #site-navigation-->
 		</div><!-- .site-header-content -->
+		<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'mobile' ) ) : ?>
+			<button type="button" class="off-canvas-open" aria-expanded="false" aria-label="<?php esc_attr_e( 'Open Menu', 'wd_s' ); ?>"></button>
+		<?php endif; ?>
 	</header><!-- .site-header-->
