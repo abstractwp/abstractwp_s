@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 .site-header {
 	background-color: #fff;
-
+	padding-top: 32px;
 	width: 280px;
 
 	@media only screen and ( max-width: 600px ) {
@@ -43,6 +43,7 @@
 		padding-left: 16px;
 
 		a {
+			color: #1f1f1f;
 			font-weight: 400;
 			font-style: normal;
 			text-transform: none;
@@ -50,6 +51,10 @@
 			line-height: 1.6;
 			font-size: 21px;
 			padding: 0.2em;
+
+			&:hover {
+				color: var( --wp--preset--color--secondary-500 );
+			}
 		}
 
 		.spacing {

@@ -190,7 +190,7 @@
 					"name": "Primary 400"
 				},
 				{
-					"color": "#3C00E7",
+					"color": "#892deb",
 					"slug": "primary-500",
 					"name": "Primary 500"
 				},
@@ -255,7 +255,7 @@
 					"name": "Secondary 400"
 				},
 				{
-					"color": "#FFC700",
+					"color": "#efa906",
 					"slug": "secondary-500",
 					"name": "Secondary 500"
 				},
