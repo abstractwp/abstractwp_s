@@ -56,63 +56,46 @@
 			"fluid": true,
 			"fontFamilies": [
 				{
-					"fontFamily": "Inter, sans-serif",
+					"fontFamily": "Galaxy-Fun",
 					"name": "Headline",
 					"slug": "headline",
 					"fontFace": [
 						{
-							"fontFamily": "Inter",
+							"fontFamily": "Galaxy-Fun",
 							"fontStyle": "normal",
-							"fontWeight": "500",
+							"fontWeight": "300",
 							"src": [
-								"file:./build/fonts/inter/Inter-Medium.ttf"
-							]
-						},
-						{
-							"fontFamily": "Inter",
-							"fontStyle": "normal",
-							"fontWeight": "600",
-							"src": [
-								"file:./build/fonts/inter/Inter-SemiBold.ttf"
-							]
-						},
-						{
-							"fontFamily": "Inter",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"src": [
-								"file:./build/fonts/inter/Inter-Bold.woff2"
+								"file:./build/fonts/Galaxy-Funsans.ttf"
 							]
 						}
 					]
 				},
 				{
-					"fontFamily": "Inter, sans-serif",
-					"name": "Body",
+					"fontFamily": "proxima-nova",
+					"name": "body",
 					"slug": "body",
 					"fontFace": [
 						{
-							"fontFamily": "Inter",
+							"fontFamily": "proxima-nova",
 							"fontStyle": "normal",
-							"fontWeight": "400",
+							"fontWeight": "300",
 							"src": [
-								"file:./build/fonts/inter/Inter-Regular.woff2"
+								"file:./build/fonts/Proxima-Nova.otf"
 							]
-						},
+						}
+					]
+				},
+				{
+					"fontFamily": "chantal",
+					"name": "chantal",
+					"slug": "chantal",
+					"fontFace": [
 						{
-							"fontFamily": "Inter",
+							"fontFamily": "chantal",
 							"fontStyle": "normal",
-							"fontWeight": "500",
+							"fontWeight": "300",
 							"src": [
-								"file:./build/fonts/inter/Inter-Medium.ttf"
-							]
-						},
-						{
-							"fontFamily": "Inter",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"src": [
-								"file:./build/fonts/inter/Inter-Bold.woff2"
+								"file:./build/fonts/Chantal.ttf"
 							]
 						}
 					]
@@ -371,7 +354,7 @@
 
 	"styles": {
 		"typography": {
-			"fontFamily": "adorn-smooth-condensed-sans",
+			"fontFamily": "Galaxy-Fun",
 			"fontSize": "var(--wp--preset--font-size--normal)",
 			"fontWeight": "400",
 			"lineHeight": "1.6",
