@@ -1,0 +1,11 @@
+.artwork-container {
+	.entry-header {
+		.entry-title {
+			@apply absolute;
+
+			font-size: 16px;
+			padding-left: 16px;
+			background-color: #ffffffb2;
+		}
+	}
+}

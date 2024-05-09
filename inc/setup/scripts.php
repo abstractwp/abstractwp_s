@@ -20,7 +20,7 @@ function scripts() {
 	} else {
 		$asset_file = [
 			'version'      => '1.0.0',
-			'dependencies' => [ 'wp-polyfill' ],
+			'dependencies' => [ 'wp-polyfill', 'jquery' ],
 		];
 	}
 

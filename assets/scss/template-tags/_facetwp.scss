@@ -1,0 +1,9 @@
+.facetwp-facet {
+	@apply text-center;
+
+	.facetwp-load-more {
+		background-color: var( --wp--preset--color--secondary-500 );
+		padding: 8px 12px;
+		color: #fff;
+	}
+}
