@@ -22,7 +22,7 @@ get_header(); ?>
 	</header><!-- .page-header -->
 
 		<?php
-		echo '<div class="posts-list container facetwp-template">';
+		echo '<div class="container facetwp-template">';
 			/* Start the Loop */
 		while ( have_posts() ) :
 			the_post();

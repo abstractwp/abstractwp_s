@@ -26,7 +26,8 @@ pre {
 	}
 }
 
-.wp-site-blocks {
+.wp-site-blocks,
+.site-main {
 	@media only screen and ( min-width: 600px ) {
 		width: calc( 100% - 280px );
 		margin-left: 280px;

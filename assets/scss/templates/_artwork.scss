@@ -1,4 +1,8 @@
 .artwork-container {
+	max-width: 280px;
+	padding: 8px;
+	margin-bottom: 0;
+
 	.entry-header {
 		.entry-title {
 			@apply absolute;
@@ -6,6 +10,17 @@
 			font-size: 16px;
 			padding-left: 16px;
 			background-color: #ffffffb2;
+
+			a {
+				color: #1f1f1f;
+			}
+		}
+
+		.artwork-img {
+			@apply object-cover;
+			min-height: 320px;
+			max-height: 320px;
 		}
 	}
 }
+
