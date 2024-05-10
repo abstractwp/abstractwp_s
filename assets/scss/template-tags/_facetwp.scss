@@ -1,4 +1,8 @@
 .facet-filter {
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-top: 16px;
+
 	.filter-label {
 		font-size: 18px;
 		margin-top: 12px;
@@ -7,8 +11,6 @@
 	@media only screen and ( max-width: 600px ) {
 		@apply flex-col;
 
-		margin-left: 16px;
-		margin-right: 16px;
 		margin-bottom: 24px;
 
 		.facetwp-facet {
