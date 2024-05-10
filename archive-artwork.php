@@ -7,7 +7,6 @@
  * @package wd_s
  */
 
-use function WebDevStudios\wd_s\print_numeric_pagination;
 use function WebDevStudios\wd_s\main_classes;
 get_header(); ?>
 <main id="main" class="<?php echo esc_attr( main_classes( [] ) ); ?>">

@@ -53,7 +53,7 @@
 	}
 }
 
-.wp-post-image:not(.artwork-img),
+.wp-post-image:not( .artwork-img ),
 .placeholder-img {
 	@apply object-cover w-full;
 

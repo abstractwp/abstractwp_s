@@ -1,11 +1,57 @@
+.facet-filter {
+	.filter-label {
+		font-size: 18px;
+		margin-top: 12px;
+	}
+
+	@media only screen and ( max-width: 600px ) {
+		@apply flex-col;
+
+		margin-left: 16px;
+		margin-right: 16px;
+		margin-bottom: 24px;
+
+		.facetwp-facet {
+			margin-bottom: 8px;
+		}
+
+		.filter-label {
+			margin-bottom: 8px;
+		}
+	}
+}
 .facetwp-facet {
 	@apply text-center;
-	margin-top: 32px;
+	margin-top: 24px;
+	border: 1px solid #1f1f1f;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-left: 8px;
+
+	&.facetwp-type-pager {
+		border: 0;
+	}
+
+	.facetwp-dropdown {
+		padding: 4px 8px;
+		border-radius: 5px;
+	}
 
 	.facetwp-load-more {
 		background-color: var( --wp--preset--color--secondary-500 );
 		padding: 8px 12px;
 		color: #fff;
+	}
+
+	@media only screen and ( max-width: 600px ) {
+		@apply flex-col;
+		margin-left: 0;
+		width: 100%;
+		margin-top: 8px;
+
+		.facetwp-dropdown {
+			width: 100%;
+		}
 	}
 }
 
