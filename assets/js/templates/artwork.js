@@ -7,5 +7,7 @@ jQuery( function ( $ ) {
 	$( document ).on( 'facetwp-loaded', function () {
 		$grid.masonry( 'reloadItems' );
 		$grid.masonry( 'layout' );
+		/*eslint eslint-comments/no-unlimited-disable: error */
+		FOOBOX.init(); //eslint-disable-line no-undef
 	} );
 } );
