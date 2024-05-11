@@ -24,6 +24,10 @@ function remove_archive_title_prefix( $block_title ) {
 		return esc_html( $single_cat_title );
 	}
 
+	if ( is_post_type_archive() ) {
+		return esc_html( post_type_archive_title( '', false ) );
+	}
+
 	return $block_title;
 }
 
